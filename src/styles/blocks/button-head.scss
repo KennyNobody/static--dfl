@@ -1,0 +1,26 @@
+.button-head {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    transition: 0.3s background-color;
+
+    &:hover {
+        background-color: $blue-bg;
+    }
+
+    &__icon {
+        display: block;
+        width: rem(24);
+        height: rem(24);
+        fill: $blue-primary;
+
+        @include r(700) {
+            width: rem(32);
+            height: rem(32);
+        }
+    }
+}

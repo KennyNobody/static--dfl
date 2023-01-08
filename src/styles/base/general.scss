@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+svg,
+button {
+    transition: 0.3s all;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+.z-index {
+    &-1 {
+        z-index: 1;
+    }
+    &-2 {
+        z-index: 2;
+    }
+    &-3 {
+        z-index: 3;
+    }
+}
+
+
+
+ //.desktop-hidden {
+ //    display: none;
+ //    visibility: hidden;
+ //    @include r(1200) {
+ //        display: block;
+ //        visibility: visible;
+ //    }
+ //}
+
+.center {
+    text-align: center;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grow {
+    flex-grow: 1;
+}

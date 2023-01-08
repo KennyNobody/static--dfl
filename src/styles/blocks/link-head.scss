@@ -1,0 +1,12 @@
+.link-head {
+    display: block;
+    color: inherit;
+    font-weight: 900;
+    font-size: rem(14);
+    text-decoration: none;
+    transition: 0.3s color;
+
+    &:hover {
+        color: $text-primary;
+    }
+}

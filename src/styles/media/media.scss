@@ -1,0 +1,20 @@
+.lap-hide {
+    @include r(1300) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.tab-hide {
+    @include r(1080) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.mob-hide {
+    @include r(700) {
+        visibility: hidden;
+        display: none;
+    }
+}

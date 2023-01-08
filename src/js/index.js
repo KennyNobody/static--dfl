@@ -1,3 +1,6 @@
-import "the-new-css-reset/css/reset.css";
+import 'reset-css';
 import "./sprite";
-import "../css/main.scss";
+import "../styles/_index.scss";
+import App from "./app";
+
+new App();

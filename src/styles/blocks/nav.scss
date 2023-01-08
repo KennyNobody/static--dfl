@@ -1,0 +1,118 @@
+.nav {
+    gap: rem(24);
+    display: flex;
+    align-items: center;
+
+    @include r(1300) {
+        gap: rem(12);
+    }
+
+    &--header {
+        padding: 0 rem(8);
+
+        @include r(1300) {
+            padding: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+        &.active {
+            .nav {
+                &__icon {
+                    transform: rotate(180deg);
+                }
+                &__dropdown {
+                    opacity: 1;
+                    height: auto;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        color: inherit;
+        height: rem(24);
+        font-size: rem(12);
+        align-items: center;
+        text-decoration: none;
+
+        &:after {
+            left: 0;
+            right: 0;
+            opacity: 0;
+            height: 1px;
+            content: "";
+            bottom: rem(2);
+            display: block;
+            position: absolute;
+            transition: 0.3s opacity;
+            background-color: $blue-primary;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        @at-root {
+            button#{&} {
+                padding: 0;
+                border: none;
+                cursor: pointer;
+                background: none;
+                font-family: inherit;
+
+                &:hover {
+                    color: $blue-primary;
+                }
+            }
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__icon {
+        display: block;
+        flex-shrink: 0;
+        width: rem(24);
+        height: rem(24);
+    }
+    &__dropdown {
+        height: 0;
+        z-index: 1;
+        opacity: 0;
+        display: block;
+        padding: rem(8) 0;
+        position: absolute;
+        width: fit-content;
+        visibility: hidden;
+        top: calc(100% + 4px);
+        border-radius: rem(2);
+        transition: 0.3s opacity;
+        background-color: $light;
+        box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
+    }
+
+    &__link-drop {
+        display: block;
+        font-weight: 400;
+        font-size: rem(12);
+        white-space: nowrap;
+        color: $blue-primary;
+        text-decoration: none;
+        padding: rem(8) rem(16);
+        &:hover {
+            background-color: $gray-bg;
+        }
+
+        &:active {
+
+        }
+    }
+}

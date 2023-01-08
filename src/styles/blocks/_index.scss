@@ -1,0 +1,28 @@
+@import "button-head";
+@import "body";
+@import "breadcrumbs";
+@import "button";
+@import "columns";
+@import "container";
+@import "editor";
+@import "form";
+@import "toolbar";
+@import "input";
+@import "link-head";
+@import "logo";
+@import "main";
+@import "nav";
+@import "section";
+@import "title";
+
+@include r(1300) {
+
+}
+
+@include r(1000) {
+
+}
+
+@include r(700) {
+
+}

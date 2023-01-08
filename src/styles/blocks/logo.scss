@@ -1,0 +1,42 @@
+.logo {
+    display: block;
+    @at-root {
+        a#{&} {
+            cursor: pointer;
+            transition: 0.3s opacity;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    &__svg {
+        display: block;
+        fill: $blue-primary;
+    }
+
+    &--header {
+        .logo__svg {
+            height: rem(28);
+            width: rem(114);
+
+            @include r(700) {
+                width: rem(131);
+                height: rem(32);
+            }
+        }
+    }
+
+    &--footer {
+        .logo__svg {
+            height: rem(35);
+            width: rem(142);
+        }
+    }
+
+    &.invert {
+        .logo__svg {
+            fill: $text-white;
+        }
+    }
+}
