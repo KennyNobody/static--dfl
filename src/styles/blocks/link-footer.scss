@@ -1,11 +1,12 @@
-.link-head {
+.link-footer {
     display: block;
     color: inherit;
-    font-weight: 900;
-    font-size: rem(14);
+    font-weight: 700;
+    font-size: rem(18);
     width: fit-content;
     text-decoration: none;
     transition: 0.3s color;
+    letter-spacing: rem(1);
 
     &:hover {
         color: $text-primary;

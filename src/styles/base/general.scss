@@ -41,11 +41,16 @@ button {
  //    }
  //}
 
-.center {
+.text-center {
     text-align: center;
 }
 
-.centered {
+.right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.center {
     margin-left: auto;
     margin-right: auto;
 }

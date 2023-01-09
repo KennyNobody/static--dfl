@@ -6,14 +6,17 @@
 @import "container";
 @import "editor";
 @import "form";
-@import "toolbar";
+@import "hr";
 @import "input";
+@import "link-footer";
 @import "link-head";
 @import "logo";
 @import "main";
 @import "nav";
 @import "section";
+@import "socials";
 @import "title";
+@import "toolbar";
 
 @include r(1300) {
 

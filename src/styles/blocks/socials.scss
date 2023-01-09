@@ -1,0 +1,27 @@
+.socials {
+    gap: rem(20);
+    display: flex;
+    width: fit-content;
+    align-items: center;
+
+    &__link {
+        display: block;
+
+        &:hover {
+            .socials__icon {
+                fill: $blue-resolution;
+            }
+        }
+    }
+
+    &__icon {
+        width: auto;
+        display: block;
+        fill: $blue-primary;
+
+        &--vk {
+            width: rem(48);
+            height: rem(48);
+        }
+    }
+}
