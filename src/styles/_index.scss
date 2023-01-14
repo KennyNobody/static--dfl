@@ -1,4 +1,17 @@
 @import "helpers/index";
 @import "base/index";
 @import "blocks/index";
+@import "services/index";
 @import "media/media";
+
+@include r(1300) {
+
+}
+
+@include r(1000) {
+
+}
+
+@include r(700) {
+
+}

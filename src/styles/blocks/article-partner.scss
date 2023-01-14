@@ -1,0 +1,25 @@
+.article-partner {
+    display: flex;
+    height: rem(40);
+    width: rem(164);
+    padding: rem(2) rem(25);
+
+    &:hover {
+        img {
+            opacity: 1;
+            filter: grayscale(0%);
+        };
+    }
+
+    img {
+        opacity: 0.4;
+        display: block;
+        transition: 0.3s all;
+        filter: grayscale(100%);
+
+        @include r(700) {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+    }
+}

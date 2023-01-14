@@ -1,0 +1,11 @@
+.fz {
+    &-14 {
+        font-size: rem(14);
+    }
+
+    &-mob-16 {
+        @include r(700) {
+            font-size: rem(16);
+        }
+    }
+}

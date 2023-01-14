@@ -1,5 +1,7 @@
 .logo {
     display: block;
+    width: fit-content;
+
     @at-root {
         a#{&} {
             cursor: pointer;
@@ -10,6 +12,7 @@
             }
         }
     }
+
     &__svg {
         display: block;
         fill: $blue-primary;

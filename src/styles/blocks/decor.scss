@@ -1,0 +1,32 @@
+.decor {
+    &-1 {
+        &:before {
+            width: 50vw;
+            content: "";
+            top: rem(-30);
+            display: block;
+            right: rem(-225);
+            height: rem(320);
+            position: absolute;
+            background-color: $gray-bg;
+
+            @include r(1300) {
+                top: rem(-110);
+                height: rem(400);
+                right: rem(-120);
+            }
+
+            @include r(1000) {
+                top: 0;
+                left: 0;
+                right: auto;
+                width: rem(200);
+                height: rem(270);
+            }
+
+            @include r(700) {
+                display: none;
+            }
+        }
+    }
+}

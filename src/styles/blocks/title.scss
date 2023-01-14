@@ -2,4 +2,8 @@
     line-height: 1.2;
     font-weight: 800;
     font-size: rem(32);
+
+    @include r(700) {
+        font-size: rem(24);
+    }
 }

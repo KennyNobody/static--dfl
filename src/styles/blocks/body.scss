@@ -6,8 +6,10 @@
     min-height: 100vh;
     overflow-x: hidden;
     color: $blue-primary;
+    padding-top: rem(76);
     flex-direction: column;
     font-family: $font-main;
+    background-color: $white-bg;
     justify-content: space-between;
     @include r(1200) {}
 }

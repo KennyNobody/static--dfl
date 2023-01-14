@@ -1,0 +1,50 @@
+.article-factoid {
+    height: 100%;
+    min-height: rem(125);
+    border-radius: rem(2);
+    padding: rem(16) rem(32);
+    box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
+
+    @include r(700) {
+        min-height: auto;
+        padding: rem(16) rem(12);
+    }
+
+    &__title {
+        line-height: 1.5;
+        font-weight: 900;
+        font-size: rem(20);
+
+        @include r(700) {
+            line-height: 1.2;
+            font-size: rem(16);
+            margin-bottom: rem(5);
+        }
+
+        strong {
+            font-size: rem(40);
+
+            @include r(700) {
+                font-size: rem(24);
+            }
+        }
+
+        sup {
+            font-size: rem(12);
+            vertical-align: super;
+
+            @include r(700) {
+                font-size: rem(10);
+            }
+        }
+    }
+
+    &__text {
+        font-size: rem(14);
+        color: $text-primary;
+
+        @include r(700) {
+            font-size: rem(16);
+        }
+    }
+}

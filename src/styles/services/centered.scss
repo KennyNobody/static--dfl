@@ -1,0 +1,19 @@
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+
+    &-l {
+
+    }
+
+    &-t {
+
+    }
+
+    &-m {
+        @include r(700) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
