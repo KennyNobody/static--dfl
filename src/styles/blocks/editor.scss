@@ -101,9 +101,12 @@
     }
 
     ul {
+        list-style-type: "—";
+        padding-left: rem(10);
+
         li {
             position: relative;
-            padding-left: rem(25);
+            padding-left: rem(12);
         }
     }
 
