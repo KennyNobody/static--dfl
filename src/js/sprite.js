@@ -1,6 +1,7 @@
 import arrowBottom from "../assets/sprite/icon-arrow-bottom.svg";
 import arrowDouble from "../assets/sprite/icon-arrow-double.svg";
 import iconArrowLeft from "../assets/sprite/icon-arrow-left.svg";
+import iconArrowReview from "../assets/sprite/icon-arrow-review.svg";
 import iconArrowRight from "../assets/sprite/icon-arrow-right.svg";
 import iconArrowTop from "../assets/sprite/icon-arrow-top.svg";
 import iconBox from "../assets/sprite/icon-box.svg";
@@ -28,6 +29,7 @@ export default {
     arrowBottom,
     arrowDouble,
     iconArrowLeft,
+    iconArrowReview,
     iconArrowRight,
     iconArrowTop,
     iconBox,

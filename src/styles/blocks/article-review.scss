@@ -1,0 +1,82 @@
+.article-review {
+    min-height: rem(275);
+    border-radius: rem(2);
+    padding: rem(16) rem(32) rem(32) rem(32);
+    box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
+
+    &__header {
+        gap: rem(24);
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(16);
+    }
+
+    &__logo {
+        flex-shrink: 0;
+        width: rem(64);
+        height: rem(64);
+        padding: rem(8);
+
+        img {
+            display: block;
+        }
+    }
+
+    &__info {
+        flex-grow: 1;
+        min-width: 0;
+    }
+
+    &__organization {
+        font-weight: 700;
+        line-height: 1.3;
+        font-size: rem(24);
+        color: $blue-primary;
+        margin-bottom: rem(8);
+    }
+
+    &__name {
+        font-weight: 600;
+        line-height: 1.3;
+        font-size: rem(16);
+        margin-bottom: rem(4);
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: rem(14);
+        color: $text-secondary-2;
+    }
+
+    &__main {
+        .editor {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    &__footer {
+        gap: rem(5);
+        display: flex;
+        padding: rem(16) 0;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__link {
+        display: block;
+        font-weight: 600;
+        font-size: rem(16);
+        color: $blue-resolution;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: rem(16);
+        display: block;
+        height: rem(16);
+        fill: $blue-resolution;
+    }
+}
