@@ -1,9 +1,23 @@
 .decor {
     &-1 {
+        &:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: rem(424);
+            position: absolute;
+            background-color: $gray-bg;
+        }
+
+    }
+
+    &-2 {
         &:before {
             width: 50vw;
             content: "";
-            top: rem(-30);
+            top: rem(-105);
             display: block;
             right: rem(-225);
             height: rem(320);
@@ -11,15 +25,15 @@
             background-color: $gray-bg;
 
             @include r(1300) {
-                top: rem(-110);
+                top: rem(-190);
                 height: rem(400);
                 right: rem(-120);
             }
 
             @include r(1000) {
-                top: 0;
                 left: 0;
                 right: auto;
+                top: rem(-80);
                 width: rem(200);
                 height: rem(270);
             }

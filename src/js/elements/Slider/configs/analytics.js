@@ -1,10 +1,10 @@
 import {Navigation, Pagination} from "swiper";
 
-export default function(el) {
+export default function (el) {
     const data = {
         modules: [Navigation, Pagination],
         // loop: true,
-        spaceBetween: 20,
+        spaceBetween: 12,
         slidesPerView: 'auto',
         // centeredSlides: false,
         // loopAdditionalSlides: 3,
@@ -18,12 +18,15 @@ export default function(el) {
             bulletActiveClass: 'bullet--active'
         },
         breakpoints: {
-            //     1000: {
-            //         spaceBetween: 16,
-            //         slidesPerView: 5,
-            //     },
+            1300: {
+                slidesPerView: 'auto'
+            },
+            1000: {
+
+                slidesPerView: 2
+            },
             700: {
-                slidesPerView: 12
+                spaceBetween: 20
             }
         }
     }
@@ -36,7 +39,8 @@ export default function(el) {
                 disabledClass: 'disabled'
             }
         }
-    } catch (e) {}
+    } catch (e) {
+    }
 
     return data;
 }

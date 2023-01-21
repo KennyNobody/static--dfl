@@ -1,13 +1,20 @@
-import 'swiper/swiper.min.css';
 import Swiper from "swiper";
 import sliderFactory from './elements/Slider/factory';
 
 import Dropmenu from "./elements/Dropmenu/Dropmenu";
+import Header from "./elements/Header/Header";
 
 class App {
     constructor() {
+        this.createHeader();
         this.createDropmenu();
         this.createSliders();
+    }
+
+    createHeader() {
+        const el = document.querySelector('[data-header]');
+
+        if (el) this.header = new Header(el);
     }
 
     createDropmenu() {
@@ -26,10 +33,7 @@ class App {
         if (el) this.sliders = [];
 
         el.forEach(item => {
-            const slider = item.querySelector('.swiper-container');
-            const navigation = item.querySelector('[data-slider-nav]');
-
-            this.sliders.push(new Swiper(slider, sliderFactory(item)));
+            this.sliders.push(new Swiper(item.querySelector('.swiper-container'), sliderFactory(item)));
         });
     }
 }

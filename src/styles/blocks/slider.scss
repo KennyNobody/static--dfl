@@ -1,0 +1,18 @@
+.slider {
+    &__slide {
+        opacity: 0;
+        transition-property: transform, opacity !important;
+        //visibility: hidden;
+        transition: 0.3s all;
+
+        &.visible {
+            opacity: 1;
+            //visibility: visible;
+        }
+
+        &--service {
+            height: auto;
+            min-height: rem(380);
+        }
+    }
+}

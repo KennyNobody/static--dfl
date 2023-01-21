@@ -1,7 +1,8 @@
 .article-review {
     min-height: rem(275);
     border-radius: rem(2);
-    padding: rem(16) rem(32) rem(32) rem(32);
+    background-color: $text-white;
+    padding: rem(16) rem(32) rem(16) rem(32);
     box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
 
     &__header {
@@ -50,6 +51,7 @@
 
     &__main {
         .editor {
+            line-height: 1.9;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 3;

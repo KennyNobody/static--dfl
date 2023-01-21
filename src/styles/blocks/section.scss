@@ -1,11 +1,31 @@
 .section {
+    z-index: 1;
+    position: relative;
     border-top: 1px solid blue;
     border-bottom: 1px solid green;
+
+    &.z-index-1 {
+        z-index: 1;
+    }
+
+    &.z-index-2 {
+        z-index: 2;
+    }
+
+    &.z-index-3 {
+        z-index: 3;
+    }
 
     &--header {
         top: 0;
         left: 0;
         right: 0;
         position: fixed;
+        transition: 0.3s background-color, 0.3s box-shadow;
+        box-shadow: 0 0 rem(50) 0 rgba(96, 107, 143, 0.16);
+
+        &.fixed {
+            background-color: $light;
+        }
     }
 }

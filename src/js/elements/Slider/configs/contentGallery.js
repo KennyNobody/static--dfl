@@ -4,12 +4,12 @@ export default function(el){
     const data = {
         modules: [Navigation, Pagination],
         // loop: true,
-        spaceBetween: 20,
-        slidesPerView: 4,
+        spaceBetween: 9,
+        slidesPerView: 'auto',
         // centeredSlides: false,
         // loopAdditionalSlides: 3,
-        // watchSlidesProgress: true,
-        // slideVisibleClass: 'visible',
+        watchSlidesProgress: true,
+        slideVisibleClass: 'visible',
         pagination: {
             el: '.slider__pagination',
             type: 'bullets',
@@ -17,23 +17,17 @@ export default function(el){
             bulletClass: 'bullet',
             bulletActiveClass: 'bullet--active'
         },
-        navigation: {
-            // nextEl: item.querySelector('.slider__button--next'),
-            // prevEl: item.querySelector('.slider__button--prev'),
-            disabledClass: 'disabled'
-        },
         breakpoints: {
             1300: {
-                // spaceBetween: 16,
-                slidesPerView: 3,
+                slidesPerView: 4,
             },
             1000: {
-                spaceBetween: 12,
-                slidesPerView: 'auto',
+                spaceBetween: 20,
+                slidesPerView: 3,
             },
-            // 700: {
-            //     slidesPerView: 3
-            // }
+            700: {
+                spaceBetween: 12
+            }
         }
     }
 
