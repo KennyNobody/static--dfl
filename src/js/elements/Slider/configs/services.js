@@ -5,7 +5,7 @@ export default function(el) {
         modules: [Navigation, Pagination],
         // loop: true,
         spaceBetween: 20,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         // centeredSlides: false,
         // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
@@ -19,6 +19,10 @@ export default function(el) {
         },
         breakpoints: {
             1000: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+            },
+            700: {
                 spaceBetween: 20,
                 slidesPerView: 3,
             }
