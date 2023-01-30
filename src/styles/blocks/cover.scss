@@ -1,0 +1,83 @@
+.cover {
+    display: flex;
+    position: relative;
+    min-height: rem(380);
+    padding-top: rem(70);
+    flex-direction: column;
+    padding-bottom: rem(30);
+    justify-content: center;
+
+    @include r(700) {
+        padding-bottom: 0;
+    }
+
+    &:before {
+        top: 0;
+        right: 32%;
+        content: "";
+        width: 100vw;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background-color: $blue-primary;
+
+        @include r(1000) {
+            right: 42%;
+        }
+
+        @include r(700) {
+            top: 0;
+            left: auto;
+            bottom: auto;
+            right: rem(-50);
+            width: rem(140);
+            height: rem(102);
+        }
+    }
+
+    &__picture {
+        right: 0;
+        display: block;
+        width: rem(630);
+        bottom: rem(-50);
+        height: rem(336);
+        overflow: hidden;
+        position: absolute;
+        background-color: red;
+
+        @include r(1300) {
+            width: rem(500);
+        }
+
+        @include r(1000) {
+            right: rem(-50);
+            width: rem(374);
+        }
+
+        @include r(700) {
+            right: 0;
+            bottom: 0;
+            height: rem(275);
+            position: relative;
+            margin-bottom: rem(30);
+            width: calc(100% + 20px);
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__content {
+        color: $text-white;
+
+        @include r(700) {
+            color: $blue-primary;
+        }
+    }
+}

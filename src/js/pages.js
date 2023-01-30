@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // Includes
 const head = fs.readFileSync("src/includes/head.html");
 const sectionHeader = fs.readFileSync("src/includes/section-header.html");
+const sectionHeaderInvert = fs.readFileSync("src/includes/section-header-invert.html");
 const sectionFooter = fs.readFileSync("src/includes/section-footer.html");
 const sectionPartners = fs.readFileSync("src/includes/section-partners.html");
 const temp = fs.readFileSync("src/includes/temp.html");
@@ -19,6 +20,16 @@ module.exports = [
         sectionHeader,
         sectionFooter,
         sectionPartners,
+        temp
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/privacy.html",
+        filename: "privacy.html",
+        inject: "body",
+        title: "Политика конфиденциальности | DFL",
+        head,
+        sectionHeader,
+        sectionFooter,
         temp
     }),
     new HtmlWebpackPlugin({
@@ -38,7 +49,7 @@ module.exports = [
         inject: "body",
         title: "Проектные перевозки | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp
@@ -82,7 +93,7 @@ module.exports = [
         inject: "body",
         title: "О нас | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp

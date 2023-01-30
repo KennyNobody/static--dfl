@@ -12,6 +12,23 @@
         background-color: $blue-bg;
     }
 
+    &.invert {
+        &:hover {
+            background: none;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        .button-head__icon {
+            @include r(700) {
+                fill: $text-white;
+            }
+        }
+    }
+
+
     &__icon {
         display: block;
         width: rem(24);
@@ -21,6 +38,18 @@
         @include r(700) {
             width: rem(32);
             height: rem(32);
+        }
+    }
+}
+
+.section--header.fixed {
+    .button-head {
+        &.invert {
+            .button-head__icon {
+                @include r(700) {
+                    fill: $blue-primary
+                }
+            }
         }
     }
 }

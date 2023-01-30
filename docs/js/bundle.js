@@ -633,6 +633,26 @@ class Header {
 
 /***/ }),
 
+/***/ "./src/js/elements/Slider/configs/_pagination.js":
+/*!*******************************************************!*\
+  !*** ./src/js/elements/Slider/configs/_pagination.js ***!
+  \*******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "pagination": function() { return /* binding */ pagination; }
+/* harmony export */ });
+const pagination = {
+    el: '.progressbar',
+    type: 'progressbar',
+    progressbarFillClass: 'progressbar__fill',
+}
+
+
+
+/***/ }),
+
 /***/ "./src/js/elements/Slider/configs/analytics.js":
 /*!*****************************************************!*\
   !*** ./src/js/elements/Slider/configs/analytics.js ***!
@@ -644,25 +664,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 12,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
-        // watchSlidesProgress: true,
-        // slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 slidesPerView: 'auto'
@@ -704,25 +715,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el){
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 9,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 slidesPerView: 4,
@@ -765,25 +769,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 8,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 spaceBetween: 20,
@@ -821,25 +818,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 12,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 slidesPerView: 'auto',
@@ -863,7 +853,8 @@ __webpack_require__.r(__webpack_exports__);
                 // disabledClass: 'disabled'
             }
         }
-    } catch (e) {}
+    } catch (e) {
+    }
 
     return data;
 }
@@ -881,25 +872,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 12,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 spaceBetween: 30,
@@ -941,6 +925,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
@@ -953,13 +939,7 @@ __webpack_require__.r(__webpack_exports__);
         // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1000: {
                 slidesPerView: 7,
@@ -996,6 +976,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
@@ -1003,17 +985,9 @@ __webpack_require__.r(__webpack_exports__);
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
         // loop: true,
         slidesPerView: 1,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        }
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination
     }
 
     try {
@@ -1042,28 +1016,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
         slidesPerView: 'auto',
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1000: {
-                // spaceBetween: 30,
                 slidesPerView: 2,
             },
             700: {
@@ -1098,37 +1064,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
         slidesPerView: 4,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
-                // spaceBetween: 16,
                 slidesPerView: 3,
             },
             1000: {
                 spaceBetween: 12,
                 slidesPerView: 'auto',
-            },
-            // 700: {
-            //     slidesPerView: 3
-            // }
+            }
         }
     }
 
@@ -1137,7 +1092,6 @@ __webpack_require__.r(__webpack_exports__);
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
                 prevEl: el.querySelector('[data-button-prev'),
-                // disabledClass: 'disabled'
             }
         }
     } catch (e) {}
@@ -1158,25 +1112,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
         slidesPerView: 1,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             700: {
                 slidesPerView: 2
@@ -1210,27 +1157,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
-        slidesPerView: 3,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
+        slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1000: {
+                spaceBetween: 20,
+                slidesPerView: 3,
+            },
+            700: {
                 spaceBetween: 20,
                 slidesPerView: 3,
             }
@@ -1263,25 +1207,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
         slidesPerView: 1,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             1300: {
                 slidesPerView: 4,
@@ -1300,7 +1237,6 @@ __webpack_require__.r(__webpack_exports__);
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
                 prevEl: el.querySelector('[data-button-prev'),
-                // disabledClass: 'disabled'
             }
         }
     } catch (e) {}
@@ -1322,25 +1258,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
 /* harmony export */ });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_pagination */ "./src/js/elements/Slider/configs/_pagination.js");
+
 
 
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const data = {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        // loop: true,
         spaceBetween: 20,
         slidesPerView: 1,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: _pagination__WEBPACK_IMPORTED_MODULE_1__.pagination,
         breakpoints: {
             700: {
                 slidesPerView: 2
@@ -1353,7 +1282,6 @@ __webpack_require__.r(__webpack_exports__);
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
                 prevEl: el.querySelector('[data-button-prev'),
-                // disabledClass: 'disabled'
             }
         }
     } catch (e) {}
@@ -1404,15 +1332,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {
     const name = el.getAttribute('data-slider');
 
-    if (name === 'analytics') return (0,_configs_analytics__WEBPACK_IMPORTED_MODULE_0__["default"])(el);
-    if (name === 'contentGallery') return (0,_configs_contentGallery__WEBPACK_IMPORTED_MODULE_1__["default"])(el);
-    if (name === 'handbook') return (0,_configs_handbook__WEBPACK_IMPORTED_MODULE_2__["default"])(el);
-    if (name === 'news') return (0,_configs_news__WEBPACK_IMPORTED_MODULE_3__["default"])(el);
+    /**/ if (name === 'analytics') return (0,_configs_analytics__WEBPACK_IMPORTED_MODULE_0__["default"])(el);
+    /**/ if (name === 'contentGallery') return (0,_configs_contentGallery__WEBPACK_IMPORTED_MODULE_1__["default"])(el);
+    /**/ if (name === 'handbook') return (0,_configs_handbook__WEBPACK_IMPORTED_MODULE_2__["default"])(el);
+    /**/ if (name === 'news') return (0,_configs_news__WEBPACK_IMPORTED_MODULE_3__["default"])(el);
     if (name === 'ourOffice') return (0,_configs_ourOffice__WEBPACK_IMPORTED_MODULE_4__["default"])(el);
     if (name === 'partners') return (0,_configs_partners__WEBPACK_IMPORTED_MODULE_5__["default"])(el);
-    if (name === 'project') return (0,_configs_project__WEBPACK_IMPORTED_MODULE_6__["default"])(el);
-    if (name === 'projectsAnother') return (0,_configs_projectsAnother__WEBPACK_IMPORTED_MODULE_7__["default"])(el);
-    if (name === 'projectsGallery') return (0,_configs_projectsGallery__WEBPACK_IMPORTED_MODULE_8__["default"])(el);
+    /**/ if (name === 'project') return (0,_configs_project__WEBPACK_IMPORTED_MODULE_6__["default"])(el);
+    /**/ if (name === 'projectsAnother') return (0,_configs_projectsAnother__WEBPACK_IMPORTED_MODULE_7__["default"])(el);
+    /**/ if (name === 'projectsGallery') return (0,_configs_projectsGallery__WEBPACK_IMPORTED_MODULE_8__["default"])(el);
     if (name === 'reviews') return (0,_configs_reviews__WEBPACK_IMPORTED_MODULE_9__["default"])(el);
     if (name === 'services') return (0,_configs_services__WEBPACK_IMPORTED_MODULE_10__["default"])(el);
     if (name === 'workers') return (0,_configs_workers__WEBPACK_IMPORTED_MODULE_11__["default"])(el);

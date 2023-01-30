@@ -1,21 +1,14 @@
 import {Navigation, Pagination} from "swiper";
+import {pagination} from "./_pagination";
 
 export default function (el) {
     const data = {
         modules: [Navigation, Pagination],
         // loop: true,
         slidesPerView: 1,
-        // centeredSlides: false,
-        // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        }
+        pagination: pagination
     }
 
     try {

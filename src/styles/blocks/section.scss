@@ -22,10 +22,10 @@
         right: 0;
         position: fixed;
         transition: 0.3s background-color, 0.3s box-shadow;
-        box-shadow: 0 0 rem(50) 0 rgba(96, 107, 143, 0.16);
 
         &.fixed {
             background-color: $light;
+            box-shadow: 0 0 rem(50) 0 rgba(96, 107, 143, 0.16);
         }
     }
 }

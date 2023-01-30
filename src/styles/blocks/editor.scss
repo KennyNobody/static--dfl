@@ -6,12 +6,22 @@
         margin-bottom: 0;
     }
 
+    &--14 {
+        font-size: rem(14);
+    }
+
     &--16 {
         font-size: rem(16);
     }
 
     &--18 {
         font-size: rem(18);
+    }
+
+    &--mob-16 {
+        @include r(700) {
+            font-size: rem(16);
+        }
     }
 
     &--center {

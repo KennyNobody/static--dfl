@@ -1,11 +1,53 @@
 .button {
+    width: 100%;
+    border: none;
+    display: flex;
     cursor: pointer;
-    @include r(1200) {
-       
+    max-width: rem(210);
+    min-height: rem(40);
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: rem(2);
+    justify-content: center;
+    background-color: $blue-primary;
+
+    &:hover {
+        background-color: $blue-bg-hover;
     }
-    &--disabled {
-        
+
+    &.invert {
+        background-color: $text-white;
+
+        &:hover {
+            background-color: $blue-bg;
+        }
     }
+
+    @include r(700) {
+        min-height: rem(50);
+    }
+
+    &[disabled] {
+
+    }
+
     &__text {
+        font-size: rem(14);
+
+        @include r(700) {
+            font-size: rem(18);
+        }
+    }
+}
+
+.cover {
+    &__content {
+        .button {
+            @include r(700) {
+                color: $light;
+                max-width: 100%;
+                background-color: $blue-primary;
+            }
+        }
     }
 }

@@ -38,8 +38,21 @@
     }
 
     &.invert {
+
         .logo__svg {
             fill: $text-white;
+
+            @include r(700) {
+                fill: $blue-primary;
+            }
+        }
+    }
+}
+
+.section.fixed {
+    .logo {
+        &__svg {
+            fill: $blue-primary;
         }
     }
 }

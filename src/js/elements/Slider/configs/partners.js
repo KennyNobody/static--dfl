@@ -1,4 +1,5 @@
 import {Navigation, Pagination} from "swiper";
+import {pagination} from "./_pagination";
 
 export default function (el) {
     const data = {
@@ -10,13 +11,7 @@ export default function (el) {
         // loopAdditionalSlides: 3,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: {
-            el: '.slider__pagination',
-            type: 'bullets',
-            clickable: true,
-            bulletClass: 'bullet',
-            bulletActiveClass: 'bullet--active'
-        },
+        pagination: pagination,
         breakpoints: {
             1000: {
                 slidesPerView: 7,

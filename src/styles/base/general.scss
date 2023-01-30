@@ -58,3 +58,17 @@ button {
 .grow {
     flex-grow: 1;
 }
+
+.tab-hidden {
+    @include r(1000) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.mob-hidden {
+    @include r(700) {
+        display: none;
+        visibility: hidden;
+    }
+}

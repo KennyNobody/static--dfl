@@ -1,4 +1,9 @@
 .main {
     flex-grow: 1;
+    overflow-x: hidden;
     position: relative;
+
+    //& > :first-child {
+    //    padding-top: rem(76);
+    //}
 }
