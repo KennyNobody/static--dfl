@@ -1,0 +1,17 @@
+.article-search-preview {
+    display: block;
+    line-height: 1.5;
+    font-size: rem(14);
+    color: $text-primary;
+    text-decoration: none;
+    padding: rem(6) rem(16);
+    transition: 0.3s background-color;
+
+    b {
+        font-weight: 700;
+    }
+
+    &:hover {
+        background-color: $gray-bg;
+    }
+}

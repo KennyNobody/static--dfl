@@ -3,12 +3,14 @@ import sliderFactory from './elements/Slider/factory';
 
 import Dropmenu from "./elements/Dropmenu/Dropmenu";
 import Header from "./elements/Header/Header";
+import Search from "./elements/Search/Search";
 
 class App {
     constructor() {
         this.createHeader();
         this.createDropmenu();
         this.createSliders();
+        this.createSearch();
     }
 
     createHeader() {
@@ -35,6 +37,12 @@ class App {
         el.forEach(item => {
             this.sliders.push(new Swiper(item.querySelector('.swiper-container'), sliderFactory(item)));
         });
+    }
+
+    createSearch() {
+        const el = document.querySelector('[data-search]');
+
+        if (el) this.search = new Search(el);
     }
 }
 

@@ -23,6 +23,17 @@ module.exports = [
         temp
     }),
     new HtmlWebpackPlugin({
+        template: "./src/pages/search-result.html",
+        filename: "search-result.html",
+        inject: "body",
+        title: "Результаты поиска | DFL",
+        head,
+        sectionHeader,
+        sectionFooter,
+        sectionPartners,
+        temp
+    }),
+    new HtmlWebpackPlugin({
         template: "./src/pages/privacy.html",
         filename: "privacy.html",
         inject: "body",

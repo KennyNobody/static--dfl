@@ -1,14 +1,74 @@
 {
-    "items": [
-        {
-            "id": 1,
-            "title": "Заголовок новости",
-            "cintent": "<p>Какой-то контент</p>" 
-        },
-        {
-            "id": 2,
-            "title": "Заголовок другой новости",
-            "cintent": "<p>Какой-то контент в несколько строк, какой-то контент в несколько строк, какой-то контент в несколько строк</p>"
-        }
-    ]
+  "search": [
+    {
+      "id": 0,
+      "title": "Логистика без границ на Третьем SCM Конгрессе",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 1,
+      "title": "Автоматизация логистики в цепях поставок",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 2,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 3,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 4,
+      "title": "Автоматизация логистики в цепях ",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 5,
+      "title": "Логистика без границ на Третьем SCM Конгрессе",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 6,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 7,
+      "title": "Логистика без границ на Третьем SCM Конгрессе",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 8,
+      "title": "Автоматизация логистики в цепях поставок",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 9,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 10,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 11,
+      "title": "Автоматизация логистики в цепях ",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 12,
+      "title": "Логистика без границ на Третьем SCM Конгрессе",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    },
+    {
+      "id": 13,
+      "title": "Участие в II Евроазиатской конференции «Логистика в России: кооперация и технологии развития»",
+      "link": "https://dfl.diez.io/news/post-exmaple/"
+    }
+  ]
 }

@@ -1,0 +1,109 @@
+.search {
+    display: block;
+    width: rem(38);
+    height: rem(38);
+    position: relative;
+
+    &.active {
+        @include r(1300) {
+            transform: translateX(rem(92));
+        }
+
+        .search {
+
+            &__form {
+
+            }
+
+            &__field {
+                opacity: 1;
+                max-width: 100%;
+                background-color: $gray-bg;
+                border: 1px solid $blue-bg-hover;
+            }
+
+            &__button {
+                max-width: rem(38);
+            }
+        }
+    }
+
+    &__form {
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: block;
+        width: fit-content;
+        position: absolute;
+        transform: translateX(rem(4));
+    }
+
+    &__field {
+        opacity: 0;
+        height: 100%;
+        max-width: 0;
+        border: none;
+        outline: none;
+        display: block;
+        width: rem(420);
+        margin-right: 0;
+        overflow: hidden;
+        font-weight: 400;
+        margin-left: auto;
+        font-size: rem(12);
+        color: $text-primary;
+        transition: 0.3s all;
+        text-overflow: ellipsis;
+        padding: 0 rem(50) 0 rem(12);
+
+        @include r(1300) {
+            width: rem(314);
+        }
+
+        @include r(1000) {
+            width: rem(442);
+        }
+    }
+
+    &__button {
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: 100%;
+        display: flex;
+        width: rem(38);
+        cursor: pointer;
+        background: none;
+        max-width: rem(38);
+        position: absolute;
+        align-items: center;
+        transition: 0.3s all;
+        text-decoration: none;
+        justify-content: center;
+
+        &:hover {
+            background-color: $blue-bg;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: rem(24);
+        height: rem(24);
+        fill: $blue-primary;
+
+        @include r(700) {
+            width: rem(32);
+            height: rem(32);
+        }
+    }
+
+    &__list {
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: calc(100% + 6px);
+    }
+}

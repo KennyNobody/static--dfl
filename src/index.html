@@ -10,8 +10,18 @@
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main decor-1">
     <section class="section mb-80">
-        <div class="container" style="height: 300px;">
-            Калькулятор
+        <div class="container" style="height: 300px; padding-top: 100px;">
+            <div class="search">
+                <form class="search__form" data-form-search>
+                    <input type="text" class="search__field">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
     </section>
     <section class="section z-index-2 mb-80">
