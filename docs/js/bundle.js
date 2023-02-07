@@ -2989,6 +2989,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_Dropmenu_Dropmenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/Dropmenu/Dropmenu */ "./src/js/elements/Dropmenu/Dropmenu.js");
 /* harmony import */ var _elements_Header_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./elements/Header/Header */ "./src/js/elements/Header/Header.js");
 /* harmony import */ var _elements_Search_Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./elements/Search/Search */ "./src/js/elements/Search/Search.js");
+/* harmony import */ var _elements_Process_Process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/Process/Process */ "./src/js/elements/Process/Process.js");
+
 
 
 
@@ -3002,6 +3004,7 @@ class App {
         this.createDropmenu();
         this.createSliders();
         this.createSearch();
+        this.createProcess();
     }
 
     createHeader() {
@@ -3034,6 +3037,12 @@ class App {
         const el = document.querySelector('[data-search]');
 
         if (el) this.search = new _elements_Search_Search__WEBPACK_IMPORTED_MODULE_4__["default"](el);
+    }
+
+    createProcess() {
+        const el = document.querySelector('[data-process]');
+
+        if (el) this.search = new _elements_Process_Process__WEBPACK_IMPORTED_MODULE_5__["default"](el);
     }
 }
 
@@ -3127,6 +3136,74 @@ class Header {
 
     fix() {
        window.pageYOffset > 0 ? this.el.classList.add('fixed') : this.el.classList.remove('fixed');
+    }
+
+}
+
+/***/ }),
+
+/***/ "./src/js/elements/Process/Process.js":
+/*!********************************************!*\
+  !*** ./src/js/elements/Process/Process.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Process; }
+/* harmony export */ });
+class Process {
+    constructor(el) {
+        this.el = el;
+        this.itemIndex = 0;
+        this.items = this.el.querySelectorAll('[data-process-step]');
+        this.marker = this.el.querySelector('[data-process-marker]');
+
+        this.setListeners();
+    }
+
+    setListeners() {
+        document.addEventListener('scroll', () => {
+            if (this.checkElPosition()) this.startMoving();
+        });
+    }
+
+    checkElPosition() {
+        let rect = this.el.getBoundingClientRect();
+        const offset = window.innerHeight / 3;
+
+        this.checkMarkerPosition();
+
+        return rect.top < (offset * 2);
+    }
+
+    checkMarkerPosition() {
+        let prevPosition = null;
+
+        setInterval(() => {
+            const nowPosition = this.marker.getBoundingClientRect().left;
+
+            if (nowPosition !== prevPosition) {
+                prevPosition = nowPosition;
+                this.checkItemPosition(Number(nowPosition.toFixed()));
+            } else {
+                clearInterval(this);
+            }
+        }, 100);
+    }
+
+    checkItemPosition(markerPosition) {
+        this.items.forEach(item => {
+            let itemPosition = item.getBoundingClientRect().left;
+            if (itemPosition < markerPosition && !item.classList.contains('active')) {
+                item.classList.add('active');
+            }
+        });
+    }
+
+    startMoving() {
+        this.el.classList.add('animate');
     }
 
 }

@@ -2946,6 +2946,73 @@ button {
   height: 0.75rem;
 }
 
+.article-step {
+  padding-right: 1.875rem;
+}
+.article-step.active .article-step__marker {
+  background-color: #273366;
+}
+.article-step.active .article-step__marker:after {
+  background-color: #FFFFFF;
+}
+.article-step.active .article-step__title {
+  color: #273366;
+}
+.article-step.active .article-step__info {
+  color: #4E5677;
+}
+.article-step__number {
+  font-weight: 900;
+  font-size: 3.75rem;
+  color: #D8DFF6;
+  line-height: 4.375rem;
+  margin-bottom: 0.75rem;
+}
+.article-step__marker {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+  background-color: #DFDFF2;
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+}
+.article-step__marker:after {
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  display: block;
+  position: absolute;
+  border-radius: 1.25rem;
+  background-color: #273366;
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.article-step__title {
+  display: block;
+  line-height: 1.3;
+  font-weight: 900;
+  font-size: 1rem;
+  min-height: 2.8125rem;
+  margin-bottom: 0.625rem;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+  color: #848CAA;
+}
+.article-step__info {
+  line-height: 1.7;
+  font-size: 0.875rem;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+  color: #848CAA;
+}
+
 .button-head {
   margin: 0;
   padding: 0;
@@ -3097,6 +3164,9 @@ button {
   .columns--mob-gap-12 {
     gap: 0.75rem;
   }
+}
+.columns--steps {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 }
 .columns--projects-grid .columns__col {
   min-height: 25rem;
@@ -4077,6 +4147,86 @@ button.nav__link {
   display: block;
   height: 1.5rem;
   fill: #FFFFFF;
+}
+
+.process {
+  display: block;
+  position: relative;
+}
+.process.animate .process__fill {
+  -webkit-animation: dash 5s linear alternate 1;
+          animation: dash 5s linear alternate 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.process.animate .process__marker {
+  -webkit-animation: route 5s linear alternate 1;
+          animation: route 5s linear alternate 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.process__svg {
+  left: 50%;
+  top: 3.9375rem;
+  width: 120rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.process__svg--bg {
+  z-index: 0;
+}
+.process__svg--marker {
+  z-index: 2;
+}
+.process__content {
+  z-index: 1;
+  position: relative;
+}
+.process__dashed {
+  stroke: #FEFEFE;
+  stroke-dasharray: 6, 6;
+}
+.process__fill {
+  stroke-dashoffset: 1920;
+  stroke-linejoin: round;
+  stroke-dasharray: 1920;
+}
+.process__marker {
+  offset-distance: 0;
+  offset-path: path("M0 0.5H1920");
+}
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1920;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1920;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes route {
+  from {
+    offset-distance: 0;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+@keyframes route {
+  from {
+    offset-distance: 0;
+  }
+  to {
+    offset-distance: 100%;
+  }
 }
 
 .progressbar {

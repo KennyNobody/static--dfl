@@ -213,7 +213,7 @@
         <div class="container" style="height: 300px; padding-top: 100px;">
             <div class="search">
                 <form class="search__form" data-form-search>
-                    <input type="text" class="search__field">
+                    <input class="search__field" type="text">
                     <button class="search__button">
                         <svg class="search__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
@@ -332,15 +332,97 @@
     </section>
     <section class="section mb-80 mbt-40 mbm-80">
         <div class="container">
-            <div class="columns">
-                <div class="columns__col columns__col--6">
-
+            <h2 class="title mb-20 mbt-30 mbm-20">
+                Как мы работаем
+            </h2>
+            <div class="process" id="animation" data-process>
+                <svg class="process__svg process__svg--bg" height="36" viewBox="0 0 1920 36">
+                    <path class="process__default" d="M0 17.5H1920" stroke="#DFDFF2"/>
+                    <path class="process__fill" id="fill" d="M0 17.5H1920" stroke="#32407B" />
+                    <path class="process__dashed" d="M0 17.5H1920"/>
+                </svg>
+                <div class="process__content">
+                    <div class="columns columns--steps">
+                        <div class="columns__col columns__col--2">
+                            <article class="article-step" data-process-step>
+                                <strong class="article-step__number">
+                                    01
+                                </strong>
+                                <div class="article-step__marker"></div>
+                                <h3 class="article-step__title">
+                                    Заявка на перевозку
+                                </h3>
+                                <p class="article-step__info">
+                                    После отправки заявки наши менеджеры свяжуться с вами в ближайшее время
+                                </p>
+                            </article>
+                        </div>
+                        <div class="columns__col columns__col--2">
+                            <article class="article-step" data-process-step>
+                                <strong class="article-step__number">
+                                    02
+                                </strong>
+                                <div class="article-step__marker"></div>
+                                <h3 class="article-step__title">
+                                    Проработка
+                                    решения
+                                </h3>
+                                <p class="article-step__info">
+                                    Наши логисты сами разработают индивидуальную схему для перевозки груза
+                                </p>
+                            </article>
+                        </div>
+                        <div class="columns__col columns__col--2">
+                            <article class="article-step" data-process-step>
+                                <strong class="article-step__number">
+                                    03
+                                </strong>
+                                <div class="article-step__marker"></div>
+                                <h3 class="article-step__title">
+                                    Заключение договора
+                                </h3>
+                                <p class="article-step__info">
+                                    Мы оптимизируем ваши затраты и осуществим грузоперевозку точно в срок договора
+                                </p>
+                            </article>
+                        </div>
+                        <div class="columns__col columns__col--2">
+                            <article class="article-step" data-process-step>
+                                <strong class="article-step__number">
+                                    04
+                                </strong>
+                                <div class="article-step__marker"></div>
+                                <h3 class="article-step__title">
+                                    Подача транспорта и перевозка груза
+                                </h3>
+                                <p class="article-step__info">
+                                    Наши логисты сами разработают индивидуальную схему для перевозки вашего груза
+                                </p>
+                            </article>
+                        </div>
+                        <div class="columns__col columns__col--2">
+                            <article class="article-step" data-process-step>
+                                <strong class="article-step__number">
+                                    05
+                                </strong>
+                                <div class="article-step__marker"></div>
+                                <h3 class="article-step__title">
+                                    Доставка выполнена!
+                                </h3>
+                                <p class="article-step__info">
+                                    Сотрудничество с DFL – это гарантия сроков доставки и целостности груза.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-                <div class="columns__col columns__col--6">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
-                </div>
+                <svg class="process__svg process__svg--marker" height="36" viewBox="0 0 1920 36">
+                    <g class="process__marker" transform="matrix(1 0 0 1 -36 0)">
+                        <rect fill="#273366" height="36" rx="18" width="36" data-process-marker/>
+                        <path d="M24.3416 17.1323L13.2549 11.3703C12.3312 10.8902 11.3802 11.9652 11.9693 12.8235L15.1414 17.4453C15.3695 17.7777 15.3757 18.2146 15.1571 18.5534L11.8628 23.658C11.2991 24.5316 12.2772 25.5785 13.187 25.0754L24.3644 18.8947C25.0627 18.5086 25.0497 17.5003 24.3416 17.1323Z"
+                              fill="#ffffff"/>
+                    </g>
+                </svg>
             </div>
         </div>
     </section>

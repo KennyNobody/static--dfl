@@ -4,6 +4,7 @@ import sliderFactory from './elements/Slider/factory';
 import Dropmenu from "./elements/Dropmenu/Dropmenu";
 import Header from "./elements/Header/Header";
 import Search from "./elements/Search/Search";
+import Process from "./elements/Process/Process";
 
 class App {
     constructor() {
@@ -11,6 +12,7 @@ class App {
         this.createDropmenu();
         this.createSliders();
         this.createSearch();
+        this.createProcess();
     }
 
     createHeader() {
@@ -43,6 +45,12 @@ class App {
         const el = document.querySelector('[data-search]');
 
         if (el) this.search = new Search(el);
+    }
+
+    createProcess() {
+        const el = document.querySelector('[data-process]');
+
+        if (el) this.search = new Process(el);
     }
 }
 

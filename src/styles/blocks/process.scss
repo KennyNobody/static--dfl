@@ -1,0 +1,75 @@
+.process {
+    display: block;
+    position: relative;
+
+    &.animate {
+        .process {
+            &__fill {
+                animation: dash 5s linear alternate 1;
+                animation-fill-mode: forwards;
+            }
+
+            &__marker {
+                animation: route 5s linear alternate 1;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    &__svg {
+        left: 50%;
+        top: rem(63);
+        width: rem(1920);
+        position: absolute;
+        transform: translateX(-50%);
+
+        &--bg {
+            z-index: 0;
+        }
+
+        &--marker {
+            z-index: 2;
+        }
+    }
+
+    &__content {
+        z-index: 1;
+        position: relative;
+    }
+
+    &__dashed {
+        stroke: $white-bg;
+        stroke-dasharray: 6, 6;
+    }
+
+    &__fill {
+        stroke-dashoffset: 1920;
+        stroke-linejoin: round;
+        stroke-dasharray: 1920;
+        //animation: dash 5s linear alternate 1;
+    }
+
+    &__marker {
+        offset-distance: 0;
+        offset-path: path('M0 0.5H1920');
+        //animation: route 5s linear alternate 1;
+    }
+
+    @keyframes dash {
+        from {
+            stroke-dashoffset: 1920;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes route {
+        from {
+            offset-distance: 0;
+        }
+        to {
+            offset-distance: 100%;
+        }
+    }
+}
