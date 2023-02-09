@@ -11,16 +11,6 @@
 <main class="main decor-1">
     <section class="section mb-80">
         <div class="container" style="height: 300px; padding-top: 100px;">
-            <div class="search">
-                <form class="search__form" data-form-search>
-                    <input class="search__field" type="text">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
 
         </div>
     </section>
@@ -141,6 +131,7 @@
                     <path class="process__fill" id="fill" d="M0 17.5H1920" stroke="#32407B" />
                     <path class="process__dashed" d="M0 17.5H1920"/>
                 </svg>
+                <div class="process__route-mob" data-process-route-mobile></div>
                 <div class="process__content">
                     <div class="columns columns--steps">
                         <div class="columns__col columns__col--2">
@@ -148,13 +139,15 @@
                                 <strong class="article-step__number">
                                     01
                                 </strong>
-                                <div class="article-step__marker"></div>
-                                <h3 class="article-step__title">
-                                    Заявка на перевозку
-                                </h3>
-                                <p class="article-step__info">
-                                    После отправки заявки наши менеджеры свяжуться с вами в ближайшее время
-                                </p>
+                                <div class="article-step__marker" data-process-point="start"></div>
+                                <div class="article-step__content">
+                                    <h3 class="article-step__title">
+                                        Заявка на перевозку
+                                    </h3>
+                                    <p class="article-step__info">
+                                        После отправки заявки наши менеджеры свяжуться с вами в ближайшее время
+                                    </p>
+                                </div>
                             </article>
                         </div>
                         <div class="columns__col columns__col--2">
@@ -163,13 +156,15 @@
                                     02
                                 </strong>
                                 <div class="article-step__marker"></div>
-                                <h3 class="article-step__title">
-                                    Проработка
-                                    решения
-                                </h3>
-                                <p class="article-step__info">
-                                    Наши логисты сами разработают индивидуальную схему для перевозки груза
-                                </p>
+                                <div class="article-step__content">
+                                    <h3 class="article-step__title">
+                                        Проработка
+                                        решения
+                                    </h3>
+                                    <p class="article-step__info">
+                                        Наши логисты сами разработают индивидуальную схему для перевозки груза
+                                    </p>
+                                </div>
                             </article>
                         </div>
                         <div class="columns__col columns__col--2">
@@ -178,12 +173,14 @@
                                     03
                                 </strong>
                                 <div class="article-step__marker"></div>
-                                <h3 class="article-step__title">
-                                    Заключение договора
-                                </h3>
-                                <p class="article-step__info">
-                                    Мы оптимизируем ваши затраты и осуществим грузоперевозку точно в срок договора
-                                </p>
+                                <div class="article-step__content">
+                                    <h3 class="article-step__title">
+                                        Заключение договора
+                                    </h3>
+                                    <p class="article-step__info">
+                                        Мы оптимизируем ваши затраты и осуществим грузоперевозку точно в срок договора
+                                    </p>
+                                </div>
                             </article>
                         </div>
                         <div class="columns__col columns__col--2">
@@ -192,12 +189,14 @@
                                     04
                                 </strong>
                                 <div class="article-step__marker"></div>
-                                <h3 class="article-step__title">
-                                    Подача транспорта и перевозка груза
-                                </h3>
-                                <p class="article-step__info">
-                                    Наши логисты сами разработают индивидуальную схему для перевозки вашего груза
-                                </p>
+                                <div class="article-step__content">
+                                    <h3 class="article-step__title">
+                                        Подача транспорта и перевозка груза
+                                    </h3>
+                                    <p class="article-step__info">
+                                        Наши логисты сами разработают индивидуальную схему для перевозки вашего груза
+                                    </p>
+                                </div>
                             </article>
                         </div>
                         <div class="columns__col columns__col--2">
@@ -205,13 +204,15 @@
                                 <strong class="article-step__number">
                                     05
                                 </strong>
-                                <div class="article-step__marker"></div>
-                                <h3 class="article-step__title">
-                                    Доставка выполнена!
-                                </h3>
-                                <p class="article-step__info">
-                                    Сотрудничество с DFL – это гарантия сроков доставки и целостности груза.
-                                </p>
+                                <div class="article-step__marker" data-process-point="end"></div>
+                                <div class="article-step__content">
+                                    <h3 class="article-step__title">
+                                        Доставка выполнена!
+                                    </h3>
+                                    <p class="article-step__info">
+                                        Сотрудничество с DFL – это гарантия сроков доставки и целостности груза.
+                                    </p>
+                                </div>
                             </article>
                         </div>
                     </div>

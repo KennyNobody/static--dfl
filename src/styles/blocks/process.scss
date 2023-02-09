@@ -18,10 +18,14 @@
 
     &__svg {
         left: 50%;
-        top: rem(63);
+        top: rem(75);
         width: rem(1920);
         position: absolute;
         transform: translateX(-50%);
+
+        @include r(1000) {
+            display: none;
+        }
 
         &--bg {
             z-index: 0;
@@ -46,13 +50,27 @@
         stroke-dashoffset: 1920;
         stroke-linejoin: round;
         stroke-dasharray: 1920;
-        //animation: dash 5s linear alternate 1;
     }
 
     &__marker {
         offset-distance: 0;
         offset-path: path('M0 0.5H1920');
-        //animation: route 5s linear alternate 1;
+    }
+
+    &__route-mob {
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        //height: 100%;
+        right: rem(13);
+        display: none;
+        position: absolute;
+        background-size: 2px auto;
+        background-image: url("../assets/content/route-mob.svg");
+
+        @include r(1000) {
+            display: block;
+        }
     }
 
     @keyframes dash {

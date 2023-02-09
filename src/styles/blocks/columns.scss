@@ -36,6 +36,12 @@
 
     &--steps {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+
+        @include r(1000) {
+            gap: rem(32);
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &--projects-grid {

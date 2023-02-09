@@ -1,6 +1,22 @@
 .article-step {
     padding-right: rem(30);
 
+    @include r(1300) {
+        padding-right: rem(20);
+    }
+
+    @include r(1000) {
+        gap: rem(20);
+        display: flex;
+        padding-right: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include r(700) {
+
+    }
+
     &.active {
         .article-step {
             &__marker {
@@ -22,14 +38,34 @@
     }
 
     &__number {
+        flex-shrink: 0;
+        display: block;
         font-weight: 900;
         font-size: rem(60);
         color: $light-blue;
         line-height: rem(70);
         margin-bottom: rem(12);
+
+        @include r(1300) {
+        }
+
+        @include r(1000) {
+            order: 1;
+            color: $gray-bg;
+            margin-bottom: 0;
+            line-height: rem(60);
+            align-self: self-start;
+        }
+
+        @include r(700) {
+            font-size: rem(40);
+            line-height: rem(46);
+            align-items: flex-start;
+        }
     }
 
     &__marker {
+        flex-shrink: 0;
         display: block;
         width: rem(20);
         height: rem(20);
@@ -38,6 +74,22 @@
         margin-bottom: rem(32);
         background-color: $blue-bg-hover;
         transition: 0.3s background-color;
+
+        @include r(1300) {
+
+        }
+
+        @include r(1000) {
+            order: 3;
+            width: rem(28);
+            height: rem(28);
+            margin-bottom: 0;
+            background-color: $blue-primary;
+        }
+
+        @include r(700) {
+
+        }
 
         &:after {
             top: 50%;
@@ -51,6 +103,23 @@
             background-color: $blue-primary;
             transition: 0.3s background-color;
             transform: translateX(-50%) translateY(-50%);
+
+            @include r(1000) {
+                width: rem(10);
+                height: rem(10);
+                background-color: $text-white;
+            }
+
+            @include r(700) {
+
+            }
+        }
+    }
+
+    &__content {
+        @include r(1000) {
+            order: 2;
+            flex-grow: 1;
         }
     }
 
@@ -64,6 +133,16 @@
         transition: 0.3s color;
         color: $text-secondary-2;
 
+        @include r(1000) {
+            min-height: 0;
+            font-weight: 600;
+            color: $text-secondary-1;
+        }
+
+        @include r(700) {
+            font-size: rem(18);
+            margin-bottom: rem(10);
+        }
     }
 
     &__info {
@@ -71,5 +150,13 @@
         font-size: rem(14);
         transition: 0.3s color;
         color: $text-secondary-2;
+
+        @include r(1000) {
+            color: $text-primary;
+        }
+
+        @include r(700) {
+            font-size: rem(16);
+        }
     }
 }

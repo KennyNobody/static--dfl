@@ -105,11 +105,63 @@
             <a href="tel:+74012306200" class="link-head mob-hide">
                 +7 4012 30 62 00
             </a>
-            <button class="button-head mob-hide">
-                <svg class="button-head__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
-                </svg>
-            </button>
+            <div class="search" data-search>
+                <form class="search__form" data-search-form>
+                    <input class="search__field" data-search-field type="text">
+                    <button class="search__button" data-search-button type="button">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+
+                    <div class="search__list search-list" data-search-list hidden>
+                        <template data-article-search-template>
+                            <a class="article-search-preview" href=""></a>
+                        </template>
+                        <div class="search-list__content" data-search-list-content>
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Одна строка-->
+                            <!--                            </a>-->
+                            <!--                            <a class="article-search-preview" href="#">-->
+                            <!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+                            <!--                            </a>-->
+                        </div>
+                        <a href="" class="search-list__button">
+                            Показать все
+                        </a>
+                    </div>
+                </form>
+            </div>
             <button class="button-head mob-hide">
                 <svg class="button-head__icon">
                     <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>

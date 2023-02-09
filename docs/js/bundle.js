@@ -3156,7 +3156,6 @@ __webpack_require__.r(__webpack_exports__);
 class Process {
     constructor(el) {
         this.el = el;
-        this.itemIndex = 0;
         this.items = this.el.querySelectorAll('[data-process-step]');
         this.marker = this.el.querySelector('[data-process-marker]');
 
@@ -3165,8 +3164,23 @@ class Process {
 
     setListeners() {
         document.addEventListener('scroll', () => {
-            if (this.checkElPosition()) this.startMoving();
+            if (this.checkElPosition() && this.checkMobile()) this.startMoving();
         });
+
+        window.addEventListener('resize', () => {
+            this.setMobileRoute();
+        });
+
+        this.setMobileRoute();
+    }
+
+    setMobileRoute() {
+        let startMarker = this.el.querySelector('[data-process-point="start"]');
+        let endMarker = this.el.querySelector('[data-process-point="end"]');
+        let routeMobile = this.el.querySelector('[data-process-route-mobile]');
+
+        routeMobile.style.top = startMarker.offsetTop + (startMarker.clientHeight / 2) + 'px';
+        routeMobile.style.bottom = routeMobile.clientHeight - (routeMobile.clientHeight - endMarker.offsetTop - endMarker.offsetHeight) + 'px';
     }
 
     checkElPosition() {
@@ -3200,6 +3214,10 @@ class Process {
                 item.classList.add('active');
             }
         });
+    }
+
+    checkMobile() {
+        return window.innerWidth > 1000;
     }
 
     startMoving() {
