@@ -73,7 +73,7 @@ export default class Search {
 
         if (arr.length) {
             arr.forEach(item => {
-               this.renderItem(item);
+                this.renderItem(item);
             });
         }
 
@@ -82,7 +82,7 @@ export default class Search {
 
     renderItem(el) {
         const clone = this.template.content.cloneNode(true);
-        let link = clone.querySelector('*');
+        const link = clone.querySelector('*');
 
         link.innerHTML = el.title;
         link.setAttribute('href', el.link);

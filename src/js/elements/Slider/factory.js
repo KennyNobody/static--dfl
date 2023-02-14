@@ -1,5 +1,6 @@
 import analytics from "./configs/analytics";
 import contentGallery from "./configs/contentGallery";
+import gallery from "./configs/gallery";
 import handbook from "./configs/handbook";
 import news from "./configs/news";
 import ourOffice from "./configs/ourOffice";
@@ -17,6 +18,7 @@ export default function(el) {
 
     /**/ if (name === 'analytics') return analytics(el);
     /**/ if (name === 'contentGallery') return contentGallery(el);
+    if (name === 'gallery') return gallery(el);
     /**/ if (name === 'handbook') return handbook(el);
     /**/ if (name === 'news') return news(el);
     if (name === 'ourOffice') return ourOffice(el);

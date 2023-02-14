@@ -5,6 +5,7 @@ import Dropmenu from "./elements/Dropmenu/Dropmenu";
 import Header from "./elements/Header/Header";
 import Search from "./elements/Search/Search";
 import Process from "./elements/Process/Process";
+import InputFile from "./elements/InputFile/InputFile";
 
 class App {
     constructor() {
@@ -13,6 +14,7 @@ class App {
         this.createSliders();
         this.createSearch();
         this.createProcess();
+        this.createInputFile();
     }
 
     createHeader() {
@@ -51,6 +53,16 @@ class App {
         const el = document.querySelector('[data-process]');
 
         if (el) this.search = new Process(el);
+    }
+
+    createInputFile() {
+        const el = document.querySelectorAll('[data-input-file]');
+
+        if (el) this.inputFile = [];
+
+        el.forEach((item) => {
+            this.inputFile.push(new InputFile(item));
+        });
     }
 }
 

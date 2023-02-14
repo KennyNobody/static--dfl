@@ -1,0 +1,21 @@
+.map-section {
+    display: block;
+    height: rem(450);
+
+    @include r(1300) {
+        height: rem(430);
+    }
+
+    @include r(1000) {
+        height: rem(350);
+    }
+
+    @include r(700) {
+        height: rem(410);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

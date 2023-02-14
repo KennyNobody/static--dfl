@@ -49,7 +49,7 @@ module.exports = [
         inject: "body",
         title: "Перевозчикам | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp
@@ -71,7 +71,7 @@ module.exports = [
         inject: "body",
         title: "Работа | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp
@@ -82,7 +82,7 @@ module.exports = [
         inject: "body",
         title: "Вакансия | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp
@@ -93,7 +93,7 @@ module.exports = [
         inject: "body",
         title: "Контакты | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp
@@ -136,6 +136,17 @@ module.exports = [
         filename: "single-article.html",
         inject: "body",
         title: "Статья | DFL",
+        head,
+        sectionHeader,
+        sectionFooter,
+        sectionPartners,
+        temp
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/single-project.html",
+        filename: "single-project.html",
+        inject: "body",
+        title: "Одиночный проект | DFL",
         head,
         sectionHeader,
         sectionFooter,

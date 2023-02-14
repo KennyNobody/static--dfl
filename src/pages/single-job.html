@@ -7,24 +7,352 @@
 </head>
 
 <body class="body">
-<%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-    <section class="section">
+<%= htmlWebpackPlugin.options.sectionHeaderInvert %>
+<main class="main decor-vacancy">
+    <section class="section mb-130 mbm-80">
         <div class="container">
-            <div class="columns">
-                <div class="columns__col columns__col--6">
-
-                </div>
-                <div class="columns__col columns__col--6">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
+            <div class="cover">
+                <picture class="cover__picture">
+                    <img alt="#" src="./assets/content/vacancy-intro.jpg">
+                </picture>
+                <div class="cover__content">
+                    <div class="columns">
+                        <div class="columns__col columns__col--5">
+                            <h1 class="title mb-5">
+                                Специалист по складской логистике
+                            </h1>
+                            <div class="editor fz-14 mb-20">
+                                <p>35 000 - 50 000 ₽</p>
+                            </div>
+                            <div class="editor fz-14 fz-mob-16 mb-20 mbm-30">
+                                Если вы хотите стать частью команды DFL, <br class="tab-hidden">
+                                присоединяйтесь к нам сегодня и исследуйте свой потенциал!
+                            </div>
+                            <button class="button button--regular invert">
+                                <span class="button__text">
+                                    Отправить резюме
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section mb-80 mbt-70">
+        <div class="container">
+            <div class="shift shift--vacancy">
+                <div class="shift__picture">
+                    <img alt="Кто мы?" src="./assets/content/ill-office.jpg">
+                </div>
+                <div class="shift__content">
+                    <h2 class="title mb-20">
+                        Должностные обязанности
+                    </h2>
+                    <div class="editor color-primary fz-14 fz-mob-16">
+                        <ul>
+                            <li>
+                                Организация и координация грузоперевозок
+                            </li>
+                            <li>
+                                Составление маршрутов транспортировки груза
+                            </li>
+                            <li>
+                                Прием и контроль автотранспорта
+                            </li>
+                            <li>
+                                Координация работы водителей
+                            </li>
+                            <li>
+                                Формирование расходных и приходных документов (1С)
+                            </li>
+                            <li>
+                                Составление маршрутов транспортировки груза
+                            </li>
+                            <li>
+                                Прием и контроль автотранспорта
+                            </li>
+                            <li>
+                                Координация работы водителей
+                            </li>
+                            <li>
+                                Формирование расходных и приходных документов (1С)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-80 mbt-40 mbm-80">
+        <div class="container">
+            <div class="slider" data-slider="workersReviews">
+                <div class="toolbar mb-30">
+                    <h2 class="title">
+                        Отзывы сотрудников
+                    </h2>
+                    <div class="nav-slider tab-hide" data-nav>
+                        <button class="nav-slider__button" data-button-prev>
+                            <svg class="nav-slider__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="nav-slider__button" data-button-next>
+                            <svg class="nav-slider__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-container slider__container">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__slide">
+                            <article class="article-review">
+                                <picture class="article-review__picture">
+                                    <img src="./assets/content/placeholder.svg" alt="#">
+                                </picture>
+                                <div class="article-review__content">
+                                    <div class="article-review__header">
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__name">
+                                                Линевич Денис Александрович
+                                            </h4>
+                                            <p class="article-review__position">
+                                                Менеджер
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__main">
+                                        <div class="editor fz-14 color-primary">
+                                            <p>
+                                                Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                с
+                                                «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                совместный,
+                                                продолжительный опыт сотрудничества с «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                продолжительный
+                                                опыт сотрудничества с «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт».
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a class="article-review__footer" href="">
+                                    <span class="article-review__link">
+                                        Полный отзыв
+                                    </span>
+                                        <svg class="article-review__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <article class="article-review">
+                                <picture class="article-review__picture">
+                                    <img src="./assets/content/placeholder.svg" alt="#">
+                                </picture>
+                                <div class="article-review__content">
+                                    <div class="article-review__header">
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__name">
+                                                Максим Субботин Петрович
+                                            </h4>
+                                            <p class="article-review__position">
+                                                Менеджер
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__main">
+                                        <div class="editor fz-14 color-primary">
+                                            <p>
+                                                КХочется очень Вас поблагодарить за хорошие партнерские отношения ,
+                                                особенно
+                                                за хорошее к нам отношение , помощь на Вашем складе и понимание
+                                                создавшейся
+                                                ситуации!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <article class="article-review">
+                                <picture class="article-review__picture">
+                                    <img src="./assets/content/placeholder.svg" alt="#">
+                                </picture>
+                                <div class="article-review__content">
+                                    <div class="article-review__header">
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__name">
+                                                Линевич Денис Александрович
+                                            </h4>
+                                            <p class="article-review__position">
+                                                Менеджер
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__main">
+                                        <div class="editor fz-14 color-primary">
+                                            <p>
+                                                Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                с
+                                                «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                совместный,
+                                                продолжительный опыт сотрудничества с «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                продолжительный
+                                                опыт сотрудничества с «DFL –
+                                                Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                профессионализме
+                                                сотрудников компании «DFL-Транспорт».
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a class="article-review__footer" href="">
+                                    <span class="article-review__link">
+                                        Полный отзыв
+                                    </span>
+                                        <svg class="article-review__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <article class="article-review">
+                                <picture class="article-review__picture">
+                                    <img src="./assets/content/placeholder.svg" alt="#">
+                                </picture>
+                                <div class="article-review__content">
+                                    <div class="article-review__header">
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__name">
+                                                Максим Субботин Петрович
+                                            </h4>
+                                            <p class="article-review__position">
+                                                Менеджер
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__main">
+                                        <div class="editor fz-14 color-primary">
+                                            <p>
+                                                КХочется очень Вас поблагодарить за хорошие партнерские отношения ,
+                                                особенно
+                                                за хорошее к нам отношение , помощь на Вашем складе и понимание
+                                                создавшейся
+                                                ситуации!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="slider__progressbar progressbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-80">
+        <div class="container">
+            <div class="container-form">
+                <h2 class="title mb-10">
+                    Остались вопросы?
+                </h2>
+                <div class="editor fz-14 fz-mob-16 color-primary mb-20">
+                    <p>
+                        Вы умеете чуть больше или сомневаетесь, что у вас есть все необходимые навыки? <br
+                            class="mob-hidden">
+                        Мы готовы рассмотреть, обсудить и предложить варианты сотрудничества, которые будут учитывать
+                        взаимные интересы.
+                    </p>
+                </div>
+                <form action="" class="form">
+                    <div class="columns columns--form">
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-1">
+                            <label class="field">
+                                <p class="field__title">
+                                    ФИО<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите ФИО">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-2">
+                            <label class="field">
+                                <p class="field__title">
+                                    Телефон<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-3">
+                            <label class="field">
+                                <p class="field__title">
+                                    Почта<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите почту">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--8 columns__col--tab-12 columns__col--mob-2 mod-textarea order-t-4">
+                            <label class="field">
+                                <p class="field__title">
+                                    Комментарий
+                                </p>
+                                <textarea class="field__textarea" placeholder="Опишите подробнее"></textarea>
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2 order-t-5">
+                            <label class="input-file" data-input-file>
+                                <input type="file" class="input-file__field" data-input-file-field>
+                                <svg class="input-file__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                                </svg>
+                                <span class="input-file__text" data-input-file-caption>
+                                    Прикрепить файл<strong>*</strong>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-7">
+                            <button class="button full">
+                                <span class="button__text">
+                                    Отправить запрос
+                                </span>
+                            </button>
+                        </div>
+                        <div class="columns__col columns__col--8 columns__col--tab-6 columns__col--mob-2 tab-hidden"></div>
+                        <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-6">
+                            <label class="agreement">
+                                <input type="checkbox" class="agreement__field">
+                                <div class="agreement__box"></div>
+                                <span class="agreement__text">
+                                    Я согласен на обработку <a href="">персональных данных</a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>

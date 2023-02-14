@@ -1,0 +1,48 @@
+.input-file {
+    gap: rem(10);
+    display: flex;
+    height: rem(38);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    transition: 0.3s opacity;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &__field {
+        height: 0;
+        width: 0;
+        top: -1px;
+        left: -1px;
+        position: absolute;
+    }
+
+    &__icon {
+        display: block;
+        flex-shrink: 0;
+        width: rem(18);
+        height: rem(18);
+        fill: $text-primary;
+    }
+
+    &__text {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        font-size: rem(14);
+        white-space: nowrap;
+        color: $text-primary;
+        text-overflow: ellipsis;
+
+        @include r(1000) {
+            font-size: rem(16);
+        }
+
+        strong {
+            color: $error;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.container-form {
+    padding: rem(32);
+    border-radius: rem(2);
+    background-color: $text-white;
+    box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
+
+    @include r(700) {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+}

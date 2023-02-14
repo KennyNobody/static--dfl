@@ -1,26 +1,31 @@
 .button {
     width: 100%;
     border: none;
+    color: $light;
     display: flex;
     cursor: pointer;
-    max-width: rem(210);
     min-height: rem(40);
     align-items: center;
     transition: 0.3s all;
     border-radius: rem(2);
     justify-content: center;
-    background-color: $blue-primary;
+    background-color: $blue-resolution;
 
     &:hover {
-        background-color: $blue-bg-hover;
+        background-color: $blue-primary;
     }
 
     &.invert {
+        color: $blue-primary;
         background-color: $text-white;
 
         &:hover {
             background-color: $blue-bg;
         }
+    }
+
+    &--regular {
+        max-width: rem(220);
     }
 
     @include r(700) {

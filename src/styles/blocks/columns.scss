@@ -157,6 +157,23 @@
         }
     }
 
+    &--form {
+        gap: rem(16) rem(20);
+        align-items: flex-end;
+
+        @include r(1300) {
+            gap: rem(14);
+        }
+
+        @include r(1000) {
+            gap: rem(14) rem(20);
+        }
+
+        .columns__col.mod-textarea {
+            grid-row: auto/span 2;
+        }
+    }
+
     &__col {
         position: relative;
 

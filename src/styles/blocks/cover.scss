@@ -2,9 +2,9 @@
     display: flex;
     position: relative;
     min-height: rem(380);
-    padding-top: rem(70);
+    padding-top: rem(100);
     flex-direction: column;
-    padding-bottom: rem(30);
+    padding-bottom: rem(20);
     justify-content: center;
 
     @include r(700) {
@@ -43,7 +43,17 @@
         height: rem(336);
         overflow: hidden;
         position: absolute;
-        background-color: red;
+
+        &:after {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            content: "";
+            position: absolute;
+            background-color: rgba(39, 51, 102, 0.2);
+        }
 
         @include r(1300) {
             width: rem(500);

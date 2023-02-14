@@ -7,24 +7,34 @@
 </head>
 
 <body class="body">
-<%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-    <section class="section">
+<%= htmlWebpackPlugin.options.sectionHeaderInvert %>
+<main class="main decor-contacts">
+    <section class="section z-index-2">
         <div class="container">
-            <div class="columns">
-                <div class="columns__col columns__col--6">
+            <div class="cover">
+                <picture class="cover__picture">
+                    <img alt="#" src="./assets/content/ill-about.jpg">
+                </picture>
+                <div class="cover__content">
+                    <div class="columns">
+                        <div class="columns__col columns__col--5">
+                            <h1 class="title mb-15">
+                                Контакты
+                            </h1>
 
-                </div>
-                <div class="columns__col columns__col--6">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section mb-80">
+        <div class="map-section">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A885df1a95a128b9dc715a0b0b7c69b5f2720a8002e44b20980447e0a976da40e&amp;source=constructor"></iframe>
+        </div>
+    </section>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>

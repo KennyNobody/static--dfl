@@ -302,6 +302,11 @@
             margin-bottom: rem(100);
         }
     }
+    &-105 {
+        @include r(1000) {
+            margin-bottom: rem(105);
+        }
+    }
 }
 
 .mbm {

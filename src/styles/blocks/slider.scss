@@ -1,6 +1,17 @@
 .slider {
+    &__container {
+        &--overflow {
+            overflow: hidden;
+
+            @include r(1000) {
+                overflow: visible;
+            }
+        }
+    }
+
     &__slide {
         opacity: 0;
+        height: auto;
         transition-property: transform, opacity !important;
         //visibility: hidden;
         transition: 0.3s all;
@@ -14,16 +25,40 @@
             height: auto;
             min-height: rem(380);
 
+
+        }
+
+        &--gallery {
+            height: rem(233);
+
             @include r(1300) {
 
             }
 
             @include r(1000) {
-
+                width: rem(326);
             }
 
             @include r(770) {
-                width: rem(335);
+                width: rem(310);
+            }
+        }
+
+        &--gallery-free {
+            width: rem(480);
+            height: rem(233);
+
+            @include r(1300) {
+
+            }
+
+            @include r(1000) {
+                width: rem(480);
+            }
+
+            @include r(770) {
+                width: rem(310);
+                height: rem(155);
             }
         }
     }

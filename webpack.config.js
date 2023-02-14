@@ -1,12 +1,10 @@
-const fs = require('fs');
 const path = require('path');
-const pages = require('./src/js/pages');
 
 const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const pages = require('./src/js/pages');
 
 module.exports = {
     mode: "development",

@@ -13,7 +13,7 @@
 
     }
 
-    &-2 {
+    &-about {
         &:before {
             width: 50vw;
             content: "";
@@ -57,6 +57,77 @@
 
             @include r(700) {
                 height: rem(325);
+            }
+        }
+    }
+
+    &-offers {
+        &:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: rem(373);
+            position: absolute;
+            background-color: $gray-bg;
+
+            @include r(1300) {
+                height: rem(392);
+            }
+
+            @include r(1000) {
+                height: rem(373);
+            }
+
+            @include r(700) {
+                height: rem(392);
+            }
+        }
+    }
+
+    &-vacancy {
+        &:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: rem(430);
+            position: absolute;
+            background-color: $gray-bg;
+
+            @include r(1300) {
+                height: rem(407);
+            }
+
+            @include r(1000) {
+                height: rem(465);
+            }
+
+            @include r(700) {
+                height: rem(188);
+            }
+        }
+    }
+
+    &-contacts {
+        &:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: rem(235);
+            position: absolute;
+            background-color: $gray-bg;
+
+            @include r(1300) {
+                height: rem(250);
+            }
+
+            @include r(700) {
+                height: rem(188);
             }
         }
 
