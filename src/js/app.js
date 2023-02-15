@@ -6,6 +6,7 @@ import Header from "./elements/Header/Header";
 import Search from "./elements/Search/Search";
 import Process from "./elements/Process/Process";
 import InputFile from "./elements/InputFile/InputFile";
+import Table from "./elements/Table/Table";
 
 class App {
     constructor() {
@@ -15,6 +16,7 @@ class App {
         this.createSearch();
         this.createProcess();
         this.createInputFile();
+        this.createTable();
     }
 
     createHeader() {
@@ -62,6 +64,16 @@ class App {
 
         el.forEach((item) => {
             this.inputFile.push(new InputFile(item));
+        });
+    }
+
+    createTable() {
+        const el = document.querySelectorAll('[data-table]');
+
+        if (el) this.table = [];
+
+        el.forEach((item) => {
+            this.table.push(new Table(item));
         });
     }
 }
