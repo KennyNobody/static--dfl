@@ -25,6 +25,7 @@
         font-size: rem(12);
         padding: 0 rem(12);
         font-family: inherit;
+        color: $text-secondary-2;
         background-color: $gray-bg;
 
         @include r(700) {
@@ -63,6 +64,18 @@
 
         &__textarea {
             flex-grow: 1;
+        }
+    }
+}
+
+.invert {
+    .field {
+        &__title {
+
+        }
+        &__input {
+            color: $light;
+            background-color: $blue-resolution;
         }
     }
 }

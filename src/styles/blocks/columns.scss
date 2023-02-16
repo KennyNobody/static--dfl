@@ -22,6 +22,7 @@
         align-items: center;
     }
 
+
     &--tab-start {
         @include r(1000) {
             align-items: flex-start;
@@ -172,6 +173,11 @@
         .columns__col.mod-textarea {
             grid-row: auto/span 2;
         }
+    }
+
+    &--form-small {
+        gap: rem(14);
+        align-items: flex-end;
     }
 
     &__col {

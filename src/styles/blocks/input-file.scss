@@ -46,3 +46,15 @@
         }
     }
 }
+
+.invert {
+    .input-file {
+        &__icon {
+            fill: $text-secondary-2;
+        }
+
+        &__text {
+            color: $light;
+        }
+    }
+}

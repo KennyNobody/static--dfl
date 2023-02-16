@@ -64,3 +64,15 @@
         }
     }
 }
+
+.invert {
+    .agreement {
+        color: $light;
+
+        &__box {
+            &:after {
+                background-color: $light;
+            }
+        }
+    }
+}

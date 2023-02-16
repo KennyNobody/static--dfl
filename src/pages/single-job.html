@@ -17,22 +17,64 @@
                 </picture>
                 <div class="cover__content">
                     <div class="columns">
-                        <div class="columns__col columns__col--5">
+                        <div class="columns__col columns__col--5 columns__col--tab-6">
                             <h1 class="title mb-5">
                                 Специалист по складской логистике
                             </h1>
                             <div class="editor fz-14 mb-20">
                                 <p>35 000 - 50 000 ₽</p>
                             </div>
-                            <div class="editor fz-14 fz-mob-16 mb-20 mbm-30">
-                                Если вы хотите стать частью команды DFL, <br class="tab-hidden">
-                                присоединяйтесь к нам сегодня и исследуйте свой потенциал!
-                            </div>
-                            <button class="button button--regular invert">
-                                <span class="button__text">
-                                    Отправить резюме
-                                </span>
-                            </button>
+                            <form action="" class="form invert" data-form>
+                                <div class="columns columns--form-small mb-30">
+                                    <div class="columns__col columns__col--6">
+                                        <label class="field">
+                                            <p class="field__title">
+                                                ФИО<strong>*</strong>
+                                            </p>
+                                            <input type="text" class="field__input" placeholder="Укажите ФИО">
+                                        </label>
+                                    </div>
+                                    <div class="columns__col columns__col--6">
+                                        <label class="field">
+                                            <p class="field__title">
+                                                Телефон<strong>*</strong>
+                                            </p>
+                                            <input type="text" class="field__input" placeholder="+7 (___) ___-__-__">
+                                        </label>
+                                    </div>
+                                    <div class="columns__col columns__col--6">
+                                        <label class="field">
+                                            <p class="field__title">
+                                                Почта<strong>*</strong>
+                                            </p>
+                                            <input type="text" class="field__input" placeholder="Укажите почту">
+                                        </label>
+                                    </div>
+                                    <div class="columns__col columns__col--6">
+                                        <label class="input-file" data-input-file>
+                                            <input type="file" class="input-file__field" data-input-file-field>
+                                            <svg class="input-file__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                                            </svg>
+                                            <span class="input-file__text" data-input-file-caption>
+                                                Прикрепить файл<strong>*</strong>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button invert mb-10">
+                                    <span class="button__text">
+                                        Отправить резюме
+                                    </span>
+                                </button>
+                                <label class="agreement">
+                                    <input type="checkbox" class="agreement__field">
+                                    <div class="agreement__box"></div>
+                                    <span class="agreement__text">
+                                        Я согласен на обработку <a href="">персональных данных</a>
+                                    </span>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -81,6 +123,113 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-80">
+        <div class="container">
+            <h2 class="title mb-20">
+                Что мы предлагаем?
+            </h2>
+            <div class="columns">
+                <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2">
+                    <article class="article-item">
+                        <picture class="article-item__picture">
+                            <img src="./assets/images/item-1.svg" alt="Нет потолка">
+                        </picture>
+                        <div class="article-item__content">
+                            <h3 class="article-item__title">
+                                Нет потолка
+                            </h3>
+                            <p class="article-item__text">
+                                Достойная окладная часть + % от маржинального дохода привлеченного бизнеса
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2">
+                    <article class="article-item">
+                        <picture class="article-item__picture">
+                            <img src="./assets/images/item-2.svg" alt="Чисто белая зарплата">
+                        </picture>
+                        <div class="article-item__content">
+                            <h3 class="article-item__title">
+                                Чисто белая зарплата
+                            </h3>
+                            <p class="article-item__text">
+                                Оформление и оплата труда в соответствии с Трудовым кодексом РФ
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2">
+                    <article class="article-item">
+                        <picture class="article-item__picture">
+                            <img src="./assets/images/item-3.svg" alt="Обучение за наш счет">
+                        </picture>
+                        <div class="article-item__content">
+                            <h3 class="article-item__title">
+                                Обучение за наш счет
+                            </h3>
+                            <p class="article-item__text">
+                                Обучающие материалы, наставника на период испытательного срока
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2">
+                    <article class="article-item">
+                        <picture class="article-item__picture">
+                            <img src="./assets/images/item-4.svg" alt="Премии">
+                        </picture>
+                        <div class="article-item__content">
+                            <h3 class="article-item__title">
+                                Премии
+                            </h3>
+                            <p class="article-item__text">
+                                Ежеквартальная премия по результатам работы
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-80">
+        <div class="container">
+            <h2 class="title mb-20">
+                Ждём от вас
+            </h2>
+            <div class="editor">
+                <ul class="editor-columns editor-columns--2">
+                    <li>
+                        Организация и координация грузоперевозок
+                    </li>
+                    <li>
+                        Составление маршрутов транспортировки груза
+                    </li>
+                    <li>
+                        Прием и контроль автотранспорта
+                    </li>
+                    <li>
+                        Координация работы водителей
+                    </li>
+                    <li>
+                        Формирование расходных и приходных документов (1С)
+                    </li>
+                    <li>
+                        Организация и координация грузоперевозок
+                    </li>
+                    <li>
+                        Составление маршрутов транспортировки груза
+                    </li>
+                    <li>
+                        Составление маршрутов транспортировки груза
+                    </li>
+                    <li>
+                        Прием и контроль автотранспорта
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
