@@ -39,8 +39,8 @@
             position: absolute;
             border-radius: rem(2);
             transition: 0.3s opacity;
-            transform: translate(-50%, -50%);
             background-color: $blue-primary;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -51,7 +51,7 @@
 
         @include r(1000) {
             line-height: 1.3;
-            font-size: rem(16);
+            font-size: rem(14);
         }
 
         a {
@@ -65,13 +65,21 @@
     }
 }
 
-.invert {
+.cover {
     .agreement {
         color: $light;
+
+        @include r(700) {
+            color: $text-primary;
+        }
 
         &__box {
             &:after {
                 background-color: $light;
+
+                @include r(700) {
+                    background-color: $blue-primary;
+                }
             }
         }
     }

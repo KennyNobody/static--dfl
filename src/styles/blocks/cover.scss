@@ -28,9 +28,9 @@
         @include r(700) {
             top: 0;
             left: auto;
+            width: 36%;
             bottom: auto;
             right: rem(-50);
-            width: rem(140);
             height: rem(102);
         }
     }

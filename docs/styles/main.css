@@ -2060,6 +2060,11 @@ button {
 }
 
 @media only screen and (max-width: 1000px) {
+  .ptt-0 {
+    padding-top: 0rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .ptt-1 {
     padding-top: 0.0625rem;
   }
@@ -2679,9 +2684,9 @@ button {
   border-radius: 0.125rem;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
+  background-color: #273366;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #273366;
 }
 .agreement__text {
   line-height: 1.1;
@@ -2691,7 +2696,7 @@ button {
 @media only screen and (max-width: 1000px) {
   .agreement__text {
     line-height: 1.3;
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 .agreement__text a {
@@ -2702,11 +2707,21 @@ button {
   text-decoration: none;
 }
 
-.invert .agreement {
+.cover .agreement {
   color: #FFFFFF;
 }
-.invert .agreement__box:after {
+@media only screen and (max-width: 700px) {
+  .cover .agreement {
+    color: #4E5677;
+  }
+}
+.cover .agreement__box:after {
   background-color: #FFFFFF;
+}
+@media only screen and (max-width: 700px) {
+  .cover .agreement__box:after {
+    background-color: #273366;
+  }
 }
 
 .article-contact {
@@ -2918,6 +2933,7 @@ button {
 }
 @media only screen and (max-width: 700px) {
   .article-factoid__text {
+    line-height: 1.35;
     font-size: 1rem;
   }
 }
@@ -4192,9 +4208,9 @@ button {
   .cover:before {
     top: 0;
     left: auto;
+    width: 36%;
     bottom: auto;
     right: -3.125rem;
-    width: 8.75rem;
     height: 6.375rem;
   }
 }
@@ -4515,6 +4531,17 @@ button {
   background-color: #32407B;
 }
 
+.cover .field__input {
+  color: #FFFFFF;
+  background-color: #32407B;
+}
+@media only screen and (max-width: 700px) {
+  .cover .field__input {
+    color: #848CAA;
+    background-color: #F1F1FA;
+  }
+}
+
 .footer-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4683,11 +4710,21 @@ a.footer-info__link:hover {
   color: #F05A63;
 }
 
-.invert .input-file__icon {
+.cover .input-file__icon {
   fill: #848CAA;
 }
-.invert .input-file__text {
+@media only screen and (max-width: 700px) {
+  .cover .input-file__icon {
+    fill: #4E5677;
+  }
+}
+.cover .input-file__text {
   color: #FFFFFF;
+}
+@media only screen and (max-width: 700px) {
+  .cover .input-file__text {
+    color: #4E5677;
+  }
 }
 
 .link-contact {

@@ -73,9 +73,28 @@
         &__title {
 
         }
+
         &__input {
             color: $light;
             background-color: $blue-resolution;
+        }
+    }
+}
+
+.cover {
+    .field {
+        &__title {
+
+        }
+
+        &__input {
+            color: $light;
+            background-color: $blue-resolution;
+
+            @include r(700) {
+                color: $text-secondary-2;
+                background-color: $gray-bg;
+            }
         }
     }
 }

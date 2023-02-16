@@ -47,14 +47,22 @@
     }
 }
 
-.invert {
+.cover {
     .input-file {
         &__icon {
             fill: $text-secondary-2;
+
+            @include r(700) {
+                fill: $text-primary;
+            }
         }
 
         &__text {
             color: $light;
+
+            @include r(700) {
+                color: $text-primary;
+            }
         }
     }
 }

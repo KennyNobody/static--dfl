@@ -44,6 +44,7 @@
         color: $text-primary;
 
         @include r(700) {
+            line-height: 1.35;
             font-size: rem(16);
         }
     }
