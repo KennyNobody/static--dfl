@@ -37,10 +37,12 @@
 
     &__picture {
         right: 0;
+        width: 51%;
+        top: rem(94);
         display: block;
-        width: rem(630);
+        //width: rem(630);
         bottom: rem(-50);
-        height: rem(336);
+        //height: rem(336);
         overflow: hidden;
         position: absolute;
 
@@ -55,16 +57,17 @@
             background-color: rgba(39, 51, 102, 0.2);
         }
 
-        @include r(1300) {
-            width: rem(500);
-        }
-
+        //@include r(1300) {
+        //    width: rem(500);
+        //}
+        //
         @include r(1000) {
+            width: 56%;
             right: rem(-50);
-            width: rem(374);
         }
 
         @include r(700) {
+            top: 0;
             right: 0;
             bottom: 0;
             height: rem(275);
@@ -84,10 +87,14 @@
     }
 
     &__content {
+        width: 46%;
         color: $text-white;
+        position: relative;
 
         @include r(700) {
+            width: 100%;
             color: $blue-primary;
         }
+
     }
 }
