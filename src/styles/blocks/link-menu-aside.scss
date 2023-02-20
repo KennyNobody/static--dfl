@@ -1,0 +1,73 @@
+.link-menu-aside {
+    display: block;
+    flex-shrink: 0;
+    font-weight: 700;
+    line-height: 1.1;
+    overflow: hidden;
+    color: $text-menu;
+    font-size: rem(36);
+    position: relative;
+    text-decoration: none;
+    padding: rem(20) rem(50) rem(20) 0;
+
+    @include r(1300) {
+        line-height: 1.05;
+        font-size: rem(28);
+        padding: rem(14) rem(40) rem(14) 0;
+    }
+
+    @include r(1000) {
+        padding: rem(28) rem(40) rem(28) 0;
+    }
+
+    @include r(700) {
+
+    }
+
+    &:after {
+        top: 50%;
+        //bottom: 0;
+        width: 100px;
+        height: 100px;
+        content: "";
+        right: -100%;
+        //height: 100%;
+        display: block;
+        position: absolute;
+        transition: 0.3s right;
+        transform-origin: center;
+        border: 2px solid $text-menu;
+        background-color: $blue-primary;
+        transform: rotate(45deg) translateY(-86%) translateX(16%);
+
+        @include r(1300) {
+
+        }
+
+        @include r(1000) {
+
+        }
+
+        @include r(700) {
+
+        }
+    }
+
+    &:hover {
+        color: $text-secondary-2;
+        text-decoration: underline;
+    }
+
+    &.active {
+        color: $text-white;
+        pointer-events: none;
+
+        &:after {
+            right: rem(-12);
+
+            @include r(1300) {
+                right: rem(-25);
+            }
+        }
+    }
+}

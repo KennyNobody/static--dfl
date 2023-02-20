@@ -11,5 +11,8 @@
     font-family: $font-main;
     background-color: $white-bg;
     justify-content: space-between;
-    @include r(1200) {}
+
+    &--fixed {
+        overflow: hidden;
+    }
 }

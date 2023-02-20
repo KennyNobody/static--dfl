@@ -1,7 +1,9 @@
 import Swiper from "swiper";
 import sliderFactory from './elements/Slider/factory';
 
+import Body from "./elements/Body/Body";
 import Dropmenu from "./elements/Dropmenu/Dropmenu";
+import Menu from "./elements/Menu/Menu";
 import Header from "./elements/Header/Header";
 import Search from "./elements/Search/Search";
 import Process from "./elements/Process/Process";
@@ -10,8 +12,10 @@ import Table from "./elements/Table/Table";
 
 class App {
     constructor() {
-        this.createHeader();
+        this.createBody();
         this.createDropmenu();
+        this.createMenu();
+        this.createHeader();
         this.createSliders();
         this.createSearch();
         this.createProcess();
@@ -19,10 +23,10 @@ class App {
         this.createTable();
     }
 
-    createHeader() {
-        const el = document.querySelector('[data-header]');
+    createBody() {
+        const el = document.querySelector('[data-body]');
 
-        if (el) this.header = new Header(el);
+        if (el) this.body = new Body(el);
     }
 
     createDropmenu() {
@@ -33,6 +37,18 @@ class App {
         el.forEach((item, index) => {
             this.dropmenu.push(new Dropmenu(item, index, this));
         });
+    }
+
+    createHeader() {
+        const el = document.querySelector('[data-header]');
+
+        if (el) this.header = new Header(el);
+    }
+
+    createMenu() {
+        const el = document.querySelector('[data-menu]');
+
+        if (el) this.menu = new Menu(el, this);
     }
 
     createSliders() {

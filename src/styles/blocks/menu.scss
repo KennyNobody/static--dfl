@@ -1,0 +1,214 @@
+.menu {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    max-height: 0;
+    top: rem(-20);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    transition: 0.3s max-height;
+    background-color: $blue-primary;
+
+    @include r(1300) {
+
+    }
+
+    @include r(1000) {
+
+    }
+
+    @include r(700) {
+
+    }
+
+    &:before {
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        content: "";
+        width: 100vw;
+        display: block;
+        position: absolute;
+        background-color: $blue-primary;
+
+        @include r(1300) {
+
+        }
+
+        @include r(1000) {
+
+        }
+
+        @include r(700) {
+
+        }
+    }
+
+    &:after {
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        content: "";
+        width: 100vw;
+        display: none;
+        position: absolute;
+        background-color: $blue-primary;
+
+        @include r(1000) {
+            display: block;
+        }
+
+        @include r(700) {
+
+        }
+    }
+
+    // TODO Вынести в класс
+    z-index: 2;
+
+    &__wrapper {
+        height: 100%;
+        flex-grow: 1;
+        min-width: 0;
+        display: flex;
+
+        @include r(1300) {
+
+        }
+
+        @include r(1000) {
+
+        }
+
+        @include r(700) {
+
+        }
+    }
+
+    &__aside {
+        display: flex;
+        flex-shrink: 0;
+        width: rem(470);
+        position: relative;
+        padding: rem(100) 0;
+        flex-direction: column;
+        justify-content: center;
+
+        @include r(1300) {
+            width: rem(370);
+            padding: rem(90) 0;
+        }
+
+        @include r(1000) {
+            width: 50%;
+        }
+
+        @include r(700) {
+
+        }
+
+        &:before {
+            right: 0;
+            width: 2px;
+            top: -50vh;
+            content: "";
+            bottom: -50vh;
+            display: block;
+            position: absolute;
+            background-color: $text-menu;
+
+            @include r(1300) {
+
+            }
+
+            @include r(1000) {
+
+            }
+
+            @include r(700) {
+
+            }
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        position: relative;
+        color: $text-white;
+        flex-direction: column;
+        justify-content: center;
+        padding: rem(100) rem(92);
+        break-inside: avoid-column;
+
+        @include r(1300) {
+            padding: rem(90) rem(60);
+        }
+
+        @include r(1000) {
+            width: 50%;
+            padding: rem(90) rem(45);
+        }
+
+        @include r(700) {
+
+        }
+    }
+
+    &__tab {
+        columns: 2;
+        //gap: rem(32);
+        //display: grid;
+        column-gap: rem(32);
+        //grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+        @include r(1300) {
+
+        }
+
+        @include r(1000) {
+            columns: 1;
+        }
+
+        @include r(700) {
+
+        }
+
+        //> * {
+        //    grid-column: span 1;
+        //}
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__footer {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        padding: rem(22) rem(94);
+
+        @include r(1300) {
+            padding: rem(22) rem(60);
+        }
+
+        @include r(1000) {
+            padding: rem(14) rem(45);
+        }
+
+        @include r(700) {
+
+        }
+    }
+}
+
+.body--menu {
+    .menu {
+        max-height: calc(100vh + rem(20));
+    }
+}

@@ -1,0 +1,42 @@
+.link-social {
+    flex-shrink: 0;
+    display: block;
+
+    &--menu {
+        &:hover {
+            .link-social__icon {
+                fill: $icon;
+            }
+        }
+
+        .link-social__icon {
+            width: rem(48);
+            height: rem(48);
+            fill: $text-menu;
+
+            @include r(1300) {
+
+            }
+
+            @include r(1000) {
+
+            }
+
+            @include r(700) {
+
+            }
+        }
+    }
+
+    &--contact {
+        .link-social__icon {
+            width: rem(42);
+            height: rem(42);
+        }
+    }
+
+    &__icon {
+        display: block;
+        transition: 0.3s fill;
+    }
+}

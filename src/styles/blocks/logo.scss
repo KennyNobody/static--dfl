@@ -19,6 +19,9 @@
     }
 
     &--header {
+        z-index: 3;
+        position: relative;
+
         .logo__svg {
             height: rem(28);
             width: rem(114);
@@ -53,6 +56,14 @@
     .logo {
         &__svg {
             fill: $blue-primary;
+        }
+    }
+}
+
+.body--menu {
+    .section--header {
+        .logo__svg {
+            fill: $text-white;
         }
     }
 }

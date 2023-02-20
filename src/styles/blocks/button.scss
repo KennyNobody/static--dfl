@@ -29,6 +29,21 @@
         max-width: rem(220);
     }
 
+    &--clear {
+        background: none;
+        font-size: rem(16);
+        border: 1px solid $text-menu;
+
+        &:hover {
+            color: $blue-primary;
+            background-color: $light;
+        }
+    }
+
+    &.menu-fix {
+        margin: rem(16) 0;
+    }
+
     @include r(700) {
         min-height: rem(50);
     }

@@ -1,0 +1,53 @@
+.link-menu {
+    gap: rem(12);
+    display: flex;
+    color: inherit;
+    flex-shrink: 0;
+    padding: rem(16) 0;
+    align-items: center;
+    text-decoration: none;
+    break-inside: avoid-column;
+
+    &:hover {
+        .link-menu {
+            &__text {
+                text-underline-offset: 0.2em;
+                text-decoration: underline $text-menu;
+            }
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        display: block;
+        width: rem(28);
+        height: rem(28);
+        fill: $text-menu;
+    }
+
+    &__text {
+        line-clamp: 3;
+        overflow: hidden;
+        display: -moz-box;
+        position: relative;
+        font-size: rem(16);
+        width: fit-content;
+        box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        -moz-box-orient: vertical;
+        -webkit-box-orient: vertical;
+
+        &:after {
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 1px;
+            content: "";
+            position: absolute;
+            transition: 0.3s background-color;
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+}

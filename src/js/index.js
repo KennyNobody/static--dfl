@@ -4,4 +4,6 @@ import 'swiper/swiper.min.css';
 import "../styles/_index.scss";
 import App from "./app";
 
-new App();
+const app = new App();
+
+export { app };
