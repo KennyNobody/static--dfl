@@ -6,19 +6,9 @@ export default function (el) {
         modules: [Navigation, Pagination],
         spaceBetween: 12,
         slidesPerView: 'auto',
-        pagination: pagination,
-        breakpoints: {
-            1300: {
-                slidesPerView: 'auto'
-            },
-            1000: {
-
-                slidesPerView: 2
-            },
-            700: {
-                spaceBetween: 20
-            }
-        }
+        watchSlidesProgress: true,
+        slideVisibleClass: 'visible',
+        pagination,
     }
 
     try {
@@ -29,8 +19,7 @@ export default function (el) {
                 disabledClass: 'disabled'
             }
         }
-    } catch (e) {
-    }
+    } catch (e) { /* empty */ }
 
     return data;
 }

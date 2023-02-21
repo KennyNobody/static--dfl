@@ -115,7 +115,7 @@ module.exports = [
         inject: "body",
         title: "Полезная информация | DFL",
         head,
-        sectionHeader,
+        sectionHeaderInvert,
         sectionFooter,
         sectionPartners,
         temp

@@ -8,7 +8,7 @@
     }
 
     @include r(1000) {
-        gap: rem(6) rem(16);
+        gap: rem(10) rem(16);
         flex-wrap: wrap;
     }
 

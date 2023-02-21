@@ -8,18 +8,16 @@ export default function (el) {
         slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination,
+        pagination,
         breakpoints: {
             1300: {
-                slidesPerView: 'auto',
+                // slidesPerView: 'auto',
             },
             1000: {
-                slidesPerView: 3,
                 spaceBetween: 20,
             },
             700: {
-                spaceBetween: 12,
-                slidesPerView: 3
+                // slidesPerView: 3
             }
         }
     }

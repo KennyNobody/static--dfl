@@ -130,6 +130,22 @@
                 height: rem(188);
             }
         }
+    }
 
+    &-info {
+        &:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: rem(250);
+            position: absolute;
+            background-color: $gray-bg;
+
+            @include r(700) {
+                height: rem(188);
+            }
+        }
     }
 }

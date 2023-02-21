@@ -1,10 +1,12 @@
 .fz {
     &-14 {
+        line-height: 1.7;
         font-size: rem(14);
     }
 
     &-mob-16 {
         @include r(700) {
+            line-height: 1.7;
             font-size: rem(16);
         }
     }

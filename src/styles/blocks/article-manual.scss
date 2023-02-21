@@ -1,0 +1,35 @@
+.article-manual {
+    width: 100%;
+    gap: rem(30);
+    color: $light;
+    display: flex;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: rem(16);
+    align-items: center;
+    min-height: rem(54);
+    text-decoration: none;
+    justify-content: space-between;
+    transition: 0.3s background-color;
+    background-color: $blue-resolution;
+    padding: rem(12) rem(12) rem(12) rem(32);
+
+    &:hover {
+        background-color: $blue-primary;
+    }
+
+    @include r(700) {
+        font-size: rem(18);
+    }
+
+    &__title {
+
+    }
+
+    &__icon {
+        fill: $light;
+        flex-shrink: 0;
+        width: rem(32);
+        height: rem(32);
+    }
+}

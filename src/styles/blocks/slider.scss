@@ -61,6 +61,18 @@
                 height: rem(155);
             }
         }
+
+        &--news {
+            width: rem(320);
+        }
+
+        &--analytics {
+            width: rem(480);
+
+            @include r(770) {
+                width: rem(310);
+            }
+        }
     }
 
     &__progressbar {

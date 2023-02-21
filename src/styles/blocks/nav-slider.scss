@@ -1,33 +1,4 @@
 .nav-slider {
     gap: rem(16);
     display: flex;
-
-    &__button {
-        border: none;
-        display: flex;
-        flex-shrink: 0;
-        width: rem(40);
-        height: rem(40);
-        cursor: pointer;
-        align-items: center;
-        transition: 0.3s all;
-        border-radius: rem(2);
-        justify-content: center;
-        background-color: $blue-resolution;
-
-        &:hover {
-            background-color: $blue-primary;
-        }
-
-        &[disabled] {
-            opacity: 0.5;
-        }
-    }
-
-    &__icon {
-        width: rem(24);
-        display: block;
-        height: rem(24);
-        fill: $text-white;
-    }
 }

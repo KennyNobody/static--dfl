@@ -6,6 +6,7 @@
     max-height: 0;
     top: rem(-20);
     display: flex;
+    overflow: hidden;
     position: absolute;
     align-items: center;
     transition: 0.3s max-height;
@@ -191,10 +192,10 @@
         right: 0;
         bottom: 0;
         position: absolute;
-        padding: rem(22) rem(94);
+        padding: rem(22) rem(40) rem(22) rem(94);
 
         @include r(1300) {
-            padding: rem(22) rem(60);
+            padding: rem(22) rem(40) rem(22) rem(60);
         }
 
         @include r(1000) {

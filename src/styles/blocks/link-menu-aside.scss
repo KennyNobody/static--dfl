@@ -8,12 +8,12 @@
     font-size: rem(36);
     position: relative;
     text-decoration: none;
-    padding: rem(20) rem(50) rem(20) 0;
+    padding: rem(30) rem(50) rem(30) 0;
 
     @include r(1300) {
         line-height: 1.05;
         font-size: rem(28);
-        padding: rem(14) rem(40) rem(14) 0;
+        padding: rem(17) rem(40) rem(14) 0;
     }
 
     @include r(1000) {
