@@ -1,3 +1,58 @@
 .form-search {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: rem(2);
 
+    @include r(700) {}
+
+    &__input {
+        width: 100%;
+        border: none;
+        display: block;
+        height: rem(38);
+        font-size: rem(12);
+        font-family: inherit;
+        text-overflow: ellipsis;
+        color: $text-secondary-1;
+        background-color: $blue-bg;
+        padding: 0 rem(50) 0 rem(12);
+
+        @include r(700) {
+            height: rem(46);
+            font-size: rem(16);
+        }
+
+        &::placeholder {
+            color: $text-secondary-1;
+        }
+    }
+
+    &__button {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        border: none;
+        display: flex;
+        width: rem(38);
+        cursor: pointer;
+        background: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        display: block;
+        width: rem(26);
+        height: rem(26);
+        fill: $blue-primary;
+
+        @include r(700) {
+            width: rem(30);
+            height: rem(30);
+        }
+    }
 }
