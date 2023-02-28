@@ -31,10 +31,12 @@ export default class Menu {
     }
 
     show() {
-        if (this.opened) {
+        if (!this.opened) {
             this.app.body.fix(true);
+            this.app.body.menu(true);
         } else {
             this.app.body.fix(false);
+            this.app.body.menu(false);
         }
 
         this.opened = !this.opened;

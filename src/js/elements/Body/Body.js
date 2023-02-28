@@ -11,7 +11,7 @@ export default class Body {
         }
     }
 
-    addMenuClass(flag) {
+    menu(flag) {
         if (flag) {
             this.el.classList.add('body--menu');
         } else {

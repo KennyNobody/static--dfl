@@ -8,72 +8,246 @@
 
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="columns__col columns__col--6">
-
-                </div>
-                <div class="columns__col columns__col--6">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
-                </div>
+<main class="main main--visible decor-news">
+    <div class="container">
+        <div class="layout pt-100 ptm-80">
+            <div class="layout__aside">
+                <aside class="sidebar">
+                    123
+                </aside>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <!-- Дестрой на планшете и мобилке -->
-            <div class="slider" data-slider="handbook">
-                <div class="toolbar mb-30">
-                    <h2 class="title">
-                        Галерея
+            <div class="layout__main">
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Название справочника
                     </h2>
-                    <div data-nav>
-                        <button data-button-prev>
-                            Назад
-                        </button>
-                        <button data-button-next>
-                            Вперед
-                        </button>
+                </section>
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Документы
+                    </h2>
+                    <div class="list-articles">
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Разовая договор-заявка</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Разовая договор-заявка</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="swiper-container slider__container">
-                    <div class="swiper-wrapper slider__wrapper">
-                        <div class="swiper-slide slider__slide">
-                            1
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            2
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            3
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            4
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            5
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            6
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            7
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            8
+                </section>
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Ссылки
+                    </h2>
+                    <div class="editor fz-14 mb-30 mbm-20">
+                        <p>
+                            В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                            Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно
+                            проработать размещение таких производств рядом с Алматы по периметру Большой Алматинской
+                            кольцевой автомобильной дорогой, что существенно поможет экономике области. Обсудите этот
+                            вопрос с Правительством и компаниями, – посоветовал Президент.
+                        </p>
+                    </div>
+                    <div class="list-articles">
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Расчет расстояний между городами
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Коды стран ISO
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Морская транспортная накладная и морской коносамент
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+                <section class="section mb-80">
+                    <div class="editor">
+                        <div class="editor">
+                            <picture class="picture float-left">
+                                <img src="./assets/content/414x274.svg" alt="#">
+                            </picture>
+                            <h2>
+                                Подзаголовок
+                            </h2>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>
+                                Подзаголовок
+                            </h2>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах.
+                            </p>
                         </div>
                     </div>
-                    <div class="slider__progressbar progressbar"></div>
-                </div>
+                </section>
+                <section class="section mb-135 mbl-140 mbt-140 mbm-80">
+                    <div class="slider" data-slider="handbook">
+                        <div class="toolbar mb-30">
+                            <h2 class="title">
+                                Галерея
+                            </h2>
+                            <div class="nav-slider tab-hide" data-nav>
+                                <button class="button-nav" data-button-prev>
+                                    <svg class="button-nav__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-nav" data-button-next>
+                                    <svg class="button-nav__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-container slider__container">
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide">
+                                    1
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    2
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    3
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    4
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    5
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    6
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    7
+                                </div>
+                                <div class="swiper-slide slider__slide">
+                                    8
+                                </div>
+                            </div>
+                            <div class="slider__progressbar progressbar"></div>
+                        </div>
+                    </div>
+                </section>
             </div>
+
         </div>
-    </section>
+    </div>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>

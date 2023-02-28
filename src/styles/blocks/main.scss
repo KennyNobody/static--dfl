@@ -3,6 +3,10 @@
     overflow-x: hidden;
     position: relative;
 
+    &--visible {
+        overflow-x: initial;
+    }
+
     //& > :first-child {
     //    padding-top: rem(76);
     //}

@@ -1,0 +1,22 @@
+.link-pagination {
+    display: flex;
+    height: rem(40);
+    font-weight: 700;
+    padding: 0 rem(10);
+    font-size: rem(14);
+    min-width: rem(40);
+    align-items: center;
+    color: $text-primary;
+    text-decoration: none;
+    border-radius: rem(2);
+    justify-content: center;
+    border: 1px solid rgba(132, 140, 170, 0.29);
+
+    &.active {
+        border-color: $blue-primary;
+    }
+
+    &:hover {
+        border-color: $blue-primary;
+    }
+}

@@ -12,6 +12,7 @@ import iconCheck from "../assets/sprite/icon-check.svg";
 import iconClip from "../assets/sprite/icon-clip.svg";
 import iconClose from "../assets/sprite/icon-close.svg";
 import iconControl from "../assets/sprite/icon-control.svg";
+import iconCopy from "../assets/sprite/icon-copy.svg";
 import iconCustomClearence from "../assets/sprite/icon-custom-clearence.svg";
 import iconEurope from "../assets/sprite/icon-europe.svg";
 import iconFile from "../assets/sprite/icon-file.svg";
@@ -53,6 +54,7 @@ export default {
     iconClip,
     iconClose,
     iconControl,
+    iconCopy,
     iconCustomClearence,
     iconEurope,
     iconFile,

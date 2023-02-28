@@ -1,0 +1,23 @@
+.button-copy {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    padding: rem(5);
+    background: none;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        .button-copy__icon {
+            fill: $text-secondary-1;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: rem(24);
+        height: rem(24);
+        transition: 0.3s fill;
+        fill: $text-secondary-2;
+    }
+}

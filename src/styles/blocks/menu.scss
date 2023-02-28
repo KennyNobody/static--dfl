@@ -1,16 +1,13 @@
 .menu {
-    left: 0;
+    //left: 0;
     right: 0;
     bottom: 0;
+    max-width: 0;
     height: 100vh;
     max-height: 0;
     top: rem(-20);
-    display: flex;
-    overflow: hidden;
+    //overflow: hidden;
     position: absolute;
-    align-items: center;
-    transition: 0.3s max-height;
-    background-color: $blue-primary;
 
     @include r(1300) {
 
@@ -24,55 +21,72 @@
 
     }
 
-    &:before {
-        top: 0;
-        bottom: 0;
-        right: 100%;
-        content: "";
-        width: 100vw;
-        display: block;
-        position: absolute;
-        background-color: $blue-primary;
 
-        @include r(1300) {
-
-        }
-
-        @include r(1000) {
-
-        }
-
-        @include r(700) {
-
-        }
-    }
-
-    &:after {
-        top: 0;
-        bottom: 0;
-        left: 100%;
-        content: "";
-        width: 100vw;
-        display: none;
-        position: absolute;
-        background-color: $blue-primary;
-
-        @include r(1000) {
-            display: block;
-        }
-
-        @include r(700) {
-
-        }
-    }
 
     // TODO Вынести в класс
     z-index: 2;
 
+    &__main {
+        &--desktop {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: $blue-primary;
+
+            &:before {
+                top: 0;
+                bottom: 0;
+                content: "";
+                width: 100vw;
+                display: block;
+                right: rem(-21);
+                max-width: rem(21);
+                position: absolute;
+                background-color: $blue-primary;
+
+                @include r(1300) {
+
+                }
+
+                @include r(1000) {
+
+                }
+
+                @include r(700) {
+
+                }
+            }
+
+            //&:after {
+            //    top: 0;
+            //    bottom: 0;
+            //    left: 100%;
+            //    content: "";
+            //    width: 21px;
+            //    display: block;
+            //    position: absolute;
+            //    background-color: $blue-primary;
+            //
+            //    @include r(1000) {
+            //        display: block;
+            //    }
+            //
+            //    @include r(700) {
+            //
+            //    }
+            //}
+        }
+
+        &--mobile {
+
+        }
+    }
+
     &__wrapper {
+        opacity: 0;
         height: 100%;
         flex-grow: 1;
-        min-width: 0;
+        //min-width: 0;
         display: flex;
 
         @include r(1300) {
@@ -211,5 +225,64 @@
 .body--menu {
     .menu {
         max-height: calc(100vh + rem(20));
+        animation: openMenu 0.5s ease-in-out forwards;
+
+        &__main {
+            &--desktop {
+                &:before {
+                    animation: 0.3s showBefore 0.3s ease-in-out forwards;
+                }
+            }
+        }
+
+        &__wrapper {
+            animation: 0.3s showContent 0.5s ease-in-out forwards;
+        }
     }
 }
+
+@keyframes openMenu {
+    0% {
+        max-height: 0;
+        max-width: 45px;
+    }
+    20% {
+        max-height: 100vh;
+        max-width: 45px;
+    }
+    99% {
+        max-height: 100vh;
+        max-width: 45px;
+    }
+    100% {
+        //max-width: 45px;
+        max-height: 100vh;
+        max-width: 100%;
+        //overflow: visible;
+    }
+}
+
+@keyframes showContent {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    50% {
+
+    }
+    100% {
+        //opacity: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes showBefore {
+    0% {
+        max-width: rem(66);
+    }
+    100% {
+        max-width: 100vw;
+    }
+}
+
+// Смещение вправо - 21px

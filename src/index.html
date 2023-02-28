@@ -182,13 +182,14 @@
                     <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
                 </svg>
             </button>
-            <button class="button-head" data-menu-button>
-                <svg class="button-head__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-menu"></use>
-                </svg>
+            <button class="button-menu" data-menu-button>
+                <span class="button-menu__line"></span>
+                <span class="button-menu__line"></span>
+                <span class="button-menu__line"></span>
             </button>
             <section class="menu" data-menu>
-                <div class="menu__wrapper">
+                <div class="menu__main menu__main--desktop">
+                    <div class="menu__wrapper">
                     <aside class="menu__aside">
                         <a href="#tab-menu-1" class="link-menu-aside" data-menu-link>
                             Услуги
@@ -544,6 +545,7 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
         </div>
     </div>
@@ -774,7 +776,7 @@
                     Документы
                 </h2>
             </div>
-            <div class="links-doc">
+            <div class="list-articles">
                 <a class="article-doc" href="">
                     <div class="article-doc__main">
                         <p>Свидетельство о государственной перерегистрации юридического лица</p>
@@ -817,7 +819,6 @@
                     </div>
                 </a>
             </div>
-
         </div>
     </section>
     <section class="section z-index-1 mb-60 mbl-80">

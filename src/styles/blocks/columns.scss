@@ -231,6 +231,78 @@
             grid-column: span 12;
         }
 
+        &--desk-1 {
+            @include r(1300) {
+                grid-column: span 1;
+            }
+        }
+
+        &--desk-2 {
+            @include r(1300) {
+                grid-column: span 2;
+            }
+        }
+
+        &--desk-3 {
+            @include r(1300) {
+                grid-column: span 3;
+            }
+        }
+
+        &--desk-4 {
+            @include r(1300) {
+                grid-column: span 4;
+            }
+        }
+
+        &--desk-5 {
+            @include r(1300) {
+                grid-column: span 5;
+            }
+        }
+
+        &--desk-6 {
+            @include r(1300) {
+                grid-column: span 6;
+            }
+        }
+
+        &--desk-7 {
+            @include r(1300) {
+                grid-column: span 7;
+            }
+        }
+
+        &--desk-8 {
+            @include r(1300) {
+                grid-column: span 8;
+            }
+        }
+
+        &--desk-9 {
+            @include r(1300) {
+                grid-column: span 9;
+            }
+        }
+
+        &--desk-10 {
+            @include r(1300) {
+                grid-column: span 10;
+            }
+        }
+
+        &--desk-11 {
+            @include r(1300) {
+                grid-column: span 11;
+            }
+        }
+
+        &--desk-12 {
+            @include r(1300) {
+                grid-column: span 12;
+            }
+        }
+
         &--tab-1 {
             @include r(1000) {
                 grid-column: span 1;

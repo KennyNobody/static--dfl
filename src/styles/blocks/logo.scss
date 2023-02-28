@@ -63,7 +63,18 @@
 .body--menu {
     .section--header {
         .logo__svg {
-            fill: $text-white;
+            animation: 0.3s animateLogo 0.3s ease-in-out forwards;
+            //fill: $text-white;
         }
+    }
+}
+
+@keyframes animateLogo {
+    0% {
+        fill: $blue-primary;
+    }
+
+    100% {
+        fill: $text-white;
     }
 }

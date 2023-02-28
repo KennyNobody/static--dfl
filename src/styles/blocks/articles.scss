@@ -1,5 +1,17 @@
 .articles {
-    gap: rem(12);
-    display: flex;
-    flex-direction: column;
+    &__content {
+
+    }
+
+    &__toolbar {
+        margin-top: rem(55);
+
+        @include r(1000) {
+            margin-top: rem(45);
+        }
+
+        @include r(700) {
+            margin-top: rem(40);
+        }
+    }
 }

@@ -1,0 +1,130 @@
+.block-accent {
+    display: flex;
+    align-items: stretch;
+
+    @include r(1000) {
+        flex-direction: column;
+    }
+
+    &--right {
+        .block-accent {
+            &__picture {
+                margin-left: rem(-30);
+                margin-right: rem(-94);
+
+                @include r(1000) {
+                    height: rem(135);
+                    margin-left: rem(-30);
+                    margin-right: rem(-30);
+                    width: calc(100% + rem(60));
+                }
+            }
+            &__aside {
+                padding: rem(24) rem(32) rem(24) 0;
+
+                @include r(1000) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    &--left {
+        .block-accent {
+            &__picture {
+                margin-left: rem(-94);
+                margin-right: rem(-30);
+
+                @include r(1000) {
+                    height: rem(135);
+                    margin-left: rem(-30);
+                    margin-right: rem(-30);
+                    width: calc(100% + rem(60));
+                }
+            }
+            &__aside {
+                padding: rem(24) 0 rem(24) rem(32);
+
+                @include r(1000) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    &--top {
+        flex-direction: column;
+
+        .block-accent {
+            &__picture {
+                height: rem(230);
+                margin-left: rem(-30);
+                margin-right: rem(-30);
+                width: calc(100% + rem(60));
+
+                @include r(1000) {
+                    height: rem(135);
+                    margin-left: rem(-30);
+                    margin-right: rem(-30);
+                    width: calc(100% + rem(60));
+                }
+            }
+            &__aside {
+                width: 100%;
+                margin-bottom: rem(-80);
+
+                @include r(1000) {
+                    padding: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__picture {
+        z-index: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: rem(2);
+
+        @include r(1000) {
+            order: 1;
+            height: rem(135);
+            margin-left: rem(-30);
+            margin-right: rem(-30);
+            margin-bottom: rem(-43);
+        }
+
+        &:after {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: rgba(39, 51, 102, 0.2);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__aside {
+        z-index: 1;
+        width: 430px;
+        flex-shrink: 0;
+        position: relative;
+
+        @include r(1000) {
+            order: 2;
+            width: 100%;
+        }
+    }
+}

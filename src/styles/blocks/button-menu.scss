@@ -1,0 +1,148 @@
+.button-menu {
+    padding: 0;
+    gap: rem(5);
+    border: none;
+    display: flex;
+    width: rem(24);
+    height: rem(24);
+    cursor: pointer;
+    background: none;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__line {
+        width: rem(18);
+        height: rem(2);
+        display: block;
+        position: relative;
+        border-radius: rem(2);
+        background-color: $blue-primary;
+        transition: 0.3s background-color;
+
+        &:nth-child(1) {
+            //margin-bottom: rem(5);
+        }
+
+        &:nth-child(2) {
+            //margin-bottom: rem(5);
+            &:before {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                content: "";
+                display: block;
+                position: absolute;
+                transition: 0.3s all;
+                background-color: rgba(255, 255, 255, 0);
+
+            }
+
+            &:after {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                content: "";
+                display: block;
+                position: absolute;
+                transition: 0.3s all;
+                background-color: rgba(255, 255, 255, 0);
+
+            }
+        }
+
+        &:nth-child(3) {
+            //display: block;
+        }
+    }
+}
+
+.body--menu {
+    .button-menu {
+        z-index: 3;
+
+        &__line {
+
+            &:nth-child(1) {
+                background-color: rgba(39, 51, 102, 0);
+            }
+
+            &:nth-child(2) {
+                background-color: rgba(39, 51, 102, 0);
+
+                &:before {
+                    //opacity: 1;
+                    //left: rem(-5);
+                    //right: rem(-5);
+                    //transform: rotate(45deg);
+                    background-color: rgba(255, 255, 255, 1);
+                    animation: animationBefore 0.5s ease-in-out forwards;
+                }
+
+                &:after {
+                    //opacity: 1;
+                    //left: rem(-5);
+                    //right: rem(-5);
+                    //transform: rotate(-45deg);
+                    background-color: rgba(255, 255, 255, 1);
+                    animation: animationAfter 0.5s ease-in-out forwards;
+                }
+            }
+
+            &:nth-child(3) {
+                background-color: rgba(39, 51, 102, 0);
+            }
+        }
+    }
+}
+
+@keyframes animationBefore {
+    0% {
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        opacity: 1;
+        left: rem(-5);
+        right: rem(-5);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: rem(-5);
+        right: rem(-5);
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes animationAfter {
+    0% {
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        opacity: 1;
+        left: rem(-5);
+        right: rem(-5);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: rem(-5);
+        right: rem(-5);
+        transform: rotate(-45deg);
+    }
+}

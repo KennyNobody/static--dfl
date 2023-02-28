@@ -1,7 +1,12 @@
 .toolbar {
+    gap: rem(10);
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &--start {
+        justify-content: flex-start;
+    }
 
     &__link {
         font-weight: 600;

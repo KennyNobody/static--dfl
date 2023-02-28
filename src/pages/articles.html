@@ -8,23 +8,253 @@
 
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-    <section class="section">
+<main class="main decor-news">
+    <section class="section pt-100 ptm-80 mb-150 mbm-130">
         <div class="container">
-            <div class="columns">
-                <div class="columns__col columns__col--6">
-
+            <h2 class="title mb-30 mbm-15">
+                Аналитика по рынку
+            </h2>
+            <div class="articles" data-articles="articles">
+                <div class="articles__template">
+                    <template data-template>
+                        <div class="columns__col columns__col--4 columns__col--desk--6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="#" class="article-news" data-template-key="link">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img data-template-key="preview" src="#" alt="#">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title" data-template-key="title"></h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </template>
                 </div>
-                <div class="columns__col columns__col--6">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
+                <div class="articles__content">
+                    <div class="columns" data-articles-content>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--desk-6 columns__col--tab-12 columns__col--mob-2">
+                            <a href="./single-post.html" class="article-news">
+                                <picture class="article-news__picture article-news__picture--analytic">
+                                    <img src="./assets/content/placeholder.svg" alt="Изменения в логистике в связи с COVID-19">
+                                </picture>
+                                <div class="article-news__content">
+                                    <h3 class="article-news__title">
+                                        Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                                    </h3>
+                                    <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-news__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__toolbar" data-articles-toolbar>
+                    <div class="pagination" data-pagination>
+                        <button class="button-nav button-nav--pagination" data-pagination-link="prev" disabled>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <a href="" class="link-pagination active" data-pagination-link="1">
+                            1
+                        </a>
+                        <a href="" class="link-pagination" data-pagination-link="2">
+                            2
+                        </a>
+                        <span class="link-pagination">
+                            ...
+                        </span>
+                        <a href="" class="link-pagination" data-pagination-link="9">
+                            9
+                        </a>
+                        <a href="" class="link-pagination" data-pagination-link="10">
+                            10
+                        </a>
+                        <button class="button-nav button-nav--pagination" data-pagination-link="next">
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
