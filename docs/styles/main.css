@@ -6114,6 +6114,7 @@ a.logo:hover {
   height: 100vh;
   max-height: 0;
   top: -1.25rem;
+  width: 100%;
   position: absolute;
   z-index: 2;
 }
