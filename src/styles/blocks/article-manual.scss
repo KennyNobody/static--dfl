@@ -3,7 +3,6 @@
     gap: rem(30);
     color: $light;
     display: flex;
-    font-weight: 700;
     line-height: 1.4;
     font-size: rem(16);
     align-items: center;
@@ -18,12 +17,17 @@
         background-color: $blue-primary;
     }
 
+    &[hidden] {
+        display: none;
+        visibility: hidden;
+    }
+
     @include r(700) {
         font-size: rem(18);
     }
 
     &__title {
-
+        font-weight: 700;
     }
 
     &__icon {
@@ -31,5 +35,10 @@
         flex-shrink: 0;
         width: rem(32);
         height: rem(32);
+    }
+
+    mark{
+        color: $blue-primary;
+        background: $white-bg;
     }
 }

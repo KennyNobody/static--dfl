@@ -2,20 +2,22 @@ import {Navigation, Pagination} from "swiper";
 import {pagination} from "./_pagination";
 
 export default function (el) {
+    console.log('Пык')
     const data = {
         modules: [Navigation, Pagination],
         spaceBetween: 8,
         slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination,
+        pagination,
         breakpoints: {
             1300: {
                 spaceBetween: 20,
+                slidesPerView: 3
             },
             700: {
                 spaceBetween: 10,
-                slidesPerView: 3
+                // slidesPerView: 3
             }
         }
     }
@@ -28,7 +30,7 @@ export default function (el) {
                 disabledClass: 'disabled'
             }
         }
-    } catch (e) {}
+    } catch (e) { /* empty */ }
 
     return data;
 }

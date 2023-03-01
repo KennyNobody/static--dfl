@@ -9,6 +9,7 @@ import Search from "./elements/Search/Search";
 import Process from "./elements/Process/Process";
 import InputFile from "./elements/InputFile/InputFile";
 import Table from "./elements/Table/Table";
+import Manual from "./elements/Manual/Manual";
 
 class App {
     constructor() {
@@ -21,6 +22,7 @@ class App {
         this.createProcess();
         this.createInputFile();
         this.createTable();
+        this.initManual();
     }
 
     createBody() {
@@ -91,6 +93,12 @@ class App {
         el.forEach((item) => {
             this.table.push(new Table(item));
         });
+    }
+
+    initManual() {
+        const el = document.querySelector('[data-manual]');
+
+        if (el) this.search = new Manual(el);
     }
 }
 

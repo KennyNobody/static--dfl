@@ -8,7 +8,7 @@ export default function (el) {
         slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination,
+        pagination,
         breakpoints: {
             1300: {
                 spaceBetween: 30,

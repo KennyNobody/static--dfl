@@ -1,0 +1,39 @@
+.article-manual-aside {
+    margin-bottom: rem(10);
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: rem(14);
+        color: $blue-primary;
+        margin-bottom: rem(10);
+    }
+
+    &__link {
+        display: block;
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: rem(14);
+        text-decoration: none;
+        margin-bottom: rem(10);
+        color: $text-secondary-2;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &[hidden] {
+            display: none;
+            visibility: hidden;
+        }
+
+        mark {
+            color: $light;
+            background-color: $text-secondary-2;;
+        }
+    }
+}
