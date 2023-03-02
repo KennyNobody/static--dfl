@@ -28,6 +28,14 @@
         }
     }
 
+    &--mobile {
+        .link-social__icon {
+            width: rem(40);
+            height: rem(40);
+            fill: $blue-primary;
+        }
+    }
+
     &--contact {
         .link-social__icon {
             width: rem(42);

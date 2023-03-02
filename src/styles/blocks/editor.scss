@@ -96,6 +96,7 @@
 
         }
     }
+
     //
     //ul,
     //ol {
@@ -192,6 +193,19 @@
     //i {
     //    font-style: italic;
     //}
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+
+        &.link-static {
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 
     .editor-columns {
         &--2 {

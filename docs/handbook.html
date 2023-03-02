@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Справочник | DFL</title>
+<link href="./styles/main.css" rel="stylesheet"></head>
+
+<body class="body">
+<header class="section section--header pt-20 pb-20 z-index-3" data-header>
+    <div class="container">
+        <div class="toolbar toolbar--gap-24">
+            <a class="logo logo--header" href="./">
+                <svg class="logo__svg" viewBox="0 0 114 28">
+                    <path d="M93.8259 4.46816H89.7791H83.1009C82.0287 4.46816 81.4032 5.14597 81.4032 6.14362C81.4032 7.18681 82.0785 7.79841 83.0705 7.81728H89.7389C90.0315 7.81728 90.326 7.95865 90.326 8.23913V10.669C90.326 11.5107 89.5847 12.2839 88.7041 12.2839H85.2176L82.9401 12.2842C82.081 12.3046 81.4095 12.8982 81.4095 13.7259V18.5503C81.4095 19.3924 80.6915 20.0792 79.811 20.0792H75.1059C74.8125 20.0792 74.5728 19.8498 74.5728 19.5696V16.5737C72.7863 18.8262 69.9212 20.1012 66.3644 20.1012H53.4915C53.1754 20.1012 52.9218 19.9161 52.9218 19.5429V8.37655C52.9218 8.00562 53.1728 7.82008 53.4822 7.8176H58.0131C59.2205 7.8176 59.7582 8.58164 59.7582 9.48562V15.0756H59.7618C59.7618 15.4465 60.012 15.6309 60.3204 15.6327C61.5315 15.6345 64.2506 15.6345 64.2506 15.6345C67.3439 15.6345 69.916 13.7868 69.916 10.052C69.916 6.30776 67.3551 4.46811 64.2506 4.46811H58.7532V4.46958H52.1775H50.8383H49.0121C48.1315 4.46958 47.4136 3.78277 47.4136 2.94109C47.4136 2.13123 47.4136 1.32124 47.4136 0.511333C47.4136 0.230391 47.6526 0.00179061 47.9464 0.00179061H50.8383V0.00146922H54.5966L54.6483 0.000780521L66.4225 0C69.7376 0 72.7356 1.21045 74.5009 3.44205C75.4592 1.17101 77.602 0.000780521 80.294 0.000780521H89.7791H94.6855H95.515L95.5714 0H100.102C100.412 0.0024793 100.663 0.187646 100.663 0.558945C100.663 5.0755 100.709 9.45064 100.709 13.9576C100.709 14.0345 100.713 14.1096 100.721 14.1827V14.1837C100.809 15.0563 101.418 15.633 102.407 15.633H109.235V15.6324H113.466C113.76 15.6324 113.999 15.8613 113.999 16.1422C113.999 16.9522 113.999 17.7622 113.999 18.5724C113.999 19.4144 113.282 20.1012 112.401 20.1012H109.235V20.1005H99.6004C93.6166 20.1005 93.8259 16.39 93.8259 12.2836V4.46807L93.8259 4.46816Z"/>
+                    <path d="M54.9867 27.9759C54.9008 27.9759 54.833 27.9511 54.7832 27.9013C54.7335 27.8516 54.7085 27.7834 54.7085 27.697V23.8179H53.1822C53.1009 23.8179 53.0374 23.7963 52.9921 23.7531C52.9469 23.7098 52.9244 23.6536 52.9244 23.5844C52.9244 23.5109 52.9469 23.4547 52.9921 23.4157C53.0374 23.3768 53.1009 23.3574 53.1822 23.3574H56.798C56.8795 23.3574 56.9427 23.3768 56.9879 23.4157C57.0331 23.4547 57.0558 23.5109 57.0558 23.5844C57.0558 23.6579 57.0331 23.7152 56.9879 23.7563C56.9427 23.7974 56.8795 23.8179 56.798 23.8179H55.2716V27.697C55.2716 27.7834 55.2479 27.8516 55.2005 27.9013C55.1529 27.9511 55.0817 27.9759 54.9867 27.9759Z"/>
+                    <path d="M60.5583 27.9759C60.4678 27.9759 60.3989 27.9511 60.3513 27.9013C60.3039 27.8516 60.2802 27.7834 60.2802 27.697V23.6298C60.2802 23.539 60.3051 23.4708 60.3548 23.4255C60.4046 23.3801 60.4746 23.3574 60.5651 23.3574H62.1728C62.6838 23.3574 63.0773 23.472 63.3532 23.7012C63.629 23.9303 63.7669 24.2569 63.7669 24.6807C63.7669 24.9488 63.7048 25.1812 63.5804 25.378C63.456 25.5747 63.274 25.724 63.0344 25.8255C62.7947 25.9271 62.5075 25.978 62.1729 25.978L62.2407 25.8936H62.3764C62.5527 25.8936 62.7065 25.937 62.8376 26.0234C62.9688 26.1099 63.0886 26.2482 63.1972 26.4386L63.8484 27.5996C63.8847 27.6601 63.9016 27.7197 63.8993 27.778C63.8971 27.8364 63.8756 27.8839 63.8349 27.9208C63.7942 27.9574 63.7353 27.9759 63.6585 27.9759C63.5817 27.9759 63.5183 27.9585 63.4686 27.924C63.4188 27.8894 63.3758 27.8396 63.3397 27.7748L62.6002 26.4645C62.4962 26.2785 62.3764 26.1542 62.2407 26.0914C62.1049 26.0288 61.9264 25.9974 61.7048 25.9974H60.8364V27.6969C60.8364 27.7834 60.8139 27.8516 60.7687 27.9012C60.7234 27.951 60.6533 27.9759 60.5583 27.9759L60.5583 27.9759ZM60.8364 25.5758H62.0913C62.4623 25.5758 62.7427 25.5012 62.9326 25.3521C63.1226 25.2029 63.2174 24.9791 63.2174 24.6808C63.2174 24.3911 63.1226 24.1715 62.9326 24.0223C62.7427 23.8732 62.4623 23.7986 62.0913 23.7986H60.8364V25.5758V25.5758Z"/>
+                    <path d="M67.3804 27.9745C67.3081 27.9745 67.2503 27.9584 67.2073 27.9259C67.1644 27.8935 67.1396 27.8502 67.1328 27.7962C67.126 27.7421 67.1384 27.6805 67.1701 27.6113L69.0357 23.5506C69.0762 23.464 69.1249 23.4026 69.1814 23.3658C69.238 23.329 69.3002 23.3105 69.368 23.3105C69.4358 23.3105 69.498 23.329 69.5545 23.3658C69.6111 23.4026 69.6574 23.464 69.6936 23.5506L71.5659 27.6113C71.602 27.6805 71.6168 27.7433 71.6099 27.7995C71.6032 27.8557 71.5795 27.8989 71.5388 27.9291C71.498 27.9594 71.4415 27.9745 71.3692 27.9745C71.2878 27.9745 71.2222 27.954 71.1725 27.9129C71.1226 27.8718 71.0819 27.8125 71.0503 27.7346L70.5483 26.6254L70.8197 26.7615H67.9027L68.1808 26.6254L67.6856 27.7346C67.6449 27.8168 67.6019 27.8772 67.5567 27.9162C67.5115 27.9552 67.4527 27.9745 67.3803 27.9745H67.3804ZM69.3612 23.9788L68.269 26.4373L68.1062 26.314H70.6162L70.467 26.4373L69.3747 23.9788H69.3611H69.3612Z"/>
+                    <path d="M75.105 27.9764C75.019 27.9764 74.9535 27.9538 74.9083 27.9084C74.863 27.863 74.8405 27.797 74.8405 27.7105V23.585C74.8405 23.4985 74.863 23.4315 74.9083 23.3839C74.9535 23.3363 75.0123 23.3125 75.0847 23.3125C75.157 23.3125 75.2102 23.3245 75.244 23.3482C75.278 23.372 75.3175 23.4142 75.3628 23.4747L78.3206 27.2434H78.1578V23.572C78.1578 23.4898 78.1804 23.426 78.2256 23.3807C78.2709 23.3353 78.3364 23.3125 78.4224 23.3125C78.5038 23.3125 78.5659 23.3353 78.6088 23.3807C78.6518 23.426 78.6732 23.4898 78.6732 23.572V27.7169C78.6732 27.7991 78.6541 27.863 78.6156 27.9084C78.5772 27.9538 78.5218 27.9764 78.4494 27.9764C78.3815 27.9764 78.3272 27.9634 78.2867 27.9375C78.2459 27.9116 78.203 27.8706 78.1577 27.8144L75.2066 24.0455H75.3627V27.7105C75.3627 27.797 75.3401 27.863 75.2948 27.9084C75.2496 27.9538 75.1864 27.9764 75.1049 27.9764H75.105Z"/>
+                    <path d="M83.6992 27.9887C83.4867 27.9887 83.2787 27.9713 83.0752 27.9367C82.8717 27.9022 82.6828 27.8524 82.5087 27.7876C82.3346 27.7227 82.1775 27.6405 82.0373 27.5411C81.983 27.5022 81.9457 27.4578 81.9254 27.4081C81.905 27.3583 81.9005 27.3085 81.9118 27.2589C81.923 27.2091 81.9457 27.167 81.9795 27.1323C82.0136 27.0978 82.0553 27.0782 82.1052 27.074C82.1549 27.0697 82.2091 27.0849 82.2679 27.1194C82.4714 27.2578 82.6885 27.3584 82.9192 27.4211C83.1498 27.4837 83.4098 27.5152 83.6992 27.5152C84.1063 27.5152 84.4082 27.4427 84.6049 27.2979C84.8016 27.1529 84.8999 26.9616 84.8999 26.7238C84.8999 26.5291 84.8288 26.3767 84.6863 26.2665C84.5438 26.1562 84.3053 26.0686 83.9706 26.0037L83.2651 25.8676C82.8401 25.781 82.5223 25.6395 82.312 25.4426C82.1017 25.2459 81.9966 24.9831 81.9966 24.6546C81.9966 24.4513 82.0395 24.2664 82.1255 24.1C82.2114 23.9335 82.3312 23.7908 82.485 23.6719C82.6388 23.5529 82.8219 23.461 83.0345 23.3961C83.2471 23.3313 83.4822 23.2988 83.74 23.2988C84.0249 23.2988 84.2906 23.3368 84.5371 23.4124C84.7836 23.4881 85.0063 23.6015 85.2052 23.7529C85.255 23.7918 85.2889 23.8362 85.3069 23.8859C85.3251 23.9357 85.3273 23.9833 85.3138 24.0287C85.3002 24.074 85.2765 24.1119 85.2425 24.1422C85.2086 24.1725 85.1656 24.1897 85.1137 24.194C85.0616 24.1984 85.0039 24.181 84.9406 24.1422C84.7598 24.0124 84.5721 23.9184 84.3776 23.86C84.1832 23.8015 83.9683 23.7724 83.7331 23.7724C83.4934 23.7724 83.2865 23.8069 83.1124 23.8761C82.9383 23.9453 82.8026 24.0459 82.7055 24.1778C82.6082 24.3096 82.5595 24.4622 82.5595 24.635C82.5595 24.8427 82.6262 25.0069 82.7596 25.128C82.8931 25.2492 83.1113 25.3378 83.4143 25.394L84.1198 25.5368C84.5766 25.6275 84.9147 25.7649 85.134 25.9486C85.3534 26.1323 85.463 26.3822 85.463 26.6978C85.463 26.888 85.4223 27.0632 85.3409 27.2232C85.2595 27.3832 85.142 27.5205 84.9881 27.6351C84.8345 27.7496 84.649 27.8372 84.4319 27.8978C84.2149 27.9583 83.9707 27.9886 83.6992 27.9886V27.9887Z"/>
+                    <path d="M88.9667 27.9759C88.8763 27.9759 88.8073 27.9511 88.7598 27.9013C88.7123 27.8516 88.6886 27.7834 88.6886 27.697V23.6298C88.6886 23.539 88.7135 23.4708 88.7632 23.4255C88.813 23.3801 88.883 23.3574 88.9736 23.3574H90.5814C91.0923 23.3574 91.4859 23.4774 91.7618 23.7174C92.0376 23.9575 92.1755 24.2958 92.1755 24.7325C92.1755 25.1651 92.0376 25.5023 91.7618 25.7445C91.4859 25.9867 91.0923 26.1077 90.5814 26.1077H89.2449V27.6969C89.2449 27.7834 89.2224 27.8516 89.1772 27.9012C89.132 27.951 89.0617 27.9759 88.9667 27.9759V27.9759ZM89.2449 25.6601H90.5135C90.8799 25.6601 91.1568 25.5813 91.3445 25.4235C91.5321 25.2655 91.626 25.0353 91.626 24.7326C91.626 24.4255 91.5321 24.1931 91.3445 24.0352C91.1568 23.8774 90.8799 23.7986 90.5135 23.7986H89.2449V25.6601V25.6601Z"/>
+                    <path d="M97.5926 27.9887C97.1494 27.9887 96.7638 27.8926 96.4359 27.7001C96.1081 27.5077 95.8549 27.2363 95.6762 26.886C95.4975 26.5357 95.4083 26.1206 95.4083 25.6406C95.4083 25.2774 95.4592 24.9519 95.5609 24.6644C95.6627 24.3768 95.8084 24.1324 95.9985 23.9314C96.1884 23.7302 96.4179 23.5746 96.687 23.4643C96.956 23.354 97.258 23.2988 97.5926 23.2988C98.0448 23.2988 98.4349 23.394 98.7629 23.5843C99.0907 23.7746 99.344 24.0438 99.5225 24.3919C99.7013 24.74 99.7905 25.1541 99.7905 25.6342C99.7905 25.9974 99.7385 26.3239 99.6344 26.6137C99.5304 26.9034 99.3835 27.1498 99.1936 27.3531C99.0037 27.5564 98.774 27.7131 98.505 27.8234C98.2359 27.9337 97.9318 27.9888 97.5926 27.9888V27.9887ZM97.5926 27.5152C97.9363 27.5152 98.2268 27.4417 98.4643 27.2946C98.7016 27.1476 98.8837 26.9336 99.0103 26.6524C99.137 26.3714 99.2002 26.0341 99.2002 25.6405C99.2002 25.048 99.0612 24.5886 98.7831 24.2621C98.505 23.9356 98.1081 23.7724 97.5925 23.7724C97.2579 23.7724 96.9719 23.8459 96.7344 23.9929C96.497 24.1399 96.3149 24.3529 96.1883 24.6319C96.0617 24.9108 95.9984 25.2471 95.9984 25.6405C95.9984 26.2287 96.1385 26.6881 96.419 27.0189C96.6993 27.3497 97.0905 27.5152 97.5925 27.5152H97.5926Z"/>
+                    <path d="M103.296 27.9759C103.206 27.9759 103.137 27.9511 103.089 27.9013C103.042 27.8516 103.018 27.7834 103.018 27.697V23.6298C103.018 23.539 103.043 23.4708 103.093 23.4255C103.142 23.3801 103.212 23.3574 103.303 23.3574H104.911C105.422 23.3574 105.815 23.472 106.091 23.7012C106.367 23.9303 106.505 24.2569 106.505 24.6807C106.505 24.9488 106.443 25.1812 106.318 25.378C106.194 25.5747 106.012 25.724 105.772 25.8255C105.532 25.9271 105.245 25.978 104.911 25.978L104.979 25.8936H105.114C105.291 25.8936 105.444 25.937 105.575 26.0234C105.707 26.1099 105.826 26.2482 105.935 26.4386L106.586 27.5996C106.622 27.6601 106.639 27.7197 106.637 27.778C106.635 27.8364 106.613 27.8839 106.573 27.9208C106.532 27.9574 106.473 27.9759 106.396 27.9759C106.319 27.9759 106.256 27.9585 106.206 27.924C106.157 27.8894 106.114 27.8396 106.077 27.7748L105.338 26.4645C105.234 26.2785 105.114 26.1542 104.979 26.0914C104.843 26.0288 104.664 25.9974 104.443 25.9974H103.574V27.6969C103.574 27.7834 103.552 27.8516 103.506 27.9012C103.461 27.951 103.391 27.9759 103.296 27.9759L103.296 27.9759ZM103.574 25.5758H104.829C105.2 25.5758 105.481 25.5012 105.67 25.3521C105.86 25.2029 105.955 24.9791 105.955 24.6808C105.955 24.3911 105.86 24.1715 105.67 24.0223C105.481 23.8732 105.2 23.7986 104.829 23.7986H103.574V25.5758V25.5758Z"/>
+                    <path d="M111.931 27.9759C111.845 27.9759 111.777 27.9511 111.727 27.9013C111.678 27.8516 111.653 27.7834 111.653 27.697V23.8179H110.126C110.045 23.8179 109.982 23.7963 109.937 23.7531C109.891 23.7098 109.869 23.6536 109.869 23.5844C109.869 23.5109 109.891 23.4547 109.937 23.4157C109.982 23.3768 110.045 23.3574 110.126 23.3574H113.742C113.824 23.3574 113.887 23.3768 113.932 23.4157C113.977 23.4547 114 23.5109 114 23.5844C114 23.6579 113.977 23.7152 113.932 23.7563C113.887 23.7974 113.824 23.8179 113.742 23.8179H112.216V27.697C112.216 27.7834 112.192 27.8516 112.145 27.9013C112.097 27.9511 112.026 27.9759 111.931 27.9759Z"/>
+                    <path clip-rule="evenodd"
+                          d="M0.447697 13.6719H38.1776C38.4152 13.6719 38.6093 13.8575 38.6093 14.0847V17.9038C38.6093 18.1309 38.4152 18.3166 38.1776 18.3166H0.447697C0.210165 18.3166 0.0159912 18.1309 0.0159912 17.9038V14.0847C0.0159912 13.8575 0.210165 13.6719 0.447697 13.6719Z"
+                          fill-rule="evenodd"/>
+                    <path clip-rule="evenodd"
+                          d="M0.447697 23.3555H6.97231C7.2098 23.3555 7.40402 23.5411 7.40402 23.7683V27.5874C7.40402 27.8145 7.2098 28.0002 6.97231 28.0002H0.447697C0.210213 28.0002 0.0159912 27.8145 0.0159912 27.5874V23.7683C0.0159912 23.5411 0.210213 23.3555 0.447697 23.3555Z"
+                          fill-rule="evenodd"/>
+                    <path clip-rule="evenodd"
+                          d="M31.6712 23.3555H38.1958C38.4333 23.3555 38.6275 23.5411 38.6275 23.7683V27.5874C38.6275 27.8145 38.4333 28.0002 38.1958 28.0002H31.6712C31.4337 28.0002 31.2395 27.8145 31.2395 27.5874V23.7683C31.2395 23.5411 31.4337 23.3555 31.6712 23.3555Z"
+                          fill-rule="evenodd"/>
+                    <path clip-rule="evenodd"
+                          d="M21.262 23.3555H27.7866C28.0241 23.3555 28.2184 23.5411 28.2184 23.7683V27.5874C28.2184 27.8145 28.0241 28.0002 27.7866 28.0002H21.262C21.0245 28.0002 20.8303 27.8145 20.8303 27.5874V23.7683C20.8303 23.5411 21.0245 23.3555 21.262 23.3555Z"
+                          fill-rule="evenodd"/>
+                    <path clip-rule="evenodd"
+                          d="M10.8569 23.3555H17.3815C17.619 23.3555 17.8132 23.5411 17.8132 23.7683V27.5874C17.8132 27.8145 17.619 28.0002 17.3815 28.0002H10.8569C10.6194 28.0002 10.4252 27.8145 10.4252 27.5874V23.7683C10.4252 23.5411 10.6194 23.3555 10.8569 23.3555Z"
+                          fill-rule="evenodd"/>
+                    <path clip-rule="evenodd"
+                          d="M38.289 8.62225C35.9187 8.50118 33.7991 7.47741 32.2992 5.90407C30.6999 7.58145 28.3963 8.63424 25.8355 8.63424C23.2747 8.63424 20.9712 7.5815 19.3719 5.90407C17.7726 7.58159 15.469 8.63442 12.9081 8.63442C10.3472 8.63442 8.04358 7.58163 6.44428 5.90407C4.94443 7.47727 2.82494 8.50104 0.454753 8.62207C0.331978 8.62836 0.223992 8.5903 0.134779 8.50944C0.0454705 8.42855 0 8.32745 0 8.20986V4.46708C0 4.25441 0.166709 4.07792 0.388012 4.05644C2.34968 3.86571 3.89001 2.31188 3.95608 0.401166C3.96381 0.178856 4.15477 0.00195312 4.38755 0.00195312H8.50117C8.73394 0.00195312 8.92495 0.178626 8.93263 0.401166C9.00326 2.44241 10.7561 4.07632 12.9081 4.07632C15.0601 4.07632 16.8129 2.44241 16.8836 0.401166C16.8913 0.178764 17.0823 0.00195312 17.3151 0.00195312H21.4287C21.6615 0.00195312 21.8524 0.178626 21.8601 0.401166C21.9307 2.44241 23.6836 4.07632 25.8356 4.07632C27.9875 4.07632 29.7404 2.44241 29.8111 0.401166C29.8188 0.178764 30.0097 0.00195312 30.2425 0.00195312H34.3561C34.5889 0.00195312 34.7798 0.178626 34.7876 0.401075C34.8537 2.31193 36.3942 3.86585 38.3558 4.05644C38.577 4.07788 38.7439 4.25441 38.7439 4.46708V8.21C38.7439 8.32758 38.6984 8.42873 38.6091 8.50963C38.5199 8.59048 38.4119 8.62854 38.2891 8.62225H38.289Z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </a>
+            <nav class="nav nav--header tab-hide">
+                <div class="nav__item" data-dropmenu="0">
+                    <button class="nav__link" data-dropmenu-button>
+                        <span class="nav__text">
+                            Услуги
+                        </span>
+                        <svg class="nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-bottom"></use>
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" data-dropmenu-content>
+                        <a class="nav__link-drop" href="">
+                            Сборные грузы
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Автоперевозки
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Авиаперевозки
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Морские перевозки
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Мультимодальные перевозки
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Складское хранение
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Страхование логистических рисков
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Таможенное оформление
+                        </a>
+                    </div>
+                </div>
+                <a class="nav__link" href="">
+                    <span class="nav__text">
+                        Перевозчикам
+                    </span>
+                </a>
+                <a class="nav__link" href="">
+                    <span class="nav__text">
+                        Проектные перевозки
+                    </span>
+                </a>
+                <div class="nav__item" data-dropmenu="1">
+                    <button class="nav__link" data-dropmenu-button>
+                        <span class="nav__text">
+                            Информация
+                        </span>
+                        <svg class="nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-bottom"></use>
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" data-dropmenu-content>
+                        <a class="nav__link-drop" href="">
+                            О компании
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Работа в DFL
+                        </a>
+                        <a class="nav__link-drop" href="">
+                            Полезная информация
+                        </a>
+                    </div>
+                </div>
+                <a class="nav__link" href="">
+                    <span class="nav__text">
+                        Контакты
+                    </span>
+                </a>
+            </nav>
+            <div class="grow"></div>
+            <a class="link-head mob-hide" href="tel:+74012306200">
+                +7 4012 30 62 00
+            </a>
+            <div class="search mob-hidden" data-search>
+                <form class="search__form" data-search-form>
+                    <input class="search__field" data-search-field type="text">
+                    <button class="search__button" data-search-button type="button">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+
+                    <div class="search__list search-list" data-search-list hidden>
+                        <template data-article-search-template>
+                            <a class="article-search-preview" href=""></a>
+                        </template>
+                        <div class="search-list__content" data-search-list-content>
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Одна строка-->
+<!--                            </a>-->
+<!--                            <a class="article-search-preview" href="#">-->
+<!--                                Многострочное название поста, которое мы выведем в демке, ааыаывапвыапывапыапывпывап-->
+<!--                            </a>-->
+                        </div>
+                        <a href="" class="search-list__button">
+                            Показать все
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <button class="button-head mob-hide">
+                <svg class="button-head__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
+                </svg>
+            </button>
+            <button class="button-head">
+                <svg class="button-head__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+<main class="main decor-news">
+    <div class="container">
+        <div class="layout pt-100 ptm-80">
+            <div class="layout__aside mbt-40 mbm-25">
+                <div class="dropdown" data-dropdown>
+                    <div class="dropdown__header">
+                        <button class="button-dropdown" data-dropdown-button>
+                            <span class="button-dropdown__title">
+                                Справочник
+                            </span>
+                            <svg class="button-dropdown__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dropdown__main">
+                        <div class="dropdown__content">
+                            <aside class="sidebar" data-manual>
+                                <div class="sidebar__header">
+                                    <form class="form-search" data-manual-form>
+                                        <input type="text" class="form-search__input" placeholder="Поиск"
+                                               data-manual-input>
+                                        <button class="form-search__button" data-manual-button>
+                                            <svg class="form-search__icon form-search__icon--search">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                                            </svg>
+                                            <svg class="form-search__icon form-search__icon--close">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="sidebar__main">
+                                    <article class="article-manual-aside" data-manual-article>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-manual-article>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout__main">
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Название справочника
+                    </h2>
+                    <div class="table table--static">
+                        <div class="table__header">
+                            <div class="table__line table__line--header">
+                                <div class="table__column table__column--25 table__column--align table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Английское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--align table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Русское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--align table__column--tab">
+                                    <strong class="text-table">
+                                        Английское/Русское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--align table__column--tab-20">
+                                    <strong class="text-table">
+                                        A2
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20 table__column--align">
+                                    <strong class="text-table">
+                                        A3
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--align table__column--tab-20">
+                                    <strong class="text-table">
+                                        №
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__section opened">
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Документы
+                    </h2>
+                    <div class="list-articles">
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Разовая договор-заявка</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Разовая договор-заявка</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="article-doc" href="">
+                            <div class="article-doc__main">
+                                <p>Договор транспортного экспедирования</p>
+                            </div>
+                            <div class="article-doc__aside">
+                                <span class="article-doc__caption">
+                                    Скачать документ
+                                </span>
+                                <svg class="article-doc__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-file"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="section mb-80">
+                    <h2 class="title mb-30 mbm-20">
+                        Ссылки
+                    </h2>
+                    <div class="editor fz-14 mb-30 mbm-20">
+                        <p>
+                            В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                            Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно
+                            проработать размещение таких производств рядом с Алматы по периметру Большой Алматинской
+                            кольцевой автомобильной дорогой, что существенно поможет экономике области. Обсудите этот
+                            вопрос с Правительством и компаниями, – посоветовал Президент.
+                        </p>
+                    </div>
+                    <div class="list-articles">
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Расчет расстояний между городами
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Коды стран ISO
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Морская транспортная накладная и морской коносамент
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="article-manual">
+                            <span class="article-manual__title">
+                                Инструкция по перевозке крупногабаритных и тяжеловесных грузов
+                            </span>
+                            <svg class="article-manual__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+                <section class="section mb-80">
+                    <div class="editor">
+                        <div class="editor">
+                            <picture class="picture float-left">
+                                <img src="./assets/content/414x274.svg" alt="#">
+                            </picture>
+                            <h2>
+                                Подзаголовок
+                            </h2>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>
+                                Подзаголовок
+                            </h2>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах непродуктивно. Акимату (LR:
+                                администрации) нужно проработать размещение таких производств рядом с Алматы по
+                                периметру Большой Алматинской кольцевой автомобильной дорогой, что существенно поможет
+                                экономике области. Обсудите этот вопрос с Правительством и компаниями, – посоветовал
+                                Президент.
+                            </p>
+                            <p>
+                                В настоящее время более 50 международных компаний из России перебазировались в
+                                Казахстан. Концентрировать их все в крупных городах.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section mb-135 mbl-140 mbt-140 mbm-80">
+                    <div class="slider" data-slider="handbook">
+                        <div class="toolbar mb-30">
+                            <h2 class="title">
+                                Галерея
+                            </h2>
+                            <div class="nav-slider tab-hide" data-nav>
+                                <button class="button-nav" data-button-prev>
+                                    <svg class="button-nav__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-nav" data-button-next>
+                                    <svg class="button-nav__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-container slider__container slider__container--overflow">
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="" class="article-gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="" class="article-gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="" class="article-gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="" class="article-gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="" class="article-gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider__progressbar progressbar"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section class="section z-index-1 mb-70 mbm-50">
+    <div class="container">
+        <div class="slider" data-slider="partners">
+            <div class="toolbar mb-30">
+                <h2 class="title ">
+                    Наши партнеры
+                </h2>
+                <div class="nav-slider tab-hide" data-nav>
+                    <button class="button-nav" data-button-prev>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="button-nav" data-button-next>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-container slider__container">
+                <div class="swiper-wrapper slider__wrapper">
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-1.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-2.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-3.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-1.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-2.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-3.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-1.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-2.png">
+                        </a>
+                    </div>
+                    <div class="swiper-slide slider__slide">
+                        <a class="article-partner" href="" target="_blank" rel="nofollow">
+                            <img alt="" src="./assets/content/logo-3.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider__progressbar progressbar"></div>
+            </div>
+        </div>
+
+        <!--        <div style="display: flex; gap: 16px;">-->
+
+
+    </div>
+</section>
+
+</main>
+<footer class="section pt-45 ptt-50 ptm-70 pb-25 bg-white">
+    <div class="container">
+        <div class="columns columns--center mb-15 mbm-25">
+            <div class="columns__col columns__col--4 columns__col--mob-2">
+                <a class="logo logo--footer centered-m" href="./">
+                    <svg class="logo__svg" viewBox="0 0 114 28">
+                        <path d="M93.8259 4.46816H89.7791H83.1009C82.0287 4.46816 81.4032 5.14597 81.4032 6.14362C81.4032 7.18681 82.0785 7.79841 83.0705 7.81728H89.7389C90.0315 7.81728 90.326 7.95865 90.326 8.23913V10.669C90.326 11.5107 89.5847 12.2839 88.7041 12.2839H85.2176L82.9401 12.2842C82.081 12.3046 81.4095 12.8982 81.4095 13.7259V18.5503C81.4095 19.3924 80.6915 20.0792 79.811 20.0792H75.1059C74.8125 20.0792 74.5728 19.8498 74.5728 19.5696V16.5737C72.7863 18.8262 69.9212 20.1012 66.3644 20.1012H53.4915C53.1754 20.1012 52.9218 19.9161 52.9218 19.5429V8.37655C52.9218 8.00562 53.1728 7.82008 53.4822 7.8176H58.0131C59.2205 7.8176 59.7582 8.58164 59.7582 9.48562V15.0756H59.7618C59.7618 15.4465 60.012 15.6309 60.3204 15.6327C61.5315 15.6345 64.2506 15.6345 64.2506 15.6345C67.3439 15.6345 69.916 13.7868 69.916 10.052C69.916 6.30776 67.3551 4.46811 64.2506 4.46811H58.7532V4.46958H52.1775H50.8383H49.0121C48.1315 4.46958 47.4136 3.78277 47.4136 2.94109C47.4136 2.13123 47.4136 1.32124 47.4136 0.511333C47.4136 0.230391 47.6526 0.00179061 47.9464 0.00179061H50.8383V0.00146922H54.5966L54.6483 0.000780521L66.4225 0C69.7376 0 72.7356 1.21045 74.5009 3.44205C75.4592 1.17101 77.602 0.000780521 80.294 0.000780521H89.7791H94.6855H95.515L95.5714 0H100.102C100.412 0.0024793 100.663 0.187646 100.663 0.558945C100.663 5.0755 100.709 9.45064 100.709 13.9576C100.709 14.0345 100.713 14.1096 100.721 14.1827V14.1837C100.809 15.0563 101.418 15.633 102.407 15.633H109.235V15.6324H113.466C113.76 15.6324 113.999 15.8613 113.999 16.1422C113.999 16.9522 113.999 17.7622 113.999 18.5724C113.999 19.4144 113.282 20.1012 112.401 20.1012H109.235V20.1005H99.6004C93.6166 20.1005 93.8259 16.39 93.8259 12.2836V4.46807L93.8259 4.46816Z"/>
+                        <path d="M54.9867 27.9759C54.9008 27.9759 54.833 27.9511 54.7832 27.9013C54.7335 27.8516 54.7085 27.7834 54.7085 27.697V23.8179H53.1822C53.1009 23.8179 53.0374 23.7963 52.9921 23.7531C52.9469 23.7098 52.9244 23.6536 52.9244 23.5844C52.9244 23.5109 52.9469 23.4547 52.9921 23.4157C53.0374 23.3768 53.1009 23.3574 53.1822 23.3574H56.798C56.8795 23.3574 56.9427 23.3768 56.9879 23.4157C57.0331 23.4547 57.0558 23.5109 57.0558 23.5844C57.0558 23.6579 57.0331 23.7152 56.9879 23.7563C56.9427 23.7974 56.8795 23.8179 56.798 23.8179H55.2716V27.697C55.2716 27.7834 55.2479 27.8516 55.2005 27.9013C55.1529 27.9511 55.0817 27.9759 54.9867 27.9759Z"/>
+                        <path d="M60.5583 27.9759C60.4678 27.9759 60.3989 27.9511 60.3513 27.9013C60.3039 27.8516 60.2802 27.7834 60.2802 27.697V23.6298C60.2802 23.539 60.3051 23.4708 60.3548 23.4255C60.4046 23.3801 60.4746 23.3574 60.5651 23.3574H62.1728C62.6838 23.3574 63.0773 23.472 63.3532 23.7012C63.629 23.9303 63.7669 24.2569 63.7669 24.6807C63.7669 24.9488 63.7048 25.1812 63.5804 25.378C63.456 25.5747 63.274 25.724 63.0344 25.8255C62.7947 25.9271 62.5075 25.978 62.1729 25.978L62.2407 25.8936H62.3764C62.5527 25.8936 62.7065 25.937 62.8376 26.0234C62.9688 26.1099 63.0886 26.2482 63.1972 26.4386L63.8484 27.5996C63.8847 27.6601 63.9016 27.7197 63.8993 27.778C63.8971 27.8364 63.8756 27.8839 63.8349 27.9208C63.7942 27.9574 63.7353 27.9759 63.6585 27.9759C63.5817 27.9759 63.5183 27.9585 63.4686 27.924C63.4188 27.8894 63.3758 27.8396 63.3397 27.7748L62.6002 26.4645C62.4962 26.2785 62.3764 26.1542 62.2407 26.0914C62.1049 26.0288 61.9264 25.9974 61.7048 25.9974H60.8364V27.6969C60.8364 27.7834 60.8139 27.8516 60.7687 27.9012C60.7234 27.951 60.6533 27.9759 60.5583 27.9759L60.5583 27.9759ZM60.8364 25.5758H62.0913C62.4623 25.5758 62.7427 25.5012 62.9326 25.3521C63.1226 25.2029 63.2174 24.9791 63.2174 24.6808C63.2174 24.3911 63.1226 24.1715 62.9326 24.0223C62.7427 23.8732 62.4623 23.7986 62.0913 23.7986H60.8364V25.5758V25.5758Z"/>
+                        <path d="M67.3804 27.9745C67.3081 27.9745 67.2503 27.9584 67.2073 27.9259C67.1644 27.8935 67.1396 27.8502 67.1328 27.7962C67.126 27.7421 67.1384 27.6805 67.1701 27.6113L69.0357 23.5506C69.0762 23.464 69.1249 23.4026 69.1814 23.3658C69.238 23.329 69.3002 23.3105 69.368 23.3105C69.4358 23.3105 69.498 23.329 69.5545 23.3658C69.6111 23.4026 69.6574 23.464 69.6936 23.5506L71.5659 27.6113C71.602 27.6805 71.6168 27.7433 71.6099 27.7995C71.6032 27.8557 71.5795 27.8989 71.5388 27.9291C71.498 27.9594 71.4415 27.9745 71.3692 27.9745C71.2878 27.9745 71.2222 27.954 71.1725 27.9129C71.1226 27.8718 71.0819 27.8125 71.0503 27.7346L70.5483 26.6254L70.8197 26.7615H67.9027L68.1808 26.6254L67.6856 27.7346C67.6449 27.8168 67.6019 27.8772 67.5567 27.9162C67.5115 27.9552 67.4527 27.9745 67.3803 27.9745H67.3804ZM69.3612 23.9788L68.269 26.4373L68.1062 26.314H70.6162L70.467 26.4373L69.3747 23.9788H69.3611H69.3612Z"/>
+                        <path d="M75.105 27.9764C75.019 27.9764 74.9535 27.9538 74.9083 27.9084C74.863 27.863 74.8405 27.797 74.8405 27.7105V23.585C74.8405 23.4985 74.863 23.4315 74.9083 23.3839C74.9535 23.3363 75.0123 23.3125 75.0847 23.3125C75.157 23.3125 75.2102 23.3245 75.244 23.3482C75.278 23.372 75.3175 23.4142 75.3628 23.4747L78.3206 27.2434H78.1578V23.572C78.1578 23.4898 78.1804 23.426 78.2256 23.3807C78.2709 23.3353 78.3364 23.3125 78.4224 23.3125C78.5038 23.3125 78.5659 23.3353 78.6088 23.3807C78.6518 23.426 78.6732 23.4898 78.6732 23.572V27.7169C78.6732 27.7991 78.6541 27.863 78.6156 27.9084C78.5772 27.9538 78.5218 27.9764 78.4494 27.9764C78.3815 27.9764 78.3272 27.9634 78.2867 27.9375C78.2459 27.9116 78.203 27.8706 78.1577 27.8144L75.2066 24.0455H75.3627V27.7105C75.3627 27.797 75.3401 27.863 75.2948 27.9084C75.2496 27.9538 75.1864 27.9764 75.1049 27.9764H75.105Z"/>
+                        <path d="M83.6992 27.9887C83.4867 27.9887 83.2787 27.9713 83.0752 27.9367C82.8717 27.9022 82.6828 27.8524 82.5087 27.7876C82.3346 27.7227 82.1775 27.6405 82.0373 27.5411C81.983 27.5022 81.9457 27.4578 81.9254 27.4081C81.905 27.3583 81.9005 27.3085 81.9118 27.2589C81.923 27.2091 81.9457 27.167 81.9795 27.1323C82.0136 27.0978 82.0553 27.0782 82.1052 27.074C82.1549 27.0697 82.2091 27.0849 82.2679 27.1194C82.4714 27.2578 82.6885 27.3584 82.9192 27.4211C83.1498 27.4837 83.4098 27.5152 83.6992 27.5152C84.1063 27.5152 84.4082 27.4427 84.6049 27.2979C84.8016 27.1529 84.8999 26.9616 84.8999 26.7238C84.8999 26.5291 84.8288 26.3767 84.6863 26.2665C84.5438 26.1562 84.3053 26.0686 83.9706 26.0037L83.2651 25.8676C82.8401 25.781 82.5223 25.6395 82.312 25.4426C82.1017 25.2459 81.9966 24.9831 81.9966 24.6546C81.9966 24.4513 82.0395 24.2664 82.1255 24.1C82.2114 23.9335 82.3312 23.7908 82.485 23.6719C82.6388 23.5529 82.8219 23.461 83.0345 23.3961C83.2471 23.3313 83.4822 23.2988 83.74 23.2988C84.0249 23.2988 84.2906 23.3368 84.5371 23.4124C84.7836 23.4881 85.0063 23.6015 85.2052 23.7529C85.255 23.7918 85.2889 23.8362 85.3069 23.8859C85.3251 23.9357 85.3273 23.9833 85.3138 24.0287C85.3002 24.074 85.2765 24.1119 85.2425 24.1422C85.2086 24.1725 85.1656 24.1897 85.1137 24.194C85.0616 24.1984 85.0039 24.181 84.9406 24.1422C84.7598 24.0124 84.5721 23.9184 84.3776 23.86C84.1832 23.8015 83.9683 23.7724 83.7331 23.7724C83.4934 23.7724 83.2865 23.8069 83.1124 23.8761C82.9383 23.9453 82.8026 24.0459 82.7055 24.1778C82.6082 24.3096 82.5595 24.4622 82.5595 24.635C82.5595 24.8427 82.6262 25.0069 82.7596 25.128C82.8931 25.2492 83.1113 25.3378 83.4143 25.394L84.1198 25.5368C84.5766 25.6275 84.9147 25.7649 85.134 25.9486C85.3534 26.1323 85.463 26.3822 85.463 26.6978C85.463 26.888 85.4223 27.0632 85.3409 27.2232C85.2595 27.3832 85.142 27.5205 84.9881 27.6351C84.8345 27.7496 84.649 27.8372 84.4319 27.8978C84.2149 27.9583 83.9707 27.9886 83.6992 27.9886V27.9887Z"/>
+                        <path d="M88.9667 27.9759C88.8763 27.9759 88.8073 27.9511 88.7598 27.9013C88.7123 27.8516 88.6886 27.7834 88.6886 27.697V23.6298C88.6886 23.539 88.7135 23.4708 88.7632 23.4255C88.813 23.3801 88.883 23.3574 88.9736 23.3574H90.5814C91.0923 23.3574 91.4859 23.4774 91.7618 23.7174C92.0376 23.9575 92.1755 24.2958 92.1755 24.7325C92.1755 25.1651 92.0376 25.5023 91.7618 25.7445C91.4859 25.9867 91.0923 26.1077 90.5814 26.1077H89.2449V27.6969C89.2449 27.7834 89.2224 27.8516 89.1772 27.9012C89.132 27.951 89.0617 27.9759 88.9667 27.9759V27.9759ZM89.2449 25.6601H90.5135C90.8799 25.6601 91.1568 25.5813 91.3445 25.4235C91.5321 25.2655 91.626 25.0353 91.626 24.7326C91.626 24.4255 91.5321 24.1931 91.3445 24.0352C91.1568 23.8774 90.8799 23.7986 90.5135 23.7986H89.2449V25.6601V25.6601Z"/>
+                        <path d="M97.5926 27.9887C97.1494 27.9887 96.7638 27.8926 96.4359 27.7001C96.1081 27.5077 95.8549 27.2363 95.6762 26.886C95.4975 26.5357 95.4083 26.1206 95.4083 25.6406C95.4083 25.2774 95.4592 24.9519 95.5609 24.6644C95.6627 24.3768 95.8084 24.1324 95.9985 23.9314C96.1884 23.7302 96.4179 23.5746 96.687 23.4643C96.956 23.354 97.258 23.2988 97.5926 23.2988C98.0448 23.2988 98.4349 23.394 98.7629 23.5843C99.0907 23.7746 99.344 24.0438 99.5225 24.3919C99.7013 24.74 99.7905 25.1541 99.7905 25.6342C99.7905 25.9974 99.7385 26.3239 99.6344 26.6137C99.5304 26.9034 99.3835 27.1498 99.1936 27.3531C99.0037 27.5564 98.774 27.7131 98.505 27.8234C98.2359 27.9337 97.9318 27.9888 97.5926 27.9888V27.9887ZM97.5926 27.5152C97.9363 27.5152 98.2268 27.4417 98.4643 27.2946C98.7016 27.1476 98.8837 26.9336 99.0103 26.6524C99.137 26.3714 99.2002 26.0341 99.2002 25.6405C99.2002 25.048 99.0612 24.5886 98.7831 24.2621C98.505 23.9356 98.1081 23.7724 97.5925 23.7724C97.2579 23.7724 96.9719 23.8459 96.7344 23.9929C96.497 24.1399 96.3149 24.3529 96.1883 24.6319C96.0617 24.9108 95.9984 25.2471 95.9984 25.6405C95.9984 26.2287 96.1385 26.6881 96.419 27.0189C96.6993 27.3497 97.0905 27.5152 97.5925 27.5152H97.5926Z"/>
+                        <path d="M103.296 27.9759C103.206 27.9759 103.137 27.9511 103.089 27.9013C103.042 27.8516 103.018 27.7834 103.018 27.697V23.6298C103.018 23.539 103.043 23.4708 103.093 23.4255C103.142 23.3801 103.212 23.3574 103.303 23.3574H104.911C105.422 23.3574 105.815 23.472 106.091 23.7012C106.367 23.9303 106.505 24.2569 106.505 24.6807C106.505 24.9488 106.443 25.1812 106.318 25.378C106.194 25.5747 106.012 25.724 105.772 25.8255C105.532 25.9271 105.245 25.978 104.911 25.978L104.979 25.8936H105.114C105.291 25.8936 105.444 25.937 105.575 26.0234C105.707 26.1099 105.826 26.2482 105.935 26.4386L106.586 27.5996C106.622 27.6601 106.639 27.7197 106.637 27.778C106.635 27.8364 106.613 27.8839 106.573 27.9208C106.532 27.9574 106.473 27.9759 106.396 27.9759C106.319 27.9759 106.256 27.9585 106.206 27.924C106.157 27.8894 106.114 27.8396 106.077 27.7748L105.338 26.4645C105.234 26.2785 105.114 26.1542 104.979 26.0914C104.843 26.0288 104.664 25.9974 104.443 25.9974H103.574V27.6969C103.574 27.7834 103.552 27.8516 103.506 27.9012C103.461 27.951 103.391 27.9759 103.296 27.9759L103.296 27.9759ZM103.574 25.5758H104.829C105.2 25.5758 105.481 25.5012 105.67 25.3521C105.86 25.2029 105.955 24.9791 105.955 24.6808C105.955 24.3911 105.86 24.1715 105.67 24.0223C105.481 23.8732 105.2 23.7986 104.829 23.7986H103.574V25.5758V25.5758Z"/>
+                        <path d="M111.931 27.9759C111.845 27.9759 111.777 27.9511 111.727 27.9013C111.678 27.8516 111.653 27.7834 111.653 27.697V23.8179H110.126C110.045 23.8179 109.982 23.7963 109.937 23.7531C109.891 23.7098 109.869 23.6536 109.869 23.5844C109.869 23.5109 109.891 23.4547 109.937 23.4157C109.982 23.3768 110.045 23.3574 110.126 23.3574H113.742C113.824 23.3574 113.887 23.3768 113.932 23.4157C113.977 23.4547 114 23.5109 114 23.5844C114 23.6579 113.977 23.7152 113.932 23.7563C113.887 23.7974 113.824 23.8179 113.742 23.8179H112.216V27.697C112.216 27.7834 112.192 27.8516 112.145 27.9013C112.097 27.9511 112.026 27.9759 111.931 27.9759Z"/>
+                        <path clip-rule="evenodd" d="M0.447697 13.6719H38.1776C38.4152 13.6719 38.6093 13.8575 38.6093 14.0847V17.9038C38.6093 18.1309 38.4152 18.3166 38.1776 18.3166H0.447697C0.210165 18.3166 0.0159912 18.1309 0.0159912 17.9038V14.0847C0.0159912 13.8575 0.210165 13.6719 0.447697 13.6719Z"
+                              fill-rule="evenodd"/>
+                        <path clip-rule="evenodd" d="M0.447697 23.3555H6.97231C7.2098 23.3555 7.40402 23.5411 7.40402 23.7683V27.5874C7.40402 27.8145 7.2098 28.0002 6.97231 28.0002H0.447697C0.210213 28.0002 0.0159912 27.8145 0.0159912 27.5874V23.7683C0.0159912 23.5411 0.210213 23.3555 0.447697 23.3555Z"
+                              fill-rule="evenodd"/>
+                        <path clip-rule="evenodd" d="M31.6712 23.3555H38.1958C38.4333 23.3555 38.6275 23.5411 38.6275 23.7683V27.5874C38.6275 27.8145 38.4333 28.0002 38.1958 28.0002H31.6712C31.4337 28.0002 31.2395 27.8145 31.2395 27.5874V23.7683C31.2395 23.5411 31.4337 23.3555 31.6712 23.3555Z"
+                              fill-rule="evenodd"/>
+                        <path clip-rule="evenodd" d="M21.262 23.3555H27.7866C28.0241 23.3555 28.2184 23.5411 28.2184 23.7683V27.5874C28.2184 27.8145 28.0241 28.0002 27.7866 28.0002H21.262C21.0245 28.0002 20.8303 27.8145 20.8303 27.5874V23.7683C20.8303 23.5411 21.0245 23.3555 21.262 23.3555Z"
+                              fill-rule="evenodd"/>
+                        <path clip-rule="evenodd" d="M10.8569 23.3555H17.3815C17.619 23.3555 17.8132 23.5411 17.8132 23.7683V27.5874C17.8132 27.8145 17.619 28.0002 17.3815 28.0002H10.8569C10.6194 28.0002 10.4252 27.8145 10.4252 27.5874V23.7683C10.4252 23.5411 10.6194 23.3555 10.8569 23.3555Z"
+                              fill-rule="evenodd"/>
+                        <path clip-rule="evenodd" d="M38.289 8.62225C35.9187 8.50118 33.7991 7.47741 32.2992 5.90407C30.6999 7.58145 28.3963 8.63424 25.8355 8.63424C23.2747 8.63424 20.9712 7.5815 19.3719 5.90407C17.7726 7.58159 15.469 8.63442 12.9081 8.63442C10.3472 8.63442 8.04358 7.58163 6.44428 5.90407C4.94443 7.47727 2.82494 8.50104 0.454753 8.62207C0.331978 8.62836 0.223992 8.5903 0.134779 8.50944C0.0454705 8.42855 0 8.32745 0 8.20986V4.46708C0 4.25441 0.166709 4.07792 0.388012 4.05644C2.34968 3.86571 3.89001 2.31188 3.95608 0.401166C3.96381 0.178856 4.15477 0.00195312 4.38755 0.00195312H8.50117C8.73394 0.00195312 8.92495 0.178626 8.93263 0.401166C9.00326 2.44241 10.7561 4.07632 12.9081 4.07632C15.0601 4.07632 16.8129 2.44241 16.8836 0.401166C16.8913 0.178764 17.0823 0.00195312 17.3151 0.00195312H21.4287C21.6615 0.00195312 21.8524 0.178626 21.8601 0.401166C21.9307 2.44241 23.6836 4.07632 25.8356 4.07632C27.9875 4.07632 29.7404 2.44241 29.8111 0.401166C29.8188 0.178764 30.0097 0.00195312 30.2425 0.00195312H34.3561C34.5889 0.00195312 34.7798 0.178626 34.7876 0.401075C34.8537 2.31193 36.3942 3.86585 38.3558 4.05644C38.577 4.07788 38.7439 4.25441 38.7439 4.46708V8.21C38.7439 8.32758 38.6984 8.42873 38.6091 8.50963C38.5199 8.59048 38.4119 8.62854 38.2891 8.62225H38.289Z"
+                              fill-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="columns__col columns__col--4 columns__col--mob-2">
+                <a class="link-footer center" href="tel:+74012306200 centered-m">
+                    +7 (4012) 306 200
+                </a>
+            </div>
+            <div class="columns__col columns__col--4 columns__col--mob-2">
+                <div class="socials right centered-m">
+                    <a class="socials__link" href="">
+                        <svg class="socials__icon socials__icon--vk">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="hr mb-15 mbm-30">
+        <div class="footer-info">
+            <span class="footer-info__link">
+                © 2022 “DFL”
+            </span>
+            <a class="footer-info__link" href="">
+                Политика конфиденциальности
+            </a>
+            <a class="footer-info__link" href="">
+                Пользовательское соглашение
+            </a>
+            <a class="footer-info__link" target="_blank" rel="nofollow" href="">
+                Разработка redStart { }
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .temp__link {
+                width: 50%;
+                color: inherit;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./search-result.html" class="temp__link">Результаты поиска</a>
+            <a href="./offers.html" class="temp__link">Перевозчикам</a>
+            <a href="./projects.html" class="temp__link">Проектные перевозки</a>
+            <a href="./job.html" class="temp__link">Работа</a>
+            <a href="./contacts.html" class="temp__link">Контакты</a>
+            <a href="./about.html" class="temp__link">О нас</a>
+            <a href="./info.html" class="temp__link">Полезная информация</a>
+            <a href="./news.html" class="temp__link">Новости</a>
+            <a href="./articles.html" class="temp__link">Статьи</a>
+            <a href="./articles.html" class="temp__link">Статьи</a>
+            <a href="./single-project.html" class="temp__link">Одиночный проект</a>
+            <a href="./single-post.html" class="temp__link">Одиночная новость</a>
+            <a href="./single-article.html" class="temp__link">Одиночная статья</a>
+            <a href="./single-job.html" class="temp__link">Вакансия</a>
+            <a href="./handbook.html" class="temp__link">Справочник</a>
+        </div>
+    </div>
+</section>
+
+<script defer src="js/bundle.js"></script></body>
+
+</html>

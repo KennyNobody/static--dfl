@@ -21,7 +21,7 @@ export default class Search {
         });
 
         document.addEventListener('click', e => {
-            let form = e.target === this.el || this.el.contains(e.target);
+            const form = e.target === this.el || this.el.contains(e.target);
 
             if (!form && this.field.value < 3) {
                 this.close();

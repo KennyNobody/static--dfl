@@ -37,7 +37,7 @@ import iconTransport from "../assets/sprite/icon-transport.svg";
 import iconTruck from "../assets/sprite/icon-truck.svg";
 import iconTrucking from "../assets/sprite/icon-trucking.svg";
 import iconVk from "../assets/sprite/icon-vk.svg";
-
+import iconVkClear from "../assets/sprite/icon-vk-clear.svg";
 
 export default {
     arrowBottom,
@@ -78,5 +78,6 @@ export default {
     iconTransport,
     iconTruck,
     iconTrucking,
-    iconVk
+    iconVk,
+    iconVkClear
 };
