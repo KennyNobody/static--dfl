@@ -25,6 +25,7 @@
 
         @include r(1000) {
             width: 100%;
+            padding-bottom: 0;
         }
     }
 }

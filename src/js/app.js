@@ -2,6 +2,7 @@ import Swiper from "swiper";
 import sliderFactory from './elements/Slider/factory';
 
 import Body from "./elements/Body/Body";
+import Dropdown from "./elements/Dropdown/Dropdown";
 import Dropmenu from "./elements/Dropmenu/Dropmenu";
 import Menu from "./elements/Menu/Menu";
 import Header from "./elements/Header/Header";
@@ -14,6 +15,7 @@ import Manual from "./elements/Manual/Manual";
 class App {
     constructor() {
         this.createBody();
+        this.initDropdown();
         this.createDropmenu();
         this.createMenu();
         this.createHeader();
@@ -29,6 +31,16 @@ class App {
         const el = document.querySelector('[data-body]');
 
         if (el) this.body = new Body(el);
+    }
+
+    initDropdown() {
+        const el = document.querySelectorAll('[data-dropdown]');
+
+        if (el) this.dropdown = [];
+
+        el.forEach((item) => {
+            this.dropdown.push(new Dropdown(item));
+        });
     }
 
     createDropmenu() {

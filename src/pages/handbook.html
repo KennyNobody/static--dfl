@@ -8,100 +8,456 @@
 
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main main--visible decor-news">
+<main class="main decor-news">
     <div class="container">
         <div class="layout pt-100 ptm-80">
-            <div class="layout__aside">
-                <aside class="sidebar" data-manual>
-                    <div class="sidebar__header">
-                        <form class="form-search" data-search-manual>
-                            <input type="text" class="form-search__input" placeholder="Поиск" data-manual-input>
-                            <button class="form-search__button">
-                                <svg class="form-search__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </form>
+            <div class="layout__aside mbt-40 mbm-25">
+                <div class="dropdown" data-dropdown>
+                    <div class="dropdown__header">
+                        <button class="button-dropdown" data-dropdown-button>
+                            <span class="button-dropdown__title">
+                                Справочник
+                            </span>
+                            <svg class="button-dropdown__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="sidebar__main">
-                        <article class="article-manual-aside" data-manual-article>
-                            <h3 class="article-manual-aside__title">
-                                Название справочника
-                            </h3>
-                            <div class="article-manual-aside__list" data-manual-block>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Изменения в логистике в связи с COVID-19
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Расчет расстояний между городами
-                                </a>
-                            </div>
-                        </article>
-                        <article class="article-manual-aside" data-search-block>
-                            <h3 class="article-manual-aside__title">
-                                Название справочника
-                            </h3>
-                            <div class="article-manual-aside__list" data-manual-block>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Коды стран ISO
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Морская транспортная накладная и морской коносамент
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Изменения в логистике в связи с COVID-19
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Расчет расстояний между городами
-                                </a>
-                            </div>
-                        </article>
-                        <article class="article-manual-aside" data-search-block>
-                            <h3 class="article-manual-aside__title">
-                                Название справочника
-                            </h3>
-                            <div class="article-manual-aside__list" data-manual-block>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Коды стран ISO
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Морская транспортная накладная и морской коносамент
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Изменения в логистике в связи с COVID-19
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Расчет расстояний между городами
-                                </a>
-                            </div>
-                        </article>
-                        <article class="article-manual-aside" data-search-block>
-                            <h3 class="article-manual-aside__title">
-                                Название справочника
-                            </h3>
-                            <div class="article-manual-aside__list" data-manual-block>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Коды стран ISO
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Морская транспортная накладная и морской коносамент
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Изменения в логистике в связи с COVID-19
-                                </a>
-                                <a href="" class="article-manual-aside__link" data-manual-item>
-                                    Расчет расстояний между городами
-                                </a>
-                            </div>
-                        </article>
+                    <div class="dropdown__main">
+                        <div class="dropdown__content">
+                            <aside class="sidebar" data-manual>
+                                <div class="sidebar__header">
+                                    <form class="form-search" data-manual-form>
+                                        <input type="text" class="form-search__input" placeholder="Поиск"
+                                               data-manual-input>
+                                        <button class="form-search__button" data-manual-button>
+                                            <svg class="form-search__icon form-search__icon--search">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                                            </svg>
+                                            <svg class="form-search__icon form-search__icon--close">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="sidebar__main">
+                                    <article class="article-manual-aside" data-manual-article>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-manual-article>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                    <article class="article-manual-aside" data-search-block>
+                                        <h3 class="article-manual-aside__title">
+                                            Название справочника
+                                        </h3>
+                                        <div class="article-manual-aside__list" data-manual-block>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Коды стран ISO
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Морская транспортная накладная и морской коносамент
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Изменения в логистике в связи с COVID-19
+                                            </a>
+                                            <a href="" class="article-manual-aside__link" data-manual-item>
+                                                Расчет расстояний между городами
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </aside>
+                        </div>
                     </div>
-                </aside>
+                </div>
             </div>
             <div class="layout__main">
                 <section class="section mb-80">
                     <h2 class="title mb-30 mbm-20">
                         Название справочника
                     </h2>
+                    <div class="table table--static">
+                        <div class="table__header">
+                            <div class="table__line table__line--header">
+                                <div class="table__column table__column--25 table__column--align table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Английское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--align table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Русское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--align table__column--tab">
+                                    <strong class="text-table">
+                                        Английское/Русское название
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--align table__column--tab-20">
+                                    <strong class="text-table">
+                                        A2
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20 table__column--align">
+                                    <strong class="text-table">
+                                        A3
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--align table__column--tab-20">
+                                    <strong class="text-table">
+                                        №
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__section opened">
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+                            <article class="table__line table__line--regular">
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Australia
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--25 table__column--desktop-only">
+                                    <strong class="text-table">
+                                        Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--tab-40 table__column--tab">
+                                    <strong class="text-table">
+                                        Australia Австралия
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AU
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--20 table__column--tab-20">
+                                    <strong class="text-table">
+                                        AUS
+                                    </strong>
+                                </div>
+                                <div class="table__column table__column--10 table__column--tab-20">
+                                    <strong class="text-table">
+                                        036
+                                    </strong>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
                 </section>
                 <section class="section mb-80">
                     <h2 class="title mb-30 mbm-20">
@@ -325,7 +681,6 @@
                     </div>
                 </section>
             </div>
-
         </div>
     </div>
     <%= htmlWebpackPlugin.options.sectionPartners %>

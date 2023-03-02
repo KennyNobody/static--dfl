@@ -2,7 +2,6 @@ import {Navigation, Pagination} from "swiper";
 import {pagination} from "./_pagination";
 
 export default function (el) {
-    console.log('Пык')
     const data = {
         modules: [Navigation, Pagination],
         spaceBetween: 8,

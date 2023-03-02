@@ -5,7 +5,8 @@
     position: relative;
     border-radius: rem(2);
 
-    @include r(700) {}
+    @include r(700) {
+    }
 
     &__input {
         width: 100%;
@@ -42,6 +43,22 @@
         position: absolute;
         align-items: center;
         justify-content: center;
+
+        &.active {
+            .form-search {
+                &__icon {
+                    &--search {
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                    &--close {
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
     }
 
     &__icon {
@@ -53,6 +70,16 @@
         @include r(700) {
             width: rem(30);
             height: rem(30);
+        }
+
+        &--search {
+            display: block;
+            visibility: visible;
+        }
+
+        &--close {
+            display: none;
+            visibility: hidden;
         }
     }
 }

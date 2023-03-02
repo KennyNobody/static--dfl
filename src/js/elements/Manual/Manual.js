@@ -8,6 +8,7 @@ export default class Manual {
         this.articles = this.el.querySelectorAll('[data-manual-article]');
         this.blocks = this.el.querySelectorAll('[data-manual-block]');
         this.items = this.el.querySelectorAll('[data-manual-item]');
+        this.button = this.el.querySelector('[data-manual-button]');
         this.markInstance = null;
 
         this.setListeners();
@@ -18,11 +19,28 @@ export default class Manual {
             this.resetInstance();
             const val = e.target.value;
             if (val.length >= 3) this.search(val);
+            //
+            // if (!val.length) this.toggleIcon(false);
         });
 
         if (this.blocks) {
             this.markInstance = new Mark(this.blocks);
         }
+
+        this.form.addEventListener('submit', (e) => {
+            e.preventDefault();
+        });
+
+        this.button.addEventListener('click', () => {
+            const val = this.input.value;
+
+            if (!this.button.classList.contains('active') && val.length > 0) {
+                this.search(val);
+            } else {
+                this.input.value = '';
+                this.resetInstance();
+            }
+        });
     }
 
     search(str) {
@@ -31,6 +49,7 @@ export default class Manual {
         });
 
         this.sortArticles();
+        this.toggleIcon(true);
     }
 
     sortArticles() {
@@ -60,5 +79,14 @@ export default class Manual {
         });
 
         this.markInstance.unmark();
+        this.toggleIcon(false);
+    }
+
+    toggleIcon(mode) {
+        if (mode) {
+            this.button.classList.add('active');
+        } else {
+            this.button.classList.remove('active');
+        }
     }
 }

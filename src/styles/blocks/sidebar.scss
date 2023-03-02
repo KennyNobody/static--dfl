@@ -11,6 +11,10 @@
     max-height: calc(100vh - rem(110));
     box-shadow: 0 0 rem(50) rem(-1) rgba(96, 107, 143, 0.16);
 
+    @include r(1000) {
+        max-height: calc(100vh - rem(175));
+    }
+
     &__header {
         padding: 0 rem(16) 0 rem(16);
     }
@@ -19,6 +23,20 @@
         flex-grow: 1;
         overflow-y: auto;
         padding: rem(10) rem(2) 0 rem(16);
+
+        @include r(1000) {
+            columns: 2;
+            column-gap: rem(30);
+            padding: rem(10) rem(10) rem(10) rem(16);
+        }
+
+        @include r(700) {
+            columns: 1;
+        }
+
+        // TODO Когда количество элементов меньше одной целой колонки, нужно сделать ширину колонки на 100%
+
+
 
         // TODO Стилизовать скроллбар для остальных браузеров
 
@@ -35,6 +53,10 @@
             border-radius: rem(12);
             border: 6px solid $light;
             background-color: #C5CADC;
+        }
+
+        & > * {
+            break-inside: avoid-column;
         }
     }
 }

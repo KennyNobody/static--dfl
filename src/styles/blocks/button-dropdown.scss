@@ -1,0 +1,32 @@
+.button-dropdown {
+    width: 100%;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    padding: rem(16) rem(32);
+    background-color: $gray-bg;
+    justify-content: space-between;
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: rem(16);
+        color: $blue-resolution;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        display: block;
+        height: rem(8);
+        width: rem(15);
+        transition: 0.3s all;
+        fill: $blue-resolution;
+    }
+}
+
+.dropdown.active {
+    .button-dropdown__icon {
+        transform: rotate(180deg);
+    }
+}
