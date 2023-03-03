@@ -8,7 +8,7 @@
 
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
+<main class="main decor-info">
     <section class="section mb-80 pt-100 ptm-80">
         <div class="container">
             <time class="date mb-20 mbm-10">
@@ -29,7 +29,6 @@
                     компаний уже приняли. С ними проводили работу по информированию о возможностях их деятельности в
                     Казахстане. На сегодняшний день 56 компаний из них изъявили желание.
                 </p>
-
                 <p>
                     В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
                     Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно
@@ -37,6 +36,50 @@
                     автомобильной дорогой, что существенно поможет экономике области. Обсудите этот вопрос с
                     Правительством и компаниями, – посоветовал Президент.
                 </p>
+                <div class="slider" data-slider="contentGallery">
+                    <div class="relative">
+                        <button class="button-nav button-nav--center tab-hidden" data-button-prev>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="button-nav button-nav--center tab-hidden" data-button-next>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper-container slider__container" data-nav>
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider__progressbar progressbar"></div>
+                        </div>
+                    </div>
+                </div>
                 <p>
                     На брифинге для журналистов премьер-министр Казахстана Алихан Смаилов сообщил, что из России уходят
                     многие иностранные компании. – Мы составили список более 300 наиболее крупных таких иностранных
@@ -69,42 +112,372 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section z-index-1 mb-80 mbm-70">
         <div class="container">
-            <h2 class="title mb-30 mbm-20">
-                Проекты
-            </h2>
-            <div class="columns">
-                <div class="columns__col columns__col--4">
-                    <a class="article-service article-service--static--large" href="">
-                        <picture class="article-service__picture">
-                            <img alt="Складское хранение" src="./assets/content/placeholder.svg">
-                        </picture>
-                        <div class="article-service__content">
-                            <h3 class="article-service__title">
-                                Складское хранение
-                            </h3>
-                            <div class="article-service__toolbar">
+            <div class="slider" data-slider="services">
+                <div class="toolbar mb-25">
+                    <h2 class="title">
+                        Услуги
+                    </h2>
+                    <div class="nav-slider tab-hide" data-nav>
+                        <button class="button-nav" data-button-prev>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="button-nav" data-button-next>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-container slider__container">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Складское хранение" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Складское хранение
+                                    </h3>
+                                    <div class="article-service__toolbar">
                                         <span class="article-service__link">
                                             Подробнее
                                         </span>
-                                <svg class="article-service__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
-                                </svg>
-                            </div>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--8">
-                    <svg>
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Страхование рисков" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Страхование рисков
+                                    </h3>
+                                    <div class="article-service__toolbar">
+                                        <span class="article-service__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Страхование рисков" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Длинный заголовок в несколько строк текста, чтобы увидеть пример, как это
+                                        работает
+                                    </h3>
+                                    <div class="article-service__toolbar">
+                                        <span class="article-service__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Складское хранение" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Складское хранение
+                                    </h3>
+                                    <div class="article-service__toolbar">
+                                        <span class="article-service__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Страхование рисков" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Страхование рисков
+                                    </h3>
+                                    <div class="article-service__toolbar">
+                                        <span class="article-service__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--service">
+                            <a class="article-service article-service--slide" href="">
+                                <picture class="article-service__picture">
+                                    <img alt="Страхование рисков" src="./assets/content/placeholder.svg">
+                                </picture>
+                                <div class="article-service__content">
+                                    <h3 class="article-service__title">
+                                        Таможенное оформление
+                                    </h3>
+                                    <div class="article-service__toolbar">
+                                        <span class="article-service__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-service__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider__progressbar progressbar"></div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section mb-130">
+        <div class="container">
+            <div class="slider" data-slider="news">
+                <div class="toolbar mb-30">
+                    <h2 class="title">
+                        Новости
+                    </h2>
+                    <a href="./news.html" class="toolbar__link">
+                        Показать все
+                    </a>
+                </div>
+                <div class="relative">
+                    <button class="button-nav button-nav--news tab-hidden" data-button-prev>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="button-nav button-nav--news tab-hidden" data-button-next>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-container slider__container slider__container--overflow relative" data-nav>
+                        <div class="swiper-wrapper slider__wrapper">
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__progressbar progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>

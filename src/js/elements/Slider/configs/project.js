@@ -4,22 +4,21 @@ import {pagination} from "./_pagination";
 export default function (el) {
     const data = {
         modules: [Navigation, Pagination],
-        // loop: true,
+        autoHeight: true,
         slidesPerView: 1,
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination
+        pagination
     }
 
     try {
         if (el.querySelector('[data-nav]')) {
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
-                prevEl: el.querySelector('[data-button-prev'),
-                // disabledClass: 'disabled'
+                prevEl: el.querySelector('[data-button-prev]'),
             }
         }
-    } catch (e) {}
+    } catch (e) { /* empty */ }
 
     return data;
 }

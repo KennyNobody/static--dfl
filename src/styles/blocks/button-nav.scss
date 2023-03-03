@@ -40,6 +40,22 @@
         }
     }
 
+    &--center {
+        top: 50%;
+        z-index: 2;
+        position: absolute;
+
+        &[data-button-prev] {
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        &[data-button-next] {
+            right: 0;
+            transform: translateX(50%) translateY(-50%);
+        }
+    }
+
     &__icon {
         width: rem(24);
         display: block;

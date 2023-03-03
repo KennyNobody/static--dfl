@@ -35,7 +35,7 @@
     h2 {
         font-weight: 800;
         line-height: 1.2;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 
     //
@@ -63,12 +63,16 @@
     }
 
     //
-    //h3 {
-    //    font-size: rem(36);
-    //    @include r(1200) {
-    //        font-size: rem(24);
-    //    }
-    //}
+    h3 {
+        line-height: 1.4;
+        font-weight: 800;
+        font-size: rem(20);
+        margin-bottom: 1em;
+
+        @include r(700) {
+            font-size: rem(18);
+        }
+    }
     //
     //// Используется
     //h4 {
@@ -165,11 +169,11 @@
     //    //}
     //}
     //
-    //picture {
-    //    width: 100%;
-    //    height: auto;
-    //    display: block;
-    //}
+    picture {
+        //width: 100%;
+        //height: auto;
+        display: block;
+    }
     //
     //img {
     //    width: 100%;
@@ -226,6 +230,7 @@
 
         @include r(700) {
             float: none;
+            height: auto;
             margin-right: 0;
             //height: rem(188);
             margin-left: rem(-20);
@@ -247,7 +252,8 @@
 
         @include r(700) {
             float: none;
-            height: rem(188);
+            height: auto;
+            //height: rem(188);
             margin-left: rem(-20);
             width: calc(100% + rem(40));
         }
@@ -255,6 +261,14 @@
         img {
             width: 100%;
             display: block;
+        }
+    }
+
+    .slider {
+        margin-bottom: rem(30);
+
+        @include r(700) {
+            margin-bottom: rem(25);
         }
     }
 }

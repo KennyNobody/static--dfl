@@ -185,5 +185,16 @@ module.exports = [
         sectionFooter,
         sectionPartners,
         temp
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/elements.html",
+        filename: "elements.html",
+        inject: "body",
+        title: "Элементы | DFL",
+        head,
+        sectionHeader,
+        sectionFooter,
+        sectionPartners,
+        temp
     })
 ];

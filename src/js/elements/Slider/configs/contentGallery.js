@@ -8,7 +8,7 @@ export default function(el){
         slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination,
+        pagination,
         breakpoints: {
             1300: {
                 slidesPerView: 4,
@@ -27,7 +27,7 @@ export default function(el){
         if (el.querySelector('[data-nav]')) {
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
-                prevEl: el.querySelector('[data-button-prev'),
+                prevEl: el.querySelector('[data-button-prev]'),
                 disabledClass: 'disabled'
             }
         }

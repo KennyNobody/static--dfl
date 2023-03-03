@@ -195,14 +195,449 @@
                     <use xlink:href="./assets/sprite/sprite.svg#icon-person"></use>
                 </svg>
             </button>
-            <button class="button-head">
-                <svg class="button-head__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-menu"></use>
-                </svg>
+            <button class="button-menu" data-menu-button>
+                <span class="button-menu__line"></span>
+                <span class="button-menu__line"></span>
+                <span class="button-menu__line"></span>
             </button>
+            <section class="menu" data-menu>
+                <div class="menu__main menu__main--desktop">
+                    <div class="menu__wrapper">
+                        <aside class="menu__aside">
+                            <a href="#tab-menu-1" class="link-menu-aside" data-menu-link>
+                                Услуги
+                            </a>
+                            <a href="#tab-menu-2" class="link-menu-aside" data-menu-link>
+                                О компании
+                            </a>
+                            <a href="#tab-menu-3" class="link-menu-aside" data-menu-link>
+                                Перевозчикам
+                            </a>
+                            <a href="#tab-menu-4" class="link-menu-aside" data-menu-link>
+                                Проектные перевозки
+                            </a>
+                            <a href="#tab-menu-5" class="link-menu-aside" data-menu-link>
+                                Работа в DFL
+                            </a>
+                            <a href="#tab-menu-6" class="link-menu-aside" data-menu-link>
+                                Полезная информация
+                            </a>
+                            <a href="#tab-menu-7" class="link-menu-aside" data-menu-link>
+                                Контакты
+                            </a>
+                        </aside>
+                        <div class="menu__content">
+                            <div class="menu__tab" id="tab-menu-1" data-menu-tab hidden>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-groupage-cargo"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Сборные грузы
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-trucking"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Автоперевозки
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-air-transportation"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Авиаперевозки
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-shipping"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Морские перевозки
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-multimodal"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Мультимодальные перевозки
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-stock"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Складское хранение
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-insurance"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Страхование логистических рисков
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                    <svg class="link-menu__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-custom-clearence"></use>
+                                    </svg>
+                                    <span class="link-menu__text">
+                                    Таможенное оформление
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-2" data-menu-tab hidden>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Кто мы?
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отзывы клиентов компании
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Наши услуги
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    О нас
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Документация
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Наши специалисты
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-3" data-menu-tab hidden>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Предложения загрузок
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    О нас
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Как мы работаем
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отзывы
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Контакты
+                                </span>
+                                </a>
+                                <a href="" class="button button--clear menu-fix">
+                                <span class="button__text">
+                                    Стать партнером
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-4" data-menu-tab hidden>
+                                <!-- Последние 9 добавленных  -->
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка негабаритного груза для химической промышленности
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка сверхнегабаритного груза весом 320 т
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка негабаритного груза для химической промышленности
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка сверхнегабаритного груза весом 320 т
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка негабаритного груза для химической промышленности
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка сверхнегабаритного груза весом 320 т
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка негабаритного груза для химической промышленности
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Перевозка сверхнегабаритного груза весом 320 т
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Мультимодальная перевозка карьерного экскаватора P&H 4100
+                                </span>
+                                </a>
+                                <a href="" class="button button--clear menu-fix">
+                                <span class="button__text">
+                                    Отправить резюме
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-5" data-menu-tab hidden>
+                                <!-- Последние 9 добавленных  -->
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    О работе в компании
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Специалист по складской логистике
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Менеджер-логист по продажам транспортных услуг
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Менеджер по пассажирским перевозкам / Менеджер-логист  по продажам по складской логике в несколько строк для тестирования переполнения контентом
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Специалист по складской логистике
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Специалист по складской логистике
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Менеджер-логист по продажам транспортных услуг
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Специалист по складской логистике
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Менеджер-логист по продажам транспортных услуг
+                                </span>
+                                </a>
+                                <a href="" class="button button--clear menu-fix">
+                                <span class="button__text">
+                                    Отправить резюме
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-6" data-menu-tab hidden>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Новости
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Аналитика по рынку
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Справочник
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__tab" id="tab-menu-7" data-menu-tab hidden>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Общие контакты
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отдел автомобильных грузоперевозок
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отдел морских и авиа перевозок
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отдел складской логистики
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отдел продаж
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Отдел таможенного оформления
+                                </span>
+                                </a>
+                                <a href="" class="link-menu">
+                                <span class="link-menu__text">
+                                    Реквизиты
+                                </span>
+                                </a>
+                            </div>
+                            <div class="menu__footer">
+                                <div class="menu-footer">
+                                    <div class="menu-footer__column">
+                                        <a class="link-contact link-contact--menu" href="tel:+74012306200">
+                                            <svg class="link-contact__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-call"></use>
+                                            </svg>
+                                            <span class="link-contact__text">
+                                            +7 4012 30 62 00
+                                        </span>
+                                        </a>
+                                        <a class="link-contact link-contact--menu"
+                                           href="mailto:kaliningrad@ru.dsv.com ">
+                                            <svg class="link-contact__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                                            </svg>
+                                            <span class="link-contact__text">
+                                            kaliningrad@ru.dsv.com
+                                        </span>
+                                        </a>
+                                    </div>
+                                    <div class="menu-footer__column">
+                                        <a class="link-contact link-contact--menu"
+                                           href="mailto:hauliers.kld@ru.dsv.com">
+                                            <svg class="link-contact__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-point"></use>
+                                            </svg>
+                                            <span class="link-contact__text">
+                                            пос. Дорожное, ул. Датский пр., 3
+                                        </span>
+                                        </a>
+                                    </div>
+                                    <div class="menu-footer__column">
+                                        <a href="" class="link-social link-social--menu">
+                                            <svg class="link-social__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__main menu__main--mobile">
+                    <div class="menu-mobile">
+                        <div class="menu-mobile__header">
+                            <form class="form-search">
+                                <input type="text" class="form-search__input" placeholder="Поиск">
+                                <button class="form-search__button">
+                                    <svg class="form-search__icon form-search__icon--search">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                                    </svg>
+                                    <svg class="form-search__icon form-search__icon--close">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="menu-mobile__main">
+                            <nav class="menu-mobile__nav">
+                                <a href="./projects.html" class="link-mobile-nav">
+                                    Услуги
+                                </a>
+                                <a href="./about.html" class="link-mobile-nav">
+                                    О компании
+                                </a>
+                                <a href="./offers.html" class="link-mobile-nav">
+                                    Перевозчикам
+                                </a>
+                                <a href="./projects.html" class="link-mobile-nav">
+                                    Проектные перевозки
+                                </a>
+                                <a href="./job.html" class="link-mobile-nav">
+                                    Работа в DFL
+                                </a>
+                                <a href="./info.html" class="link-mobile-nav">
+                                    Полезная информация
+                                </a>
+                                <a href="./contacts.html" class="link-mobile-nav">
+                                    Контакты
+                                </a>
+                            </nav>
+                            <div class="menu-mobile__controls">
+                                <div class="menu-mobile__toolbar menu-mobile__toolbar--main">
+                                    <a href="" class="button">
+                                        <span class="button__text">
+                                            Войти в личный кабинет
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="menu-mobile__toolbar">
+                                    <a class="link-head" href="tel:+74012306200">
+                                        +7 4012 30 62 00
+                                    </a>
+                                </div>
+                                <div class="menu-mobile__toolbar">
+                                    <div class="editor fz-mob-16 color-primary">
+                                        <p>
+                                            <a class="link-static" href="">kaliningrad@ru.dsv.com </a>
+                                            <br>
+                                            <span>пос. Дорожное, ул. Датский пр., 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="menu-mobile__toolbar">
+                                    <a href="#" class="link-social link-social--mobile" target="_blank" rel="nofollow">
+                                        <svg class="link-social__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-vk-clear"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </header>
+
 <main class="main decor-news">
     <section class="section pt-100 ptm-80 mb-150 mbm-130">
         <div class="container">
@@ -627,6 +1062,7 @@
             <a href="./single-article.html" class="temp__link">Одиночная статья</a>
             <a href="./single-job.html" class="temp__link">Вакансия</a>
             <a href="./handbook.html" class="temp__link">Справочник</a>
+            <a href="./elements.html" class="temp__link">Элементы и формы</a>
         </div>
     </div>
 </section>

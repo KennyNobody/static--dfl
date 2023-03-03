@@ -8,7 +8,7 @@ export default function(el) {
         slidesPerView: 'auto',
         watchSlidesProgress: true,
         slideVisibleClass: 'visible',
-        pagination: pagination,
+        pagination,
         breakpoints: {
             1000: {
                 spaceBetween: 20,
@@ -25,11 +25,10 @@ export default function(el) {
         if (el.querySelector('[data-nav]')) {
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
-                prevEl: el.querySelector('[data-button-prev'),
-                // disabledClass: 'disabled'
+                prevEl: el.querySelector('[data-button-prev]'),
             }
         }
-    } catch (e) {}
+    } catch (e) { /* empty */ }
 
     return data;
 }

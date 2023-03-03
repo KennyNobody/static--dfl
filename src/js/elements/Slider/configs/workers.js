@@ -26,10 +26,10 @@ export default function(el) {
         if (el.querySelector('[data-nav]')) {
             data.navigation = {
                 nextEl: el.querySelector('[data-button-next]'),
-                prevEl: el.querySelector('[data-button-prev'),
+                prevEl: el.querySelector('[data-button-prev]'),
             }
         }
-    } catch (e) {}
+    } catch (e) { /* empty */ }
 
     return data;
 

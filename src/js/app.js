@@ -11,6 +11,7 @@ import Process from "./elements/Process/Process";
 import InputFile from "./elements/InputFile/InputFile";
 import Table from "./elements/Table/Table";
 import Manual from "./elements/Manual/Manual";
+import { initGalleryModal } from "./functions/initFancybox";
 
 class App {
     constructor() {
@@ -25,6 +26,7 @@ class App {
         this.createInputFile();
         this.createTable();
         this.initManual();
+        this.initFunctions();
     }
 
     createBody() {
@@ -71,8 +73,32 @@ class App {
         if (el) this.sliders = [];
 
         el.forEach(item => {
-            this.sliders.push(new Swiper(item.querySelector('.swiper-container'), sliderFactory(item)));
+            const slider = new Swiper(
+                item.querySelector('.swiper-container'),
+                sliderFactory(item)
+            );
+
+            this.sliders.push(slider);
         });
+
+        // el.forEach(item => {
+        //     const slider = new Swiper(
+        //         item.querySelector('.swiper-container'),
+        //         sliderFactory(item)
+        //     );
+        //
+        //     if (item.hasAttribute('data-slider-desktop')) {
+        //         window.addEventListener('resize', () => {
+        //             if (slider.currentBreakpoint === '700' || 'max') {
+        //                 slider.destroy();
+        //             } else {
+        //                 slider.init();
+        //             }
+        //         });
+        //     }
+        //
+        //     this.sliders.push(slider);
+        // });
     }
 
     createSearch() {
@@ -111,6 +137,10 @@ class App {
         const el = document.querySelector('[data-manual]');
 
         if (el) this.search = new Manual(el);
+    }
+
+    initFunctions() {
+        initGalleryModal();
     }
 }
 

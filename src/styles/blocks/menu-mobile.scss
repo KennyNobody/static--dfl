@@ -1,4 +1,5 @@
 .menu-mobile {
+    opacity: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,5 +44,20 @@
         &--main {
             margin-bottom: rem(18);
         }
+    }
+}
+
+.body--menu {
+    .menu-mobile {
+        animation: 1s showMobileMenu 0.3s ease-in-out forwards;
+    }
+}
+
+@keyframes showMobileMenu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

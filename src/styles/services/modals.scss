@@ -1,0 +1,7 @@
+#fancybox-modal-gallery {
+    --fancybox-bg: rgba(78, 86, 119, 0.7);
+
+    @include r(700) {
+        --fancybox-bg: rgba(78, 86, 119, 0.95);
+    }
+}

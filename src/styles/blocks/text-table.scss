@@ -2,12 +2,12 @@
     line-height: 1.2;
 
     @at-root {
-        span {
+        span#{&} {
             font-weight: 400;
             font-size: rem(16);
         }
 
-        strong {
+        strong#{&} {
             font-weight: 700;
             font-size: rem(18);
 

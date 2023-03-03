@@ -1,0 +1,58 @@
+.article-project {
+    position: relative;
+
+    @include r(700) {
+        padding-top: rem(140);
+    }
+
+    &__picture {
+        right: 0;
+        top: rem(-60);
+        width: rem(430);
+        height: rem(280);
+        position: absolute;
+        background-color: blue;
+
+        @include r(1000) {
+            width: rem(300);
+            height: rem(331);
+        }
+
+        @include r(700) {
+            top: 0;
+            left: rem(-20);
+            right: rem(-20);
+            width: calc(100% + rem(40));
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__content {
+        z-index: 1;
+        padding: rem(32);
+        position: relative;
+        border-radius: rem(2);
+        background-color: $light;
+        width: calc(100% - rem(408));
+        box-shadow: 0 0 rem(50) -1px rgba(96, 107, 143, 0.16);
+
+        @include r(1300) {
+            width: calc(100% - rem(400));
+        }
+
+        @include r(1000) {
+            width: calc(100% - rem(244));
+        }
+
+        @include r(700) {
+            width: 100%;
+        }
+    }
+}
