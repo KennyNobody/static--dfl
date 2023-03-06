@@ -6,12 +6,82 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main ">
-    <section class="section">
-        <div class="container">
+    <section class="section pt-100 ptt-80 bg-blue">
+        <div class="container" style="display: flex;flex-direction: column; gap: 20px; align-items: center;">
+            <section class="modal modal--small">
+                123
+            </section>
+            <section class="modal modal--regular">
+                <form action="" class="form" data-form="partner">
+                    <div class="columns">
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    ФИО<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите ФИО">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--12">
+                            <label class="field">
+                                <p class="field__title">
+                                    Название организации<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите организацию">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    Регион организации<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите регион">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    Телефон<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    Почта<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите почту">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    Ваша должность<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите должность">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <label class="field">
+                                <p class="field__title">
+                                    ИНН<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите ИНН">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--12">
 
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="modal modal--regular">
+                123
+            </section>
         </div>
     </section>
 </main>

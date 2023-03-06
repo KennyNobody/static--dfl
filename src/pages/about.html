@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-3">
     <section class="section mb-130">
@@ -385,16 +385,63 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <a class="article-review__footer" href="">
-                                    <span class="article-review__link">
-                                        Полный отзыв
-                                    </span>
+                                    <a class="article-review__footer" href="#modal-review-1" data-fancybox="review">
+                                        <span class="article-review__link">
+                                            Полный отзыв
+                                        </span>
                                         <svg class="article-review__icon">
                                             <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
                                         </svg>
                                     </a>
                                 </div>
                             </article>
+                            <div hidden>
+                                <!-- Здесь дублируется верхний отзыв, но без article-footer. Сделай проверку на количество символов, если их больше, чем 2.5 строки, то делаешь модалку  -->
+                                <div class="modal modal--regular" id="modal-review-1">
+                                    <article class="article-review">
+                                        <div class="article-review__content">
+                                            <div class="article-review__header">
+                                                <picture class="article-review__logo">
+                                                    <img alt="" src="./assets/content/logo-review-1.svg">
+                                                </picture>
+                                                <div class="article-review__info">
+                                                    <h3 class="article-review__organization">
+                                                        Бауцентр
+                                                    </h3>
+                                                    <h4 class="article-review__name">
+                                                        Линевич Денис Александрович
+                                                    </h4>
+                                                    <p class="article-review__position">
+                                                        Менеджер
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main">
+                                                <div class="editor fz-14 color-primary">
+                                                    <p>
+                                                        Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                        с
+                                                        «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                        совместный,
+                                                        продолжительный опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                        продолжительный
+                                                        опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide slider__slide">
                             <article class="article-review">

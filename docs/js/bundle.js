@@ -4756,6 +4756,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-fax.svg":
+/*!****************************************!*\
+  !*** ./src/assets/sprite/icon-fax.svg ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-fax-usage",
+      viewBox: "0 0 24 24",
+      url: "/assets/sprite/" + "sprite.svg#icon-fax-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-file.svg":
 /*!*****************************************!*\
   !*** ./src/assets/sprite/icon-file.svg ***!
@@ -6768,9 +6787,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function initGalleryModal() {
-    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="gallery"]', {
+    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="review"]', {
         dragToClose: false,
-        id: "modal-gallery"
+        id: "modal-review"
+    });
+
+    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="offer"]', {
+        dragToClose: false,
+        id: "modal-offer",
+        groupAll: false,
+        groupAttr: 'unreak',
+        defaultType: 'html',
+        on: {
+            done: (fancybox) => {
+                console.log(fancybox);
+                // here `fancybox` refers to the current instance
+            },
+        },
+    });
+
+    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="photo"]', {
+        dragToClose: false,
+        id: "modal-photo",
+        groupAll: false,
+        // groupAttr: 'unreak',
+        defaultType: 'image',
+    });
+
+    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="office"]', {
+        dragToClose: false,
+        id: "modal-photo",
+        groupAll: false,
+        // groupAttr: 'unreak',
+        defaultType: 'image',
+    });
+
+    _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox="project"]', {
+        dragToClose: false,
+        id: "modal-project",
+        groupAll: false,
+        groupAttr: 'unreak',
+        defaultType: 'html',
     });
 }
 
@@ -6804,29 +6861,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_copy_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/sprite/icon-copy.svg */ "./src/assets/sprite/icon-copy.svg");
 /* harmony import */ var _assets_sprite_icon_custom_clearence_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/sprite/icon-custom-clearence.svg */ "./src/assets/sprite/icon-custom-clearence.svg");
 /* harmony import */ var _assets_sprite_icon_europe_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/sprite/icon-europe.svg */ "./src/assets/sprite/icon-europe.svg");
-/* harmony import */ var _assets_sprite_icon_file_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/sprite/icon-file.svg */ "./src/assets/sprite/icon-file.svg");
-/* harmony import */ var _assets_sprite_icon_groupage_cargo_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/sprite/icon-groupage-cargo.svg */ "./src/assets/sprite/icon-groupage-cargo.svg");
-/* harmony import */ var _assets_sprite_icon_house_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/sprite/icon-house.svg */ "./src/assets/sprite/icon-house.svg");
-/* harmony import */ var _assets_sprite_icon_insurance_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sprite/icon-insurance.svg */ "./src/assets/sprite/icon-insurance.svg");
-/* harmony import */ var _assets_sprite_icon_mail_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sprite/icon-mail.svg */ "./src/assets/sprite/icon-mail.svg");
-/* harmony import */ var _assets_sprite_icon_marker_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/sprite/icon-marker.svg */ "./src/assets/sprite/icon-marker.svg");
-/* harmony import */ var _assets_sprite_icon_menu_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/sprite/icon-menu.svg */ "./src/assets/sprite/icon-menu.svg");
-/* harmony import */ var _assets_sprite_icon_multimodal_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../assets/sprite/icon-multimodal.svg */ "./src/assets/sprite/icon-multimodal.svg");
-/* harmony import */ var _assets_sprite_icon_person_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../assets/sprite/icon-person.svg */ "./src/assets/sprite/icon-person.svg");
-/* harmony import */ var _assets_sprite_icon_phrase_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../assets/sprite/icon-phrase.svg */ "./src/assets/sprite/icon-phrase.svg");
-/* harmony import */ var _assets_sprite_icon_plane_svg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../assets/sprite/icon-plane.svg */ "./src/assets/sprite/icon-plane.svg");
-/* harmony import */ var _assets_sprite_icon_point_svg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../assets/sprite/icon-point.svg */ "./src/assets/sprite/icon-point.svg");
-/* harmony import */ var _assets_sprite_icon_search_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../assets/sprite/icon-search.svg */ "./src/assets/sprite/icon-search.svg");
-/* harmony import */ var _assets_sprite_icon_shield_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../assets/sprite/icon-shield.svg */ "./src/assets/sprite/icon-shield.svg");
-/* harmony import */ var _assets_sprite_icon_ship_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../assets/sprite/icon-ship.svg */ "./src/assets/sprite/icon-ship.svg");
-/* harmony import */ var _assets_sprite_icon_shipping_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../assets/sprite/icon-shipping.svg */ "./src/assets/sprite/icon-shipping.svg");
-/* harmony import */ var _assets_sprite_icon_stock_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../assets/sprite/icon-stock.svg */ "./src/assets/sprite/icon-stock.svg");
-/* harmony import */ var _assets_sprite_icon_storage_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../assets/sprite/icon-storage.svg */ "./src/assets/sprite/icon-storage.svg");
-/* harmony import */ var _assets_sprite_icon_transport_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../assets/sprite/icon-transport.svg */ "./src/assets/sprite/icon-transport.svg");
-/* harmony import */ var _assets_sprite_icon_truck_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../assets/sprite/icon-truck.svg */ "./src/assets/sprite/icon-truck.svg");
-/* harmony import */ var _assets_sprite_icon_trucking_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../assets/sprite/icon-trucking.svg */ "./src/assets/sprite/icon-trucking.svg");
-/* harmony import */ var _assets_sprite_icon_vk_svg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../assets/sprite/icon-vk.svg */ "./src/assets/sprite/icon-vk.svg");
-/* harmony import */ var _assets_sprite_icon_vk_clear_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../assets/sprite/icon-vk-clear.svg */ "./src/assets/sprite/icon-vk-clear.svg");
+/* harmony import */ var _assets_sprite_icon_fax_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/sprite/icon-fax.svg */ "./src/assets/sprite/icon-fax.svg");
+/* harmony import */ var _assets_sprite_icon_file_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/sprite/icon-file.svg */ "./src/assets/sprite/icon-file.svg");
+/* harmony import */ var _assets_sprite_icon_groupage_cargo_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/sprite/icon-groupage-cargo.svg */ "./src/assets/sprite/icon-groupage-cargo.svg");
+/* harmony import */ var _assets_sprite_icon_house_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sprite/icon-house.svg */ "./src/assets/sprite/icon-house.svg");
+/* harmony import */ var _assets_sprite_icon_insurance_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sprite/icon-insurance.svg */ "./src/assets/sprite/icon-insurance.svg");
+/* harmony import */ var _assets_sprite_icon_mail_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/sprite/icon-mail.svg */ "./src/assets/sprite/icon-mail.svg");
+/* harmony import */ var _assets_sprite_icon_marker_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/sprite/icon-marker.svg */ "./src/assets/sprite/icon-marker.svg");
+/* harmony import */ var _assets_sprite_icon_menu_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../assets/sprite/icon-menu.svg */ "./src/assets/sprite/icon-menu.svg");
+/* harmony import */ var _assets_sprite_icon_multimodal_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../assets/sprite/icon-multimodal.svg */ "./src/assets/sprite/icon-multimodal.svg");
+/* harmony import */ var _assets_sprite_icon_person_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../assets/sprite/icon-person.svg */ "./src/assets/sprite/icon-person.svg");
+/* harmony import */ var _assets_sprite_icon_phrase_svg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../assets/sprite/icon-phrase.svg */ "./src/assets/sprite/icon-phrase.svg");
+/* harmony import */ var _assets_sprite_icon_plane_svg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../assets/sprite/icon-plane.svg */ "./src/assets/sprite/icon-plane.svg");
+/* harmony import */ var _assets_sprite_icon_point_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../assets/sprite/icon-point.svg */ "./src/assets/sprite/icon-point.svg");
+/* harmony import */ var _assets_sprite_icon_search_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../assets/sprite/icon-search.svg */ "./src/assets/sprite/icon-search.svg");
+/* harmony import */ var _assets_sprite_icon_shield_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../assets/sprite/icon-shield.svg */ "./src/assets/sprite/icon-shield.svg");
+/* harmony import */ var _assets_sprite_icon_ship_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../assets/sprite/icon-ship.svg */ "./src/assets/sprite/icon-ship.svg");
+/* harmony import */ var _assets_sprite_icon_shipping_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../assets/sprite/icon-shipping.svg */ "./src/assets/sprite/icon-shipping.svg");
+/* harmony import */ var _assets_sprite_icon_stock_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../assets/sprite/icon-stock.svg */ "./src/assets/sprite/icon-stock.svg");
+/* harmony import */ var _assets_sprite_icon_storage_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../assets/sprite/icon-storage.svg */ "./src/assets/sprite/icon-storage.svg");
+/* harmony import */ var _assets_sprite_icon_transport_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../assets/sprite/icon-transport.svg */ "./src/assets/sprite/icon-transport.svg");
+/* harmony import */ var _assets_sprite_icon_truck_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../assets/sprite/icon-truck.svg */ "./src/assets/sprite/icon-truck.svg");
+/* harmony import */ var _assets_sprite_icon_trucking_svg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../assets/sprite/icon-trucking.svg */ "./src/assets/sprite/icon-trucking.svg");
+/* harmony import */ var _assets_sprite_icon_vk_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../assets/sprite/icon-vk.svg */ "./src/assets/sprite/icon-vk.svg");
+/* harmony import */ var _assets_sprite_icon_vk_clear_svg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../assets/sprite/icon-vk-clear.svg */ "./src/assets/sprite/icon-vk-clear.svg");
+
 
 
 
@@ -6886,29 +6945,30 @@ __webpack_require__.r(__webpack_exports__);
     iconCopy: _assets_sprite_icon_copy_svg__WEBPACK_IMPORTED_MODULE_14__["default"],
     iconCustomClearence: _assets_sprite_icon_custom_clearence_svg__WEBPACK_IMPORTED_MODULE_15__["default"],
     iconEurope: _assets_sprite_icon_europe_svg__WEBPACK_IMPORTED_MODULE_16__["default"],
-    iconFile: _assets_sprite_icon_file_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
-    iconGroupageCargo: _assets_sprite_icon_groupage_cargo_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
-    iconHouse: _assets_sprite_icon_house_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
-    iconInsurance: _assets_sprite_icon_insurance_svg__WEBPACK_IMPORTED_MODULE_20__["default"],
-    iconMail: _assets_sprite_icon_mail_svg__WEBPACK_IMPORTED_MODULE_21__["default"],
-    iconMarker: _assets_sprite_icon_marker_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
-    iconMenu: _assets_sprite_icon_menu_svg__WEBPACK_IMPORTED_MODULE_23__["default"],
-    iconMultimodal: _assets_sprite_icon_multimodal_svg__WEBPACK_IMPORTED_MODULE_24__["default"],
-    iconPerson: _assets_sprite_icon_person_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
-    iconPhrase: _assets_sprite_icon_phrase_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
-    iconPlane: _assets_sprite_icon_plane_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
-    iconPoint: _assets_sprite_icon_point_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
-    iconSearch: _assets_sprite_icon_search_svg__WEBPACK_IMPORTED_MODULE_29__["default"],
-    iconShield: _assets_sprite_icon_shield_svg__WEBPACK_IMPORTED_MODULE_30__["default"],
-    iconShip: _assets_sprite_icon_ship_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
-    iconShipping: _assets_sprite_icon_shipping_svg__WEBPACK_IMPORTED_MODULE_32__["default"],
-    iconStock: _assets_sprite_icon_stock_svg__WEBPACK_IMPORTED_MODULE_33__["default"],
-    iconStorage: _assets_sprite_icon_storage_svg__WEBPACK_IMPORTED_MODULE_34__["default"],
-    iconTransport: _assets_sprite_icon_transport_svg__WEBPACK_IMPORTED_MODULE_35__["default"],
-    iconTruck: _assets_sprite_icon_truck_svg__WEBPACK_IMPORTED_MODULE_36__["default"],
-    iconTrucking: _assets_sprite_icon_trucking_svg__WEBPACK_IMPORTED_MODULE_37__["default"],
-    iconVk: _assets_sprite_icon_vk_svg__WEBPACK_IMPORTED_MODULE_38__["default"],
-    iconVkClear: _assets_sprite_icon_vk_clear_svg__WEBPACK_IMPORTED_MODULE_39__["default"]
+    iconFax: _assets_sprite_icon_fax_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
+    iconFile: _assets_sprite_icon_file_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
+    iconGroupageCargo: _assets_sprite_icon_groupage_cargo_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
+    iconHouse: _assets_sprite_icon_house_svg__WEBPACK_IMPORTED_MODULE_20__["default"],
+    iconInsurance: _assets_sprite_icon_insurance_svg__WEBPACK_IMPORTED_MODULE_21__["default"],
+    iconMail: _assets_sprite_icon_mail_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
+    iconMarker: _assets_sprite_icon_marker_svg__WEBPACK_IMPORTED_MODULE_23__["default"],
+    iconMenu: _assets_sprite_icon_menu_svg__WEBPACK_IMPORTED_MODULE_24__["default"],
+    iconMultimodal: _assets_sprite_icon_multimodal_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
+    iconPerson: _assets_sprite_icon_person_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
+    iconPhrase: _assets_sprite_icon_phrase_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
+    iconPlane: _assets_sprite_icon_plane_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
+    iconPoint: _assets_sprite_icon_point_svg__WEBPACK_IMPORTED_MODULE_29__["default"],
+    iconSearch: _assets_sprite_icon_search_svg__WEBPACK_IMPORTED_MODULE_30__["default"],
+    iconShield: _assets_sprite_icon_shield_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
+    iconShip: _assets_sprite_icon_ship_svg__WEBPACK_IMPORTED_MODULE_32__["default"],
+    iconShipping: _assets_sprite_icon_shipping_svg__WEBPACK_IMPORTED_MODULE_33__["default"],
+    iconStock: _assets_sprite_icon_stock_svg__WEBPACK_IMPORTED_MODULE_34__["default"],
+    iconStorage: _assets_sprite_icon_storage_svg__WEBPACK_IMPORTED_MODULE_35__["default"],
+    iconTransport: _assets_sprite_icon_transport_svg__WEBPACK_IMPORTED_MODULE_36__["default"],
+    iconTruck: _assets_sprite_icon_truck_svg__WEBPACK_IMPORTED_MODULE_37__["default"],
+    iconTrucking: _assets_sprite_icon_trucking_svg__WEBPACK_IMPORTED_MODULE_38__["default"],
+    iconVk: _assets_sprite_icon_vk_svg__WEBPACK_IMPORTED_MODULE_39__["default"],
+    iconVkClear: _assets_sprite_icon_vk_clear_svg__WEBPACK_IMPORTED_MODULE_40__["default"]
 });
 
 

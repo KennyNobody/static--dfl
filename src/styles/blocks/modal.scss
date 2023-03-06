@@ -1,0 +1,14 @@
+.modal {
+    width: 100%;
+    background-color: $white-bg;
+
+    &--small {
+        padding: rem(32);
+        max-width: rem(400);
+    }
+
+    &--regular {
+        padding: rem(24) rem(32);
+        max-width: rem(480);
+    }
+}

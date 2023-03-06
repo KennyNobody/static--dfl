@@ -6,9 +6,9 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
+<main class="main decor-info">
     <section class="section pt-120 mb-140">
         <div class="container">
             <h1 class="title mb-35">
@@ -64,8 +64,8 @@
             </a>
         </div>
     </section>
+    <%= htmlWebpackPlugin.options.sectionPartners %>
 </main>
-<%= htmlWebpackPlugin.options.sectionPartners %>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>
 </body>

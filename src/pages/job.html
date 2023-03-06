@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-vacancy">
     <section class="section mb-130 mbm-80">
@@ -263,81 +263,9 @@
                     </div>
                 </form>
             </div>
-
         </div>
     </section>
-    <section class="section mb-80">
-        <div class="container">
-            <div class="columns columns--center columns--tab-start">
-                <div class="columns__col columns__col--5 columns__col--tab-12 mbt-10 mbm-0">
-                    <div class="columns">
-                        <div class="columns__col columns__col--12 columns__col--tab-3">
-                            <h2 class="title">
-                                О DFL
-                            </h2>
-                        </div>
-                        <div class="columns__col columns__col--12 columns__col--tab-9">
-                            <div class="editor color-primary fz-14 fz-mob-16">
-                                <p>
-                                    DFL – транспортная компания, предоставляющая комплексный логистический сервис,
-                                    которая
-                                    помогает развивать конкурентные преимущества своих клиентов за счет использования
-                                    лучших
-                                    транспортных и информационных технологии в организации управления цепочками
-                                    поставок.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns__col columns__col--7 columns__col--tab-12">
-                    <div class="columns columns--mob-gap-12">
-                        <div class="columns__col columns__col--6 columns__col--mob-1">
-                            <article class="article-factoid bg-white">
-                                <h3 class="article-factoid__title">
-                                    <strong>14</strong> млн.евро
-                                </h3>
-                                <p class="article-factoid__text">
-                                    Годовой оборот (2012)
-                                </p>
-                            </article>
-                        </div>
-                        <div class="columns__col columns__col--6 columns__col--mob-1">
-                            <article class="article-factoid bg-white">
-                                <h3 class="article-factoid__title">
-                                    <strong>10 000</strong> м<sup>2</sup>
-                                </h3>
-                                <p class="article-factoid__text">
-                                    Складских площадей класса А с системой Red Prairie
-                                </p>
-                            </article>
-                        </div>
-                        <div class="columns__col columns__col--6 columns__col--mob-1">
-                            <article class="article-factoid bg-white">
-                                <h3 class="article-factoid__title">
-                                    <strong>150</strong> сотрудников
-                                </h3>
-                                <p class="article-factoid__text">
-                                    Владеющих иностранными языками
-                                </p>
-                            </article>
-                        </div>
-                        <div class="columns__col columns__col--6 columns__col--mob-1">
-                            <article class="article-factoid bg-white">
-                                <h3 class="article-factoid__title">
-                                    <strong>2 000</strong> м<sup>2</sup>
-                                </h3>
-                                <p class="article-factoid__text">
-                                    Офисных и бытовых площадей
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section mb-80 mbt-40 mbm-80">
+    <section class="section mb-80 mbt-40 mbm-80 overflow-hidden">
         <div class="container">
             <div class="slider" data-slider="workers">
                 <div class="toolbar mb-30">
@@ -360,49 +288,50 @@
                 <div class="swiper-container slider__container">
                     <div class="swiper-wrapper slider__wrapper">
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <!-- Ссылка на 1920х1080, img - маленький -->
+                            <a class="article-gallery" href="./assets/content/ill-worker-1.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-1.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-2.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-2.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-3.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-3.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-1.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-1.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-2.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-2.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-3.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-3.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-1.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-1.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-2.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-2.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/ill-worker-3.jpg" data-fancybox="photo">
                                 <img src="./assets/content/ill-worker-3.jpg" alt="">
-                            </picture>
+                            </a>
                         </div>
                     </div>
                     <div class="slider__progressbar progressbar"></div>
@@ -470,7 +399,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <a class="article-review__footer" href="">
+                                    <a class="article-review__footer" href="#modal-review-1" data-fancybox="review">
                                     <span class="article-review__link">
                                         Полный отзыв
                                     </span>
@@ -480,6 +409,50 @@
                                     </a>
                                 </div>
                             </article>
+                            <div hidden>
+                                <!-- Здесь дублируется верхний отзыв, но без article-footer. Сделай проверку на количество символов, если их больше, чем 2.5 строки, то делаешь модалку  -->
+                                <div class="modal modal--regular" id="modal-review-1">
+                                    <article class="article-review">
+                                        <picture class="article-review__picture">
+                                            <img src="./assets/content/placeholder.svg" alt="#">
+                                        </picture>
+                                        <div class="article-review__content">
+                                            <div class="article-review__header">
+                                                <div class="article-review__info">
+                                                    <h4 class="article-review__name">
+                                                        Линевич Денис Александрович
+                                                    </h4>
+                                                    <p class="article-review__position">
+                                                        Менеджер
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main">
+                                                <div class="editor fz-14 color-primary">
+                                                    <p>
+                                                        Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                        с
+                                                        «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                        совместный,
+                                                        продолжительный опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                        продолжительный
+                                                        опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide slider__slide">
                             <article class="article-review">
@@ -596,7 +569,7 @@
             </div>
         </div>
     </section>
-    <section class="section mb-80">
+    <section class="section mb-80 overflow-hidden">
         <div class="container">
             <div class="slider" data-slider="ourOffice">
                 <div class="toolbar mb-30">
@@ -619,49 +592,207 @@
                 <div class="swiper-container slider__container slider__container--overflow">
                     <div class="swiper-wrapper slider__wrapper">
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery-free">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/placeholder.svg" alt="">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/placeholder.svg" data-fancybox="office">
+                                <img src="./assets/content/placeholder.svg" alt="Наш офис">
+                            </a>
                         </div>
                     </div>
                     <div class="slider__progressbar progressbar"></div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="section mbt-70 mbm-60">
+        <div class="container">
+            <div class="info">
+                <div class="info__content">
+                    <article class="article-contact article-contact--line-tab">
+                        <div class="article-contact__header">
+                            <h2 class="article-contact__title article-contact__title--large">
+                                Контакты
+                            </h2>
+                            <h3 class="article-contact__name">
+                                Титов Сергей Фёдорович
+                            </h3>
+                            <p class="article-contact__caption">
+                                Менеджер по персоналу
+                            </p>
+                        </div>
+                        <div class="article-contact__main">
+                            <div class="article-contact__links">
+                                <a class="link-contact link-contact--medium" href="tel:+74012306202">
+                                    <svg class="link-contact__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-call"></use>
+                                    </svg>
+                                    <span class="link-contact__text">
+                                        +7 (4012) 30 62 02
+                                    </span>
+                                </a>
+                                <a class="link-contact link-contact--medium" href="mailto:grigory.pavlov@ru.dsv.com">
+                                    <svg class="link-contact__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                    <span class="link-contact__text">
+                                        grigory.pavlov@ru.dsv.com
+                                    </span>
+                                </a>
+                                <!-- TODO Вставить ссылку на карту -->
+                                <a class="link-contact link-contact--medium" href="">
+                                    <svg class="link-contact__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-point"></use>
+                                    </svg>
+                                    <span class="link-contact__text">
+                                        Калининградская обл., Гурьевский район, пос. Дорожное, ул. Датский проезд, 3
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="info__map" data-map="page"></div>
+                <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+                <script>
+                    ymaps.ready(init);
+
+                    function init () {
+                        const mapEl = document.querySelector('[data-map]');
+                        const point = [54.6422742957742,20.520111363754264];
+
+                        const myMap = new ymaps.Map(mapEl, {
+                                center: point,
+                                zoom: 15,
+                                controls: ['default', 'zoomControl', 'routeButtonControl']
+                            }),
+
+                            placemark = new ymaps.Placemark(point, {}, {
+                                iconImageHref: './assets/images/marker.svg',
+                                iconImageSize: [30, 44],
+                                iconImageOffset: [-15, -22]
+                            });
+                        myMap.geoObjects.add(placemark);
+
+                        // myMap.controls
+                        //     .add('zoomControl', { left: 5, top: 5 })
+                        //     .add('mapTools', { left: 35, top: 5 });
+                        // myMap.geoObjects.add(placemark);
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="section relative z-index-1 mb-100 mbl-85 mbt-80 mbm-110">
+        <div class="container">
+            <div class="container-form">
+                <h2 class="title mb-8 mbm-20">
+                    Остались вопросы?
+                </h2>
+                <div class="editor editor--14 color-primary mb-20">
+                    <p>
+                        Вы умеете чуть больше или сомневаетесь, что у вас есть все необходимые навыки? <br class="mob-hidden">
+                        Мы готовы рассмотреть, обсудить и предложить варианты сотрудничества, которые будут учитывать взаимные интересы.
+                    </p>
+                </div>
+                <form class="form" data-form="./actionLink/">
+                    <div class="columns columns--form">
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-1">
+                            <label class="field" data-input>
+                                <p class="field__title">
+                                    ФИО<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите ФИО">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-2">
+                            <label class="field" data-input>
+                                <p class="field__title">
+                                    Телефон<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-3">
+                            <label class="field" data-input>
+                                <p class="field__title">
+                                    Почта<strong>*</strong>
+                                </p>
+                                <input type="text" class="field__input" placeholder="Укажите почту">
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--8 columns__col--tab-12 columns__col--mob-2 mod-textarea order-t-4">
+                            <label class="field" data-input>
+                                <p class="field__title">
+                                    Комментарий
+                                </p>
+                                <textarea class="field__textarea" placeholder="Опишите подробнее"></textarea>
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--3 columns__col--tab-6 columns__col--mob-2 order-t-5">
+                            <label class="input-file" data-input-file>
+                                <input type="file" class="input-file__field" data-input-file-field>
+                                <svg class="input-file__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                                </svg>
+                                <span class="input-file__text" data-input-file-caption>
+                                    Прикрепить файл<strong>*</strong>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-7">
+                            <button class="button full" data-form-button>
+                                <span class="button__text" data-form-text-field>
+                                    Отправить запрос
+                                </span>
+                            </button>
+                        </div>
+                        <div class="columns__col columns__col--8 columns__col--tab-6 columns__col--mob-2 tab-hidden"></div>
+                        <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-6">
+                            <label class="agreement" data-agreement>
+                                <input type="checkbox" class="agreement__field">
+                                <div class="agreement__box"></div>
+                                <span class="agreement__text">
+                                    Я согласен на обработку <a href="">персональных данных</a>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </section>
     <%= htmlWebpackPlugin.options.sectionPartners %>

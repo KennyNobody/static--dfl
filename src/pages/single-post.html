@@ -6,92 +6,109 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main">
-    <section class="section">
+<main class="main decor-info">
+    <section class="section mb-80 pt-100 ptm-80">
         <div class="container">
-            <div class="slider" data-slider="contentGallery">
-                <div class="swiper-container slider__container">
-                    <div class="swiper-wrapper slider__wrapper">
-                        <div class="swiper-slide slider__slide">
-                            1
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            2
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            3
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            4
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            5
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            6
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            7
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            8
+            <time class="date mb-20 mbm-10">
+                08:53, 6 декабря 2022
+            </time>
+            <div class="editor fz-14 fz-mob-16">
+                <h1>
+                    Заголовок новости
+                </h1>
+                <picture class="picture float-right">
+                    <img src="./assets/content/630x257.svg" alt="#">
+                </picture>
+                <p>
+                    На брифинге для журналистов премьер-министр Казахстана Алихан Смаилов сообщил, что из России уходят
+                    многие иностранные компании. – Мы составили список более 300 наиболее крупных таких иностранных
+                    компаний. С ними проводили работу по информированию о возможностях их деятельности в Казахстане. На
+                    сегодняшний день 56 компаний из них изъявили желание релоцировать свои офисы в Казахстан. Часть
+                    компаний уже приняли. С ними проводили работу по информированию о возможностях их деятельности в
+                    Казахстане. На сегодняшний день 56 компаний из них изъявили желание.
+                </p>
+                <p>
+                    В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                    Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно
+                    проработать размещение таких производств рядом с Алматы по периметру Большой Алматинской кольцевой
+                    автомобильной дорогой, что существенно поможет экономике области. Обсудите этот вопрос с
+                    Правительством и компаниями, – посоветовал Президент.
+                </p>
+                <div class="slider" data-slider="contentGallery">
+                    <div class="relative">
+                        <button class="button-nav button-nav--center tab-hidden" data-button-prev>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="button-nav button-nav--center tab-hidden" data-button-next>
+                            <svg class="button-nav__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper-container slider__container" data-nav>
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide slider__slide--gallery">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slider__slide slider__slide--news">
+                                    <a href="./assets/content/placeholder.svg" class="article-gallery" data-fancybox="gallery">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider__progressbar progressbar"></div>
                         </div>
                     </div>
-                    <div class="slider__progressbar progressbar"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="slider" data-slider="news">
-                <div class="toolbar mb-30">
-                    <h2 class="title">
-                        Новости
-                    </h2>
-                    <span>
-                        Показать все
-                    </span>
-                    <!--                    <div data-nav>-->
-                    <!--                        <button data-button-prev>-->
-                    <!--                            Назад-->
-                    <!--                        </button>-->
-                    <!--                        <button data-button-next>-->
-                    <!--                            Вперед-->
-                    <!--                        </button>-->
-                    <!--                    </div>-->
-                </div>
-                <div class="swiper-container slider__container">
-                    <div class="swiper-wrapper slider__wrapper">
-                        <div class="swiper-slide slider__slide">
-                            1
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            2
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            3
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            4
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            5
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            6
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            7
-                        </div>
-                        <div class="swiper-slide slider__slide">
-                            8
-                        </div>
-                    </div>
-                    <div class="slider__progressbar slider__progressbar--30 progressbar"></div>
-                </div>
+                <p>
+                    На брифинге для журналистов премьер-министр Казахстана Алихан Смаилов сообщил, что из России уходят
+                    многие иностранные компании. – Мы составили список более 300 наиболее крупных таких иностранных
+                    компаний. С ними проводили работу по информированию о возможностях их деятельности в Казахстане. На
+                    сегодняшний день 56 компаний из них изъявили желание релоцировать свои офисы в Казахстан. Часть
+                    компаний уже приняли положительное решение и уже, можно сказать, релоцировались, – сказал чиновник,
+                    приведя в пример фирмы «Индрайвер» и «Honeywell». С ними проводили работу по информированию о
+                    возможностях их деятельности в Казахстане. На сегодняшний день 56 компаний из них.
+                </p>
+                <p>
+                    Основную задачу республиканского руководства премьер-министр видит в том, чтобы привлечь
+                    производственные мощности зарубежных компаний. – Для этого у нас есть инструменты, которые действуют
+                    и для отечественных, и для иностранных инвесторов. Это и определенные налоговые, и регуляторные
+                    преференции. Плюс поддержка местных исполнительных органов в части инфраструктуры, – пояснил
+                    Смаилов.
+                </p>
+                <picture class="picture float-left">
+                    <img src="./assets/content/630x257.svg" alt="#">
+                </picture>
+                <p>
+                    В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                    Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно
+                    проработать размещение таких производств рядом с Алматы по периметру Большой Алматинской кольцевой
+                    автомобильной дорогой, что существенно поможет экономике области. Обсудите этот вопрос с
+                    Правительством и компаниями, – посоветовал Президент.
+                    В настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                    Концентрировать их все в крупных городах непродуктивно. Акимату (LR: администрации) нужно. В
+                    настоящее время более 50 международных компаний из России перебазировались в Казахстан.
+                </p>
             </div>
         </div>
     </section>
@@ -100,7 +117,7 @@
             <div class="slider" data-slider="services">
                 <div class="toolbar mb-25">
                     <h2 class="title">
-                        Сопутствующие услуги
+                        Услуги
                     </h2>
                     <div class="nav-slider tab-hide" data-nav>
                         <button class="button-nav" data-button-prev>
@@ -240,6 +257,221 @@
                         </div>
                     </div>
                     <div class="slider__progressbar progressbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-130">
+        <div class="container">
+            <div class="slider" data-slider="news">
+                <div class="toolbar mb-30">
+                    <h2 class="title">
+                        Новости
+                    </h2>
+                    <a href="./news.html" class="toolbar__link">
+                        Показать все
+                    </a>
+                </div>
+                <div class="relative">
+                    <button class="button-nav button-nav--news tab-hidden" data-button-prev>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="button-nav button-nav--news tab-hidden" data-button-next>
+                        <svg class="button-nav__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-container slider__container slider__container--overflow relative" data-nav>
+                        <div class="swiper-wrapper slider__wrapper">
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация о формуле формирования рейтинга
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slider__slide slider__slide--news">
+                                <a href="./single-post.html" class="article-news">
+                                    <picture class="article-news__picture article-news__picture--small">
+                                        <img src="./assets/content/placeholder.svg" alt="Заголовок новости">
+                                    </picture>
+                                    <div class="article-news__content">
+                                        <time class="article-news__date">
+                                            08:53, 6 декабря 2022
+                                        </time>
+                                        <h3 class="article-news__title">
+                                            Актуальная информация
+                                        </h3>
+                                        <div class="article-news__toolbar">
+                                        <span class="article-news__link">
+                                            Подробнее
+                                        </span>
+                                            <svg class="article-news__icon">
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__progressbar progressbar"></div>
+                    </div>
                 </div>
             </div>
         </div>

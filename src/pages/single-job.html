@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-vacancy">
     <section class="section mb-130 mbm-80">
@@ -22,10 +22,10 @@
                     <div class="editor fz-14 mb-20">
                         <p>35 000 - 50 000 ₽</p>
                     </div>
-                    <form action="" class="form invert" data-form>
+                    <form action="" class="form invert" data-form="./actionLink/">
                         <div class="columns columns--form-small mb-30">
                             <div class="columns__col columns__col--6 columns__col--tab-12 order-m-1">
-                                <label class="field">
+                                <label class="field" data-input>
                                     <p class="field__title">
                                         ФИО<strong>*</strong>
                                     </p>
@@ -33,7 +33,7 @@
                                 </label>
                             </div>
                             <div class="columns__col columns__col--6 columns__col--tab-12 order-m-2">
-                                <label class="field">
+                                <label class="field" data-input>
                                     <p class="field__title">
                                         Телефон<strong>*</strong>
                                     </p>
@@ -41,7 +41,7 @@
                                 </label>
                             </div>
                             <div class="columns__col columns__col--6 columns__col--tab-12 order-m-3">
-                                <label class="field">
+                                <label class="field" data-input>
                                     <p class="field__title">
                                         Почта<strong>*</strong>
                                     </p>
@@ -61,14 +61,14 @@
                             </div>
 
                             <div class="columns__col columns__col--12 pt-15 ptt-0 order-m-6">
-                                <button class="button invert">
-                                    <span class="button__text">
+                                <button class="button invert" data-form-button>
+                                    <span class="button__text" data-form-text-field>
                                         Отправить резюме
                                     </span>
                                 </button>
                             </div>
                             <div class="columns__col columns__col--12 order-t-5">
-                                <label class="agreement">
+                                <label class="agreement" data-agreement>
                                     <input type="checkbox" class="agreement__field">
                                     <div class="agreement__box"></div>
                                     <span class="agreement__text">
@@ -294,16 +294,60 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <a class="article-review__footer" href="">
-                                    <span class="article-review__link">
-                                        Полный отзыв
-                                    </span>
+                                    <a class="article-review__footer" href="#modal-review-1" data-fancybox="review">
+                                        <span class="article-review__link">
+                                            Полный отзыв
+                                        </span>
                                         <svg class="article-review__icon">
                                             <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
                                         </svg>
                                     </a>
                                 </div>
                             </article>
+                            <div hidden>
+                                <!-- Здесь дублируется верхний отзыв, но без article-footer. Сделай проверку на количество символов, если их больше, чем 2.5 строки, то делаешь модалку  -->
+                                <div class="modal modal--regular" id="modal-review-1">
+                                    <article class="article-review">
+                                        <picture class="article-review__picture">
+                                            <img src="./assets/content/placeholder.svg" alt="#">
+                                        </picture>
+                                        <div class="article-review__content">
+                                            <div class="article-review__header">
+                                                <div class="article-review__info">
+                                                    <h4 class="article-review__name">
+                                                        Линевич Денис Александрович
+                                                    </h4>
+                                                    <p class="article-review__position">
+                                                        Менеджер
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main">
+                                                <div class="editor fz-14 color-primary">
+                                                    <p>
+                                                        Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                        с
+                                                        «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                        совместный,
+                                                        продолжительный опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                        продолжительный
+                                                        опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide slider__slide">
                             <article class="article-review">
@@ -434,10 +478,10 @@
                         взаимные интересы.
                     </p>
                 </div>
-                <form action="" class="form">
+                <form class="form" data-form="./actionLink/">
                     <div class="columns columns--form">
                         <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-1">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     ФИО<strong>*</strong>
                                 </p>
@@ -445,7 +489,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-2">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Телефон<strong>*</strong>
                                 </p>
@@ -453,7 +497,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--4 columns__col--tab-6 columns__col--mob-2 order-t-3">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Почта<strong>*</strong>
                                 </p>
@@ -461,7 +505,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--8 columns__col--tab-12 columns__col--mob-2 mod-textarea order-t-4">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Комментарий
                                 </p>
@@ -480,15 +524,15 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-7">
-                            <button class="button full">
-                                <span class="button__text">
+                            <button class="button full" data-form-button>
+                                <span class="button__text" data-form-text-field>
                                     Отправить запрос
                                 </span>
                             </button>
                         </div>
                         <div class="columns__col columns__col--8 columns__col--tab-6 columns__col--mob-2 tab-hidden"></div>
                         <div class="columns__col columns__col--4 columns__col--tab-12 columns__col--mob-2 order-t-6">
-                            <label class="agreement">
+                            <label class="agreement" data-agreement>
                                 <input type="checkbox" class="agreement__field">
                                 <div class="agreement__box"></div>
                                 <span class="agreement__text">

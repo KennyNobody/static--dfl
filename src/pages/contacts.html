@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-contacts">
     <section class="section z-index-2">
@@ -19,7 +19,41 @@
                     <h1 class="title mb-15">
                         Контакты
                     </h1>
-                    <a href="" class="link-social">
+                    <!-- TODO Вставить ссылку на карту -->
+                    <a class="link-contact link-contact--intro mb-12" href="">
+                        <svg class="link-contact__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-point"></use>
+                        </svg>
+                        <span class="link-contact__text">
+                            Калининградская обл., Гурьевский район, <br class="mob-hidden"> пос. Дорожное, ул. Датский проезд, 3
+                        </span>
+                    </a>
+                    <a class="link-contact link-contact--intro mb-12" href="tel:+74012306200">
+                        <svg class="link-contact__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-call"></use>
+                        </svg>
+                        <span class="link-contact__text">
+                            +7 4012 30 62 00
+                        </span>
+                    </a>
+                    <a class="link-contact link-contact--intro mb-12" href="tel:+74012306245">
+                        <svg class="link-contact__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-fax"></use>
+                        </svg>
+                        <span class="link-contact__text">
+                            +7 4012 30 62 45
+                        </span>
+                    </a>
+                    <a class="link-contact link-contact--intro mb-12" href="mailto:kaliningrad@ru.dsv.com ">
+                        <svg class="link-contact__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <span class="link-contact__text">
+                            kaliningrad@ru.dsv.com
+                        </span>
+                    </a>
+
+                    <a href="" class="link-social link-social--intro">
                         <svg class="link-social__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
                         </svg>
@@ -29,9 +63,32 @@
         </div>
     </section>
     <section class="section mb-80">
-        <div class="map-section">
-<!--            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A885df1a95a128b9dc715a0b0b7c69b5f2720a8002e44b20980447e0a976da40e&amp;source=constructor"></iframe>-->
-        </div>
+        <div class="map-section" data-map="section"></div>
+        <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+        <script>
+            ymaps.ready(init);
+
+            function init () {
+                const mapEl = document.querySelector('[data-map]');
+                const point = [54.6422742957742,20.520111363754264];
+
+                const myMap = new ymaps.Map(mapEl, {
+                        center: point,
+                        zoom: 15
+                    }),
+
+                    placemark = new ymaps.Placemark(point, {}, {
+                        iconImageHref: './assets/images/marker.svg',
+                        iconImageSize: [30, 44],
+                        iconImageOffset: [-15, -22]
+                    });
+
+                myMap.controls
+                    .add('zoomControl', { left: 5, top: 5 })
+                    .add('mapTools', { left: 35, top: 5 });
+                myMap.geoObjects.add(placemark);
+            }
+        </script>
     </section>
     <section class="section mb-90 mbl-80">
         <div class="container">

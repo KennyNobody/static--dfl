@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-3">
     <section class="section mb-130 mbm-80">
@@ -24,11 +24,16 @@
                             Мы можем помочь вам перевезти тяжелый, <br class="tab-hidden">негабаритный и сложный груз
                         </p>
                     </div>
-                    <button class="button button--regular invert">
+                    <a class="button button--regular invert" href="#modal-project" data-fancybox="project">
                         <span class="button__text">
                             Оставить запрос
                         </span>
-                    </button>
+                    </a>
+                    <div hidden>
+                        <div class="modal" id="modal-project">
+                            Модалка заказа
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

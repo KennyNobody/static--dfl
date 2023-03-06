@@ -15,6 +15,7 @@ import iconControl from "../assets/sprite/icon-control.svg";
 import iconCopy from "../assets/sprite/icon-copy.svg";
 import iconCustomClearence from "../assets/sprite/icon-custom-clearence.svg";
 import iconEurope from "../assets/sprite/icon-europe.svg";
+import iconFax from "../assets/sprite/icon-fax.svg";
 import iconFile from "../assets/sprite/icon-file.svg";
 import iconGroupageCargo from "../assets/sprite/icon-groupage-cargo.svg";
 import iconHouse from "../assets/sprite/icon-house.svg";
@@ -57,6 +58,7 @@ export default {
     iconCopy,
     iconCustomClearence,
     iconEurope,
+    iconFax,
     iconFile,
     iconGroupageCargo,
     iconHouse,

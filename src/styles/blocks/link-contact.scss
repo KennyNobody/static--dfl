@@ -7,13 +7,27 @@
 
     @at-root {
         a#{&} {
+            transition: 0.3s all;
             text-decoration: none;
-            transition: 0.3s opacity;
         }
 
         button#{&} {
+            transition: 0.3s all;
             text-decoration: none;
-            transition: 0.3s opacity;
+        }
+    }
+
+    &--intro {
+        gap: rem(12);
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        @include r(700) {
+            font-weight: 500;
+            font-size: rem(16);
+            color: $blue-primary;
         }
     }
 
@@ -27,7 +41,7 @@
                 transition: 0.3s opacity;
 
                 &:hover {
-                    opacity: 0.7;
+                    color: $text-primary;
                 }
             }
 
@@ -36,7 +50,7 @@
                 transition: 0.3s opacity;
 
                 &:hover {
-                    opacity: 0.7;
+                    color: $text-primary;
                 }
             }
         }

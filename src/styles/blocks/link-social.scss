@@ -28,6 +28,33 @@
         }
     }
 
+    &--intro {
+        &:hover {
+            opacity: 0.5;
+        }
+
+        .link-social__icon {
+            fill: none;
+            width: rem(42);
+            height: rem(42);
+            stroke-width: 1px;
+            stroke: $text-secondary-2;
+
+            @include r(1300) {
+
+            }
+
+            @include r(1000) {
+
+            }
+
+            @include r(700) {
+
+            }
+        }
+    }
+
+
     &--mobile {
         .link-social__icon {
             width: rem(40);

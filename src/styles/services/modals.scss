@@ -1,7 +1,96 @@
-#fancybox-modal-gallery {
+#fancybox-modal-photo {
     --fancybox-bg: rgba(78, 86, 119, 0.7);
 
     @include r(700) {
         --fancybox-bg: rgba(78, 86, 119, 0.95);
     }
 }
+
+#fancybox-modal-review {
+    --fancybox-bg: rgba(78, 86, 119, 0.7);
+
+    //@include r(700) {
+    //    --fancybox-bg: rgba(78, 86, 119, 0.95);
+    //}
+
+    .fancybox {
+        &__slide {
+            padding: 0;
+        }
+        &__content {
+            padding: 0;
+            max-width: rem(480);
+        }
+    }
+
+    .f-button.is-close-btn {
+        top: rem(24);
+        right: rem(32);
+        width: rem(24);
+        height: rem(24);
+        background: none;
+
+        svg {
+            width: rem(14);
+            height: rem(14);
+            stroke: $text-secondary-1;
+        }
+    }
+}
+
+#fancybox-modal-offer {
+    --fancybox-bg: rgba(78, 86, 119, 0.7);
+
+    .fancybox {
+        &__slide {
+            padding: 0;
+        }
+        &__content {
+            padding: 0;
+            max-width: rem(480);
+        }
+    }
+
+    .f-button.is-close-btn {
+        top: rem(24);
+        right: rem(32);
+        width: rem(24);
+        height: rem(24);
+        background: none;
+
+        svg {
+            width: rem(14);
+            height: rem(14);
+            stroke: $text-secondary-1;
+        }
+    }
+}
+
+#fancybox-modal-project {
+    --fancybox-bg: rgba(78, 86, 119, 0.7);
+
+    .fancybox {
+        &__slide {
+            padding: 0;
+        }
+        &__content {
+            padding: 0;
+            max-width: rem(480);
+        }
+    }
+
+    .f-button.is-close-btn {
+        top: rem(24);
+        right: rem(32);
+        width: rem(24);
+        height: rem(24);
+        background: none;
+
+        svg {
+            width: rem(14);
+            height: rem(14);
+            stroke: $text-secondary-1;
+        }
+    }
+}
+

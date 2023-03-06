@@ -98,3 +98,26 @@
         fill: $blue-resolution;
     }
 }
+
+.fancybox__content {
+    .article-review {
+        min-height: 0;
+
+        &__organization {
+            padding-right: rem(26);
+        }
+
+        &__main {
+            .editor {
+                display: block;
+                -webkit-line-clamp: inherit;
+                -webkit-box-orient: inherit;
+            }
+        }
+
+        &__footer {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

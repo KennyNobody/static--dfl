@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeaderInvert %>
 <main class="main decor-offers">
     <section class="section mb-130 mbm-80">
@@ -25,11 +25,11 @@
                             <br class="tab-hidden">
                         </p>
                     </div>
-                    <button class="button button--regular invert">
+                    <a href="#modal-offer" data-fancybox="offer" class="button button--regular invert" data-button-scroll>
                         <span class="button__text">
                             Стать партнером
                         </span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -193,9 +193,9 @@
                                 </div>
                             </div>
                             <div class="table__column table__column--15 table__column--fill table__column--tab-100">
-                                <button class="table__button" data-offer-button="001">
+                                <a class="table__button" data-offer-id="1" href="#modal-offer" data-fancybox="offer">
                                     Оставить запрос
-                                </button>
+                                </a>
                             </div>
                         </article>
                         <article class="table__line table__line--regular">
@@ -307,9 +307,9 @@
                                 </div>
                             </div>
                             <div class="table__column table__column--15 table__column--fill table__column--tab-100">
-                                <button class="table__button" data-offer-button="002">
+                                <a class="table__button" data-offer-id="2" href="#modal-offer" data-fancybox="offer">
                                     Оставить запрос
-                                </button>
+                                </a>
                             </div>
                         </article>
                         <article class="table__line table__line--regular">
@@ -421,11 +421,16 @@
                                 </div>
                             </div>
                             <div class="table__column table__column--15 table__column--fill table__column--tab-100">
-                                <button class="table__button" data-offer-button="003">
+                                <a class="table__button" data-offer-id="3" href="#modal-offer" data-fancybox="offer">
                                     Оставить запрос
-                                </button>
+                                </a>
                             </div>
                         </article>
+                    </div>
+                </div>
+                <div hidden>
+                    <div class="modal" id="modal-offer">
+                        Модалка
                     </div>
                 </div>
             </div>
@@ -669,16 +674,60 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <a class="article-review__footer" href="">
-                                    <span class="article-review__link">
-                                        Полный отзыв
-                                    </span>
+                                    <a class="article-review__footer" data-fancybox="review" href="#modal-review-1">
+                                        <span class="article-review__link">
+                                            Полный отзыв
+                                        </span>
                                         <svg class="article-review__icon">
                                             <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-review"></use>
                                         </svg>
                                     </a>
                                 </div>
                             </article>
+                            <div hidden>
+                                <!-- Здесь дублируется верхний отзыв, но без article-footer. Сделай проверку на количество символов, если их больше, чем 2.5 строки, то делаешь модалку  -->
+                                <div class="modal modal--regular" id="modal-review-1">
+                                    <article class="article-review">
+                                        <div class="article-review__content">
+                                            <div class="article-review__header">
+                                                <div class="article-review__info">
+                                                    <h3 class="article-review__organization">
+                                                        ООО "Багира-транс"
+                                                    </h3>
+                                                    <h4 class="article-review__name">
+                                                        Линевич Денис Александрович
+                                                    </h4>
+                                                    <p class="article-review__position">
+                                                        Менеджер
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main">
+                                                <div class="editor fz-14 color-primary">
+                                                    <p>
+                                                        Компания Бауцентр имеет совместный, продолжительный опыт сотрудничества
+                                                        с
+                                                        «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт». Компания Бауцентр имеет
+                                                        совместный,
+                                                        продолжительный опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».Компания Бауцентр имеет совместный,
+                                                        продолжительный
+                                                        опыт сотрудничества с «DFL –
+                                                        Транспорт» более 12 лет. За это время мы убедились в высоком
+                                                        профессионализме
+                                                        сотрудников компании «DFL-Транспорт».
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide slider__slide">
                             <article class="article-review">

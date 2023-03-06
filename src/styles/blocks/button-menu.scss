@@ -62,6 +62,30 @@
     }
 }
 
+.section--header {
+    .button-menu.invert {
+        .button-menu {
+            &__line {
+                @include r(700) {
+                    background-color: $text-white;
+                }
+            }
+        }
+    }
+}
+
+.section--header.fixed {
+    .button-menu.invert {
+        .button-menu {
+            &__line {
+                @include r(700) {
+                    background-color: $blue-primary;
+                }
+            }
+        }
+    }
+}
+
 .body--menu {
     .button-menu {
         z-index: 3;

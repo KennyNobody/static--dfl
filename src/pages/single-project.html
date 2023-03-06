@@ -6,7 +6,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body class="body">
+<body class="body" data-body>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main decor-projects">
     <section class="section pt-95 mb-80">
@@ -130,10 +130,10 @@
                 <h2 class="title mb-20">
                     Запрос на проект
                 </h2>
-                <form action="" class="form">
+                <form class="form" data-form="./actionUrl/">
                     <div class="columns columns--form">
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-1">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     ФИО<strong>*</strong>
                                 </p>
@@ -141,7 +141,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-2">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Название организации<strong>*</strong>
                                 </p>
@@ -149,7 +149,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-3">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Телефон<strong>*</strong>
                                 </p>
@@ -157,7 +157,7 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-4">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Почта<strong>*</strong>
                                 </p>
@@ -165,15 +165,15 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--9 columns__col--tab-6 mod-textarea order-m-5">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
-                                    Комментраий
+                                    Комментарий
                                 </p>
                                 <textarea class="field__textarea" placeholder="Опишите подробнее"></textarea>
                             </label>
                         </div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-6">
-                            <label class="field">
+                            <label class="field" data-input>
                                 <p class="field__title">
                                     Дата погрузки и отгрузки
                                 </p>
@@ -181,17 +181,15 @@
                             </label>
                         </div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-8">
-                            <button class="button full">
-                                <span class="button__text">
+                            <button class="button full" data-form-button="">
+                                <span class="button__text" data-form-text-field>
                                     Отправить запрос
                                 </span>
                             </button>
                         </div>
-                        <div class="columns__col columns__col--9 columns__col--tab-6 mob-hidden">
-                            <!-- Это сркрыть-->
-                        </div>
+                        <div class="columns__col columns__col--9 columns__col--tab-6 mob-hidden"></div>
                         <div class="columns__col columns__col--3 columns__col--tab-6 order-m-7">
-                            <label class="agreement">
+                            <label class="agreement" data-agreement="">
                                 <input type="checkbox" class="agreement__field">
                                 <div class="agreement__box"></div>
                                 <span class="agreement__text">
@@ -227,44 +225,49 @@
                 <div class="swiper-container slider__container">
                     <div class="swiper-wrapper slider__wrapper">
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-1.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-1.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-2.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-2.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-3.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-3.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/item-gallery-4.jpg" alt="Заголовок изображения">
-                            </picture>
-                        </div>
-                        <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-1.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-1.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-2.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-2.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-3.jpg" data-fancybox="photo">
                                 <img src="./assets/content/item-gallery-3.jpg" alt="Заголовок изображения">
-                            </picture>
+                            </a>
                         </div>
                         <div class="swiper-slide slider__slide slider__slide--gallery">
-                            <picture class="article-gallery">
-                                <img src="./assets/content/item-gallery-4.jpg" alt="Заголовок изображения">
-                            </picture>
+                            <a class="article-gallery" href="./assets/content/item-gallery-1.jpg" data-fancybox="photo">
+                                <img src="./assets/content/item-gallery-1.jpg" alt="Заголовок изображения">
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-2.jpg" data-fancybox="photo">
+                                <img src="./assets/content/item-gallery-2.jpg" alt="Заголовок изображения">
+                            </a>
+                        </div>
+                        <div class="swiper-slide slider__slide slider__slide--gallery">
+                            <a class="article-gallery" href="./assets/content/item-gallery-3.jpg" data-fancybox="photo">
+                                <img src="./assets/content/item-gallery-3.jpg" alt="Заголовок изображения">
+                            </a>
                         </div>
                     </div>
                     <div class="slider__progressbar progressbar"></div>
