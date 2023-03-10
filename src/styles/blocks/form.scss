@@ -1,5 +1,25 @@
 .form {
+    &--partners {
+
+    }
     @include r(1200) {
 
+    }
+
+    &__section {
+        padding: rem(12) 0;
+    }
+
+    &__footer {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        gap: rem(10);
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: $white-bg;
+        padding: rem(10) rem(24) rem(12);
+        box-shadow: 0 rem(-3) rem(4) rem(-3) rgba(0, 0, 0, 0.1), 0 rem(4) rem(32) rem(-2) rgba(0, 0, 0, 0.08);
     }
 }

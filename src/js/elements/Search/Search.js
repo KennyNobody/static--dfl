@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default class Search {
+class Search {
     constructor(el) {
         this.el = el;
         this.form = this.el.querySelector('[data-search-form]');
@@ -99,3 +99,5 @@ export default class Search {
         this.list.setAttribute('hidden', 'hidden');
     }
 }
+
+export { Search };

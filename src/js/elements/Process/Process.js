@@ -1,4 +1,4 @@
-export default class Process {
+class Process {
     constructor(el) {
         this.el = el;
         this.items = this.el.querySelectorAll('[data-process-step]');
@@ -68,5 +68,6 @@ export default class Process {
     startMoving() {
         this.el.classList.add('animate');
     }
-
 }
+
+export { Process };

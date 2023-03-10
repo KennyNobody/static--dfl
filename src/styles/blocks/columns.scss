@@ -180,6 +180,10 @@
         align-items: flex-end;
     }
 
+    &--form-modal {
+        gap: rem(8);
+    }
+
     &__col {
         position: relative;
 

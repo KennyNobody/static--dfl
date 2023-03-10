@@ -31,12 +31,15 @@
 
     &--clear {
         background: none;
+        color: $text-menu;
         font-size: rem(16);
         border: 1px solid $text-menu;
 
         &:hover {
-            color: $blue-primary;
-            background-color: $light;
+            opacity: 0.5;
+            // TODO Сделать нормальный ховер
+            //color: $blue-primary;
+            //background-color: $light;
         }
     }
 

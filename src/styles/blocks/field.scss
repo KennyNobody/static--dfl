@@ -18,15 +18,16 @@
 
     &__input {
         width: 100%;
-        border: none;
         display: block;
         height: rem(38);
         font-weight: 400;
         font-size: rem(12);
         padding: 0 rem(12);
         font-family: inherit;
+        border-radius: rem(2);
         color: $text-secondary-2;
         background-color: $gray-bg;
+        border: 1px solid transparent;
 
         @include r(700) {
             height: rem(46);
@@ -37,9 +38,27 @@
         }
     }
 
+    &__select {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        height: rem(38);
+        font-weight: 400;
+        font-size: rem(12);
+        padding: 0 rem(12);
+        font-family: inherit;
+        border-radius: rem(2);
+        color: $text-secondary-2;
+        background-color: $gray-bg;
+        border: 1px solid transparent;
+
+        @include r(700) {
+            height: rem(46);
+        }
+    }
+
     &__textarea {
         width: 100%;
-        border: none;
         resize: none;
         //height: 100%;
         display: block;
@@ -48,10 +67,24 @@
         font-size: rem(12);
         min-height: rem(90);
         font-family: inherit;
+        border-radius: rem(2);
         background-color: $gray-bg;
+        border: 1px solid transparent;
 
         &::placeholder {
             color: $text-secondary-2;
+        }
+    }
+
+    &.error {
+        .field {
+            &__input {
+                border-color: $error;
+            }
+
+            &__textarea {
+                border-color: $error;
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-export default class Table {
+class Table {
     constructor(el) {
         this.el = el;
         this.sections = this.el.querySelectorAll('[data-table-section]');
@@ -20,3 +20,5 @@ export default class Table {
         });
     };
 }
+
+export { Table };

@@ -1,0 +1,15 @@
+.fieldset {
+    display: block;
+
+    &__title {
+        display: block;
+        font-weight: 400;
+        font-size: rem(14);
+        margin-bottom: rem(16);
+        color: $text-secondary-2;
+
+        strong {
+            color: $error;
+        }
+    }
+}

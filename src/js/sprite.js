@@ -1,4 +1,5 @@
 import arrowDrop from "../assets/sprite/icon-arrow-drop.svg";
+import iconArrowDropSection from "../assets/sprite/icon-arrow-drop-section.svg";
 import arrowBottom from "../assets/sprite/icon-arrow-bottom.svg";
 import arrowDouble from "../assets/sprite/icon-arrow-double.svg";
 import iconAirTransportation from "../assets/sprite/icon-air-transportation.svg"
@@ -44,6 +45,7 @@ export default {
     arrowBottom,
     arrowDouble,
     arrowDrop,
+    iconArrowDropSection,
     iconAirTransportation,
     iconArrowLeft,
     iconArrowReview,

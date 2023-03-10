@@ -1,0 +1,23 @@
+.dropdown-form {
+
+    &__main {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__content {
+        padding: rem(10) 0;
+    }
+}
+
+.form {
+    &__section {
+        &.active {
+            .dropdown-form {
+                &__main {
+                    max-height: 1000vh;
+                }
+            }
+        }
+    }
+}

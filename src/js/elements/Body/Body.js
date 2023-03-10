@@ -1,4 +1,4 @@
-export default class Body {
+class Body {
     constructor(el) {
         this.el = el;
     }
@@ -19,3 +19,5 @@ export default class Body {
         }
     }
 }
+
+export { Body };

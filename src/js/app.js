@@ -1,16 +1,17 @@
 import Swiper from "swiper";
 import sliderFactory from './elements/Slider/factory';
 
-import Body from "./elements/Body/Body";
-import Dropdown from "./elements/Dropdown/Dropdown";
-import Dropmenu from "./elements/Dropmenu/Dropmenu";
-import Menu from "./elements/Menu/Menu";
-import Header from "./elements/Header/Header";
-import Search from "./elements/Search/Search";
-import Process from "./elements/Process/Process";
-import InputFile from "./elements/InputFile/InputFile";
-import Table from "./elements/Table/Table";
-import Manual from "./elements/Manual/Manual";
+import { Body } from "./elements/Body/Body";
+import { Dropdown } from "./elements/Dropdown/Dropdown";
+import { Dropmenu } from "./elements/Dropmenu/Dropmenu";
+import { Form } from "./elements/Form/Form";
+import { Menu } from "./elements/Menu/Menu";
+import { Header } from "./elements/Header/Header";
+import { Search } from "./elements/Search/Search";
+import { Process } from "./elements/Process/Process";
+import { InputFile } from "./elements/InputFile/InputFile";
+import { Table } from "./elements/Table/Table";
+import { Manual } from "./elements/Manual/Manual";
 import { initGalleryModal } from "./functions/initFancybox";
 
 class App {
@@ -18,6 +19,7 @@ class App {
         this.createBody();
         this.initDropdown();
         this.createDropmenu();
+        this.createForm();
         this.createMenu();
         this.createHeader();
         this.createSliders();
@@ -55,6 +57,16 @@ class App {
         });
     }
 
+    createForm() {
+        const el = document.querySelectorAll('[data-form]');
+
+        if (el) this.form = [];
+
+        el.forEach((item) => {
+            this.form.push(new Form(item));
+        });
+    }
+
     createHeader() {
         const el = document.querySelector('[data-header]');
 
@@ -80,25 +92,6 @@ class App {
 
             this.sliders.push(slider);
         });
-
-        // el.forEach(item => {
-        //     const slider = new Swiper(
-        //         item.querySelector('.swiper-container'),
-        //         sliderFactory(item)
-        //     );
-        //
-        //     if (item.hasAttribute('data-slider-desktop')) {
-        //         window.addEventListener('resize', () => {
-        //             if (slider.currentBreakpoint === '700' || 'max') {
-        //                 slider.destroy();
-        //             } else {
-        //                 slider.init();
-        //             }
-        //         });
-        //     }
-        //
-        //     this.sliders.push(slider);
-        // });
     }
 
     createSearch() {

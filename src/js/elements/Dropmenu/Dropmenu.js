@@ -16,9 +16,9 @@ class Dropmenu {
             });
 
             document.addEventListener('click', e => {
-                let menu = e.target === this.content || this.content.contains(e.target);
-                let button = e.target === this.button || this.button.contains(e.target);
-                let menuIsActive = this.el.classList.contains('active');
+                const menu = e.target === this.content || this.content.contains(e.target);
+                const button = e.target === this.button || this.button.contains(e.target);
+                const menuIsActive = this.el.classList.contains('active');
 
                 if (!menu && !button && menuIsActive) {
                     this.close();
@@ -41,9 +41,9 @@ class Dropmenu {
 
     closeAll() {
         this.parent.dropmenu.forEach(item => {
-           if (item.index !== this.index) item.close();
+            if (item.index !== this.index) item.close();
         });
     }
 }
 
-export default Dropmenu;
+export { Dropmenu };

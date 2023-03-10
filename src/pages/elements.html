@@ -12,75 +12,454 @@
     <section class="section pt-100 ptt-80 bg-blue">
         <div class="container" style="display: flex;flex-direction: column; gap: 20px; align-items: center;">
             <section class="modal modal--small">
-                123
+                <div class="message">
+                    
+                </div>
             </section>
             <section class="modal modal--regular">
-                <form action="" class="form" data-form="partner">
-                    <div class="columns">
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    ФИО<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите ФИО">
-                            </label>
+                <form class="form" data-form="offer">
+                    <h2 class="title title--middle mb-15">
+                        Стать партнером
+                    </h2>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <div class="columns columns--form-modal">
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    ФИО<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите ФИО" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Название организации<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите организацию" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Регион организации<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите регион" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Телефон<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Почта<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите почту" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Ваша должность<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите должность" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    ИНН<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите ИНН" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--12 pt-8">
+                                            <label class="agreement" data-agreement>
+                                                <input type="checkbox" class="agreement__field" required>
+                                                <div class="agreement__box"></div>
+                                                <span class="agreement__text">
+                                                    Я согласен на обработку <a href="">персональных данных</a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="columns__col columns__col--12">
-                            <label class="field">
-                                <p class="field__title">
-                                    Название организации<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите организацию">
-                            </label>
+                    </div>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__header">
+                                <button class="button-section" type="button">
+                                    <span class="button-section__text">
+                                        Класс транспорта
+                                    </span>
+                                    <svg class="button-section__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-section"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <fieldset class="fieldset" data-fieldset="required">
+                                        <legend class="fieldset__title">
+                                            Заполните хотя бы одно поле<strong>*</strong>
+                                        </legend>
+                                        <div class="columns columns--form-modal">
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        EURO 6
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        EURO 5
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        EURO 4
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        EURO 3
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--12">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Комментарий
+                                                    </p>
+                                                    <textarea type="text" class="field__textarea" placeholder="Укажите ИНН"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
                         </div>
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    Регион организации<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите регион">
-                            </label>
+                    </div>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__header">
+                                <button class="button-section" type="button">
+                                    <span class="button-section__text">
+                                        Тип транспорта
+                                    </span>
+                                    <svg class="button-section__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-section"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <fieldset class="fieldset" data-fieldset="required">
+                                        <legend class="fieldset__title">
+                                            Заполните хотя бы одно поле<strong>*</strong>
+                                        </legend>
+                                        <div class="columns columns--form-modal">
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Тент 90 м³
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Тент 120 м³
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Jumbo
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Mega
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Опишите подробнее">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Платформа
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Рефрижер.
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--3">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Спецтрансп.
+                                                    </p>
+                                                    <input type="number" class="field__input" placeholder="Кол-во">
+                                                </label>
+                                            </div>
+                                            <div class="columns__col columns__col--12">
+                                                <label class="field" data-input>
+                                                    <p class="field__title">
+                                                        Комментарий
+                                                    </p>
+                                                    <textarea type="text" class="field__textarea" placeholder="Укажите ИНН"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
                         </div>
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    Телефон<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__">
-                            </label>
+                    </div>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__header">
+                                <button class="button-section" type="button">
+                                    <span class="button-section__text">
+                                        Направления
+                                    </span>
+                                    <svg class="button-section__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-section"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <div class="columns columns--form-modal">
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Откуда<strong>*</strong>
+                                                </p>
+                                                <input type="number" class="field__input" placeholder="Выберите страну" value="DE-49,86">
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Куда<strong>*</strong>
+                                                </p>
+                                                <input type="number" class="field__input" placeholder="Кол-во">
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Комментарий
+                                                </p>
+                                                <textarea type="text" class="field__textarea" placeholder="Укажите ИНН"></textarea>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    Почта<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите почту">
-                            </label>
+                    </div>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__header">
+                                <button class="button-section" type="button">
+                                    <span class="button-section__text">
+                                        Дополнительная информация
+                                    </span>
+                                    <svg class="button-section__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-section"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <div class="columns columns--form-modal">
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-select>
+                                                <p class="field__title">
+                                                    Наличие страхования CMR<strong>*</strong>
+                                                </p>
+                                                <select class="field__select" required>
+                                                    <option disabled selected>Укажите наличие страховки</option>
+                                                    <option value="Есть">Есть страхование</option>
+                                                    <option value="Нет">Нет страхования</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Комментарий
+                                                </p>
+                                                <textarea type="text" class="field__textarea" placeholder="Опишите подробнее"></textarea>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Членство в ассоциациях
+                                                </p>
+                                                <input type="number" class="field__input" placeholder="Например: ZMPD, ACMAП">
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Регистрация на биржах
+                                                </p>
+                                                <input type="number" class="field__input" placeholder="Например: TimoCom, ATI.su">
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Кто может дать вам рекомендацию
+                                                </p>
+                                                <textarea type="text" class="field__textarea" placeholder="Опишите подробнее"></textarea>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    Ваша должность<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите должность">
-                            </label>
-                        </div>
-                        <div class="columns__col columns__col--6">
-                            <label class="field">
-                                <p class="field__title">
-                                    ИНН<strong>*</strong>
-                                </p>
-                                <input type="text" class="field__input" placeholder="Укажите ИНН">
-                            </label>
-                        </div>
-                        <div class="columns__col columns__col--12">
-
-                        </div>
+                    </div>
+                    <div class="form__footer" data-form-footer>
+                        <button class="button button--clear" type="button" data-form-button="prev">
+                            <span class="button__text">
+                                Назад
+                            </span>
+                        </button>
+                        <button class="button" type="button" data-form-button="next">
+                            <span class="button__text" data-form-message-field>
+                                Далее
+                            </span>
+                        </button>
                     </div>
                 </form>
             </section>
             <section class="modal modal--regular">
-                123
+                <form class="form" data-form="partner">
+                    <h2 class="title title--middle mb-15">
+                        Расскажите о проекте
+                    </h2>
+                    <div class="form__section" data-form-section>
+                        <div class="dropdown-form">
+                            <div class="dropdown-form__main">
+                                <div class="dropdown-form__content">
+                                    <div class="columns columns--form-modal">
+                                        <div class="columns__col columns__col--12">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    ФИО<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите ФИО" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Название организации<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите организацию" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Дата погрузки и отгрузки
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Выберите даты">
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Телефон<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="+7 (___) ___-__-__" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Почта<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите почту" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    Ваша должность<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите должность" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--6">
+                                            <label class="field" data-input>
+                                                <p class="field__title">
+                                                    ИНН<strong>*</strong>
+                                                </p>
+                                                <input type="text" class="field__input" placeholder="Укажите ИНН" required>
+                                            </label>
+                                        </div>
+                                        <div class="columns__col columns__col--12 pt-8">
+                                            <label class="agreement" data-agreement>
+                                                <input type="checkbox" class="agreement__field" required>
+                                                <div class="agreement__box"></div>
+                                                <span class="agreement__text">
+                                                    Я согласен на обработку <a href="">персональных данных</a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__footer" data-form-footer>
+                        <button class="button" type="button" data-form-button="next">
+                            <span class="button__text" data-form-message-field>
+                                Отправить запрос
+                            </span>
+                        </button>
+                    </div>
+                </form>
             </section>
         </div>
     </section>

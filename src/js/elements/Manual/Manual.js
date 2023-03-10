@@ -1,6 +1,6 @@
 import Mark from "mark.js/src/vanilla";
 
-export default class Manual {
+class Manual {
     constructor(el) {
         this.el = el;
         this.form = this.el.querySelector('[data-manual-form]');
@@ -19,8 +19,6 @@ export default class Manual {
             this.resetInstance();
             const val = e.target.value;
             if (val.length >= 3) this.search(val);
-            //
-            // if (!val.length) this.toggleIcon(false);
         });
 
         if (this.blocks) {
@@ -90,3 +88,5 @@ export default class Manual {
         }
     }
 }
+
+export { Manual };

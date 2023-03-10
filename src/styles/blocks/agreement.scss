@@ -63,6 +63,14 @@
             }
         }
     }
+
+    &.error {
+        .agreement {
+            &__box {
+                border-color: $error;
+            }
+        }
+    }
 }
 
 .cover {

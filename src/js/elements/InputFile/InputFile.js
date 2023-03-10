@@ -1,4 +1,4 @@
-export default class InputFile {
+class InputFile {
     constructor(el) {
         this.el = el;
         this.field = this.el.querySelector('[data-input-file-field]');
@@ -13,3 +13,5 @@ export default class InputFile {
         });
     }
 }
+
+export { InputFile };

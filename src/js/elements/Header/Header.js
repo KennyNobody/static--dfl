@@ -1,4 +1,4 @@
-export default class Header {
+class Header {
     constructor(el) {
         this.el = el;
 
@@ -12,7 +12,8 @@ export default class Header {
     }
 
     fix() {
-       window.pageYOffset > 0 ? this.el.classList.add('fixed') : this.el.classList.remove('fixed');
+        window.pageYOffset > 0 ? this.el.classList.add('fixed') : this.el.classList.remove('fixed');
     }
-
 }
+
+export { Header };

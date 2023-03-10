@@ -1,4 +1,4 @@
-export default class Menu {
+class Menu {
     constructor(el, app) {
         this.el = el;
         this.app = app;
@@ -59,5 +59,6 @@ export default class Menu {
             }
         });
     };
-
 }
+
+export { Menu };
