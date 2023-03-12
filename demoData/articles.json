@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "title": "Заголовок статьи 1",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-1/"
+    },
+    {
+        "id": 2,
+        "title": "Длинный заголовок статьи 2",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-2/"
+    },
+    {
+        "id": 3,
+        "title": "Заголовок статьи 3",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-3/"
+    },
+    {
+        "id": 4,
+        "title": "Заголовок статьи 4",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-4/"
+    },
+    {
+        "id": 5,
+        "title": "Длинный заголовок статьи 5",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-5/"
+    },
+    {
+        "id": 6,
+        "title": "Заголовок статьи 6",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-6/"
+    },
+    {
+        "id": 7,
+        "title": "Заголовок статьи 7",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-7/"
+    },
+    {
+        "id": 8,
+        "title": "Длинный заголовок статьи 8",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-8/"
+    },
+    {
+        "id": 9,
+        "title": "Заголовок статьи 9",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-9/"
+    },
+    {
+        "id": 10,
+        "title": "Заголовок статьи 10",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-10/"
+    },
+    {
+        "id": 11,
+        "title": "Длинный заголовок статьи 11",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-11/"
+    },
+    {
+        "id": 12,
+        "title": "Заголовок статьи 12",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-12/"
+    },
+    {
+        "id": 13,
+        "title": "Заголовок статьи 13",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-13/"
+    },
+    {
+        "id": 14,
+        "title": "Заголовок статьи 14",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-14/"
+    },
+    {
+        "id": 15,
+        "title": "Длинный заголовок статьи 15",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-15/"
+    },
+    {
+        "id": 16,
+        "title": "Заголовок статьи 16",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-16/"
+    },
+    {
+        "id": 17,
+        "title": "Длинный заголовок статьи 17",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-17/"
+    },
+    {
+        "id": 18,
+        "title": "Заголовок статьи 18",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-18/"
+    },
+    {
+        "id": 19,
+        "title": "Заголовок статьи 19",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-19/"
+    },
+    {
+        "id": 20,
+        "title": "Длинный заголовок статьи 20",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-20/"
+    },
+    {
+        "id": 21,
+        "title": "Заголовок статьи 21",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-21/"
+    },
+    {
+        "id": 22,
+        "title": "Заголовок статьи 22",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-22/"
+    },
+    {
+        "id": 23,
+        "title": "Длинный заголовок статьи 23",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-23/"
+    },
+    {
+        "id": 24,
+        "title": "Заголовок статьи 24",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-24/"
+    },
+    {
+        "id": 25,
+        "title": "Заголовок статьи 25",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-25/"
+    },
+    {
+        "id": 26,
+        "title": "Длинный заголовок статьи 26",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-26/"
+    },
+    {
+        "id": 27,
+        "title": "Заголовок статьи 27",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-27/"
+    },
+    {
+        "id": 28,
+        "title": "Длинный заголовок статьи 28",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-28/"
+    },
+    {
+        "id": 29,
+        "title": "Заголовок статьи 29",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-29/"
+    },
+    {
+        "id": 30,
+        "title": "Заголовок статьи 30",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-30/"
+    },
+    {
+        "id": 31,
+        "title": "Заголовок статьи 31",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-31/"
+    },
+    {
+        "id": 32,
+        "title": "Длинный заголовок статьи 32",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-32/"
+    },
+    {
+        "id": 33,
+        "title": "Заголовок статьи 33",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-33/"
+    },
+    {
+        "id": 34,
+        "title": "Заголовок статьи 34",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-34/"
+    },
+    {
+        "id": 35,
+        "title": "Заголовок статьи 35",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-35/"
+    },
+    {
+        "id": 36,
+        "title": "Длинный заголовок статьи 36",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-36/"
+    },
+    {
+        "id": 37,
+        "title": "Заголовок статьи 37",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-37/"
+    },
+    {
+        "id": 38,
+        "title": "Заголовок статьи 38",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-38/"
+    },
+    {
+        "id": 39,
+        "title": "Длинный заголовок статьи 39",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-39/"
+    },
+    {
+        "id": 40,
+        "title": "Заголовок статьи 40",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-40/"
+    },
+    {
+        "id": 41,
+        "title": "Заголовок статьи 41",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-41/"
+    },
+    {
+        "id": 42,
+        "title": "Заголовок статьи 42",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-42/"
+    },
+    {
+        "id": 43,
+        "title": "Длинный заголовок статьи 43",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-43/"
+    },
+    {
+        "id": 44,
+        "title": "Заголовок статьи 44",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-44/"
+    },
+    {
+        "id": 45,
+        "title": "Заголовок статьи 45",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-45/"
+    },
+    {
+        "id": 46,
+        "title": "Заголовок статьи 46",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-46/"
+    },
+    {
+        "id": 47,
+        "title": "Длинный заголовок статьи 47",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-47/"
+    },
+    {
+        "id": 48,
+        "title": "Заголовок статьи 48",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-48/"
+    },
+    {
+        "id": 49,
+        "title": "Заголовок статьи 49",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-49/"
+    },
+    {
+        "id": 50,
+        "title": "Заголовок статьи 50",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-50/"
+    },
+    {
+        "id": 51,
+        "title": "Длинный заголовок статьи 51",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-51/"
+    },
+    {
+        "id": 52,
+        "title": "Заголовок статьи 52",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-52/"
+    },
+    {
+        "id": 53,
+        "title": "Заголовок статьи 53",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-53/"
+    },
+    {
+        "id": 54,
+        "title": "Длинный заголовок статьи 54",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-54/"
+    },
+    {
+        "id": 55,
+        "title": "Заголовок статьи 55",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-55/"
+    },
+    {
+        "id": 56,
+        "title": "Заголовок статьи 56",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-56/"
+    },
+    {
+        "id": 57,
+        "title": "Длинный заголовок статьи 57",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-57/"
+    },
+    {
+        "id": 58,
+        "title": "Заголовок статьи 58",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-58/"
+    },
+    {
+        "id": 59,
+        "title": "Заголовок статьи 59",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-59/"
+    },
+    {
+        "id": 60,
+        "title": "Длинный заголовок статьи 60",
+        "preview": "https://placeholder.pics/svg/900x600",
+        "link": "/articles/link-60/"
+    }
+]

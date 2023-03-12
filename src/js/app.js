@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import sliderFactory from './elements/Slider/factory';
 
+import { Articles } from "./elements/Articles/Articles";
 import { Body } from "./elements/Body/Body";
 import { Dropdown } from "./elements/Dropdown/Dropdown";
 import { Dropmenu } from "./elements/Dropmenu/Dropmenu";
@@ -16,6 +17,7 @@ import { initGalleryModal } from "./functions/initFancybox";
 
 class App {
     constructor() {
+        this.initArticles();
         this.createBody();
         this.initDropdown();
         this.createDropmenu();
@@ -29,6 +31,12 @@ class App {
         this.createTable();
         this.initManual();
         this.initFunctions();
+    }
+
+    initArticles() {
+        const el = document.querySelector('[data-articles]');
+
+        if (el) this.body = new Articles(el);
     }
 
     createBody() {

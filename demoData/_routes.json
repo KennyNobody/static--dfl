@@ -1,0 +1,6 @@
+{
+    "/api/v1/news": "/news",
+    "/api/v1/articles": "/articles",
+    "/posts/:category": "/posts?category=:category",
+    "/articles\\?id=:id": "/posts/:id"
+}

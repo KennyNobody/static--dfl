@@ -4,11 +4,11 @@
   "description": "Web development starter template",
   "main": "index.js",
   "scripts": {
-    "start": "json-server -H 0.0.0.0 -p8080 --watch demoData/_index.js",
+    "start": "json-server -H 0.0.0.0 -p8080 --watch demoData/_index.js --routes demoData/_routes.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "serve": "webpack serve",
-    "server": "json-server -p8080 --watch demoData/_index.js",
+    "server": "json-server -p3001 --watch demoData/_index.js --routes demoData/_routes.json",
     "lint": "npx eslint src/**/*.js"
   },
   "repository": {

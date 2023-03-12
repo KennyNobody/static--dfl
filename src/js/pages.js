@@ -165,8 +165,8 @@ module.exports = [
         temp
     }),
     new HtmlWebpackPlugin({
-        template: "./src/pages/articles.html",
-        filename: "articles.html",
+        template: "./src/pages/Articles.html",
+        filename: "Articles.html",
         inject: "body",
         title: "Статьи | DFL",
         head,
